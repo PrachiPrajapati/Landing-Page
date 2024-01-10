@@ -1,0 +1,1551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <title>Gigify</title>
+    <!--Favicon Included-->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--Font Awsome Included-->
+    <link href="css/font-awesome.css" type="text/css" rel="stylesheet" />
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!--Extra Style Included-->
+    <link href="css/jcf.css" rel="stylesheet">
+    <link href="css/slick-theme.css" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+    <link rel="stylesheet" href="css/smart_wizard.min.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.css" />
+     <!--Main Style Included-->
+     <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <!--Main Js Included-->
+	<script src="js/lib/jquery.js" type="text/javascript"></script>
+    <script src="js/modernizr.js" type="text/javascript"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.js"></script>
+    <!--Extra Js Included-->
+    <script src="js/jcf.js"></script>
+    <script src="js/jcf.select.js"></script>
+    <script src="js/jcf.radio.js"></script>
+    <script src="js/jcf.checkbox.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
+    <script src="js/jquery.smartWizard.min.js"></script>
+    <script src="js/jquery.fancybox.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+    	<!--
+    	if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+      	  var msViewportStyle = document.createElement('style');
+      	  msViewportStyle.appendChild(
+      	    document.createTextNode(
+      	      '@-ms-viewport{width:auto!important}'
+      	    )
+      	  );
+      	  document.querySelector('head').appendChild(msViewportStyle);
+      	}
+    	-->
+    </script>
+    <script>
+        (function($){
+            $(window).on("load",function(){
+                $(".custom-scroll").mCustomScrollbar();
+            });
+        })(jQuery);
+    </script>
+    <script type="text/javascript">
+        $(function() {
+            $( "#datepicker, #datepicker1").datepicker({ firstDay: 1, minDate: 0, changeMonth: true,
+                    changeYear: true, });
+            $(function() {
+            $("#datepicker, #datepicker1").datepicker({
+                startDate: '01/01/1996'
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+<!--******************* Header Section Start *********************-->
+<header>
+    <div class="main-header">
+        <div class="container">
+            <div class="justify-space-between">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.svg" alt="logo"/></a>
+                </div>
+                <div class="header-menu-content">
+                    <ul>
+                        <li class="all-services">
+                            <a href="javascript:;">All Services</a>
+                            <div class="all-services-list">
+                                <ul class="custom-scroll">
+                                    <li><a href="#">Home Repairs</a></li>
+                                    <li><a href="#">Cleaning</a></li>
+                                    <li><a href="#">Moving & Packing</a></li>
+                                    <li><a href="#">Furniture Assembly</a></li>
+                                    <li><a href="#">Painting</a></li>
+                                    <li><a href="#">Pet Care</a></li>
+                                    <li><a href="#">Home Beauty</a></li>
+                                    <li><a href="#">Painting</a></li>
+                                    <li><a href="#">Pet Care</a></li>
+                                    <li><a href="#">Home Beauty</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="login.html">Login</a>
+                        </li>
+                        <li>
+                            <a href="gigworker-signup.html" class="btn-1">Become a GigWorker</a>
+                        </li>
+                        <li class="notification-gigs">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16.625" height="19" viewBox="0 0 16.625 19">
+                                    <path id="bell" d="M16.3,13.444c-.717-.77-2.058-1.929-2.058-5.726A5.86,5.86,0,0,0,9.5,1.961V1.187a1.187,1.187,0,1,0-2.374,0v.773A5.86,5.86,0,0,0,2.377,7.719c0,3.8-1.342,4.955-2.058,5.726A1.159,1.159,0,0,0,0,14.25a1.189,1.189,0,0,0,1.191,1.187H15.433a1.188,1.188,0,0,0,1.191-1.187A1.159,1.159,0,0,0,16.3,13.444Zm-13.8.212A9.293,9.293,0,0,0,4.158,7.74c0-.007,0-.014,0-.022a4.156,4.156,0,0,1,8.313,0c0,.007,0,.014,0,.022a9.291,9.291,0,0,0,1.652,5.916ZM8.312,19a2.375,2.375,0,0,0,2.374-2.375H5.938A2.375,2.375,0,0,0,8.312,19Z" transform="translate(0.001)" fill="#fff"/>
+                                  </svg>  
+                                  <div class="gigs-notification-no"><span>4</span></div>                                
+                            </a>
+                            <div class="gigs-notificatiob-blk">
+                                <h5>My Gig Notifications</h5>
+                                <div class="gigs-notification-list custom-scroll">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <div class="justify-space-between tb-border">
+                                                    <div class="d-flex align-center">
+                                                        <div class="profile-img-small" style="background:url('images/user-profile.png') no-repeat center center / cover;"></div>
+                                                        <div>
+                                                            <div class="nofification-user-nm">Francesca<span>sent you a message</span></div>
+                                                            <div class="notification-timer">4 min ago</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <img src="images/notification-ic-1.svg" alt="notification-ic-1"/>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="justify-space-between tb-border">
+                                                    <div class="d-flex align-center">
+                                                        <div class="profile-img-small" style="background:url('images/user-profile.png') no-repeat center center / cover;"></div>
+                                                        <div>
+                                                            <div class="nofification-user-nm">A. Borg<span>has accepted your time change</span></div>
+                                                            <div class="notification-timer">4 min ago</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <img src="images/notification-ic-2.svg" alt="notification-ic-2"/>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="justify-space-between tb-border">
+                                                    <div class="d-flex align-center">
+                                                        <div class="profile-img-small" style="background:url('images/user-profile.png') no-repeat center center / cover;"></div>
+                                                        <div>
+                                                            <div class="nofification-user-nm">J. Cilia<span>has cancelled the gig</span></div>
+                                                            <div class="notification-timer">4 min ago</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <img src="images/notification-ic-3.svg" alt="notification-ic-3"/>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="justify-space-between tb-border">
+                                                    <div class="d-flex align-center">
+                                                        <div class="profile-img-small" style="background:url('images/user-profile.png') no-repeat center center / cover;"></div>
+                                                        <div>
+                                                            <div class="nofification-user-nm">J. Micallef<span>sent you a message</span></div>
+                                                            <div class="notification-timer">4 min ago</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <img src="images/notification-ic-4.svg" alt="notification-ic-4"/>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="justify-space-between tb-border">
+                                                    <div class="d-flex align-center">
+                                                        <div class="profile-img-small" style="background:url('images/user-profile.png') no-repeat center center / cover;"></div>
+                                                        <div>
+                                                            <div class="nofification-user-nm">D. Vella<span>is requesting a re-schedule</span></div>
+                                                            <div class="notification-timer">4 min ago</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <img src="images/notification-ic-2.svg" alt="notification-ic-2"/>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="justify-space-between tb-border">
+                                                    <div class="d-flex align-center">
+                                                        <div class="profile-img-small" style="background:url('images/user-profile.png') no-repeat center center / cover;"></div>
+                                                        <div>
+                                                            <div class="nofification-user-nm">B. Azzopardi<span>has rated your gig</span></div>
+                                                            <div class="notification-timer">4 min ago</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <img src="images/notification-ic-5.svg" alt="notification-ic-5"/>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="justify-space-between tb-border">
+                                                    <div class="d-flex align-center">
+                                                        <div class="profile-img-small" style="background:url('images/user-profile.png') no-repeat center center / cover;"></div>
+                                                        <div>
+                                                            <div class="nofification-user-nm">B. Azzopardi<span>has rated your gig</span></div>
+                                                            <div class="notification-timer">4 min ago</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <img src="images/notification-ic-5.svg" alt="notification-ic-1"/>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="view-all">
+                                    <a href="#">View All Gigs</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="my-gigs-title">My Gigs</a>
+                        </li>
+                        <li class="user-profile">
+                            <a href="javascript:;"><img src="images/user-ic.svg" alt="user-ic"/></a>
+                            <div class="user-settings">
+                                <ul>
+                                    <li class="user-profile-nm d-flex align-center">
+                                        <div class="profile-img-small" style="background:url('images/user-profile.png') no-repeat center center / cover;"></div>
+                                        <div class="user-nm-1">Carl Vella</div>
+                                    </li>
+                                    <li><a href="#">Manage My Account</a></li>
+                                    <li><a href="#">Refer & Earn</a></li>
+                                    <li><a href="#">Gig Points</a></li>
+                                    <li><a href="#">Log in as GigWorker</a></li>
+                                    <li><a href="#">Log Out</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--******************* Header Section End *********************-->
+<!--******************* Middle Section Start ******************-->
+<main>
+    <section class="sevice-steps-nm-blk">
+        <div class="booking-step-bg">
+            <div class="container">
+                <div class="booking-service-nm"><h3>HOME REPAIRS</h3></div>
+            </div>
+        </div>
+        <div class="step-form booking-service-steps">
+            <div class="container">
+                <form role="form">
+                    <div id="smartwizard">
+                        <ul class="step-progress">
+                            <li><a href="#step-1"><span>1</span></a><span>Gig Details</span></li>
+                            <li><a href="#step-2"><span>2</span></a><span>Select GigWorker</span></li>
+                            <li><a href="#step-3"><span>3</span></a><span>Review & Confirm</span></li>
+                        </ul>
+                        <div>
+                            <div id="step-1">
+                                <div class="gig-service-details-sec">
+                                    <div class="row">
+                                        <div class="col-lg-7">
+                                            <div class="gig-service-details-blk">
+                                                <h6>Gig Address</h6>
+                                                <p>Let your GigWorker know where to go</p>
+                                                <div class="form-style">
+                                                    <div>
+                                                        <span class="input input--hoshi">
+                                                            <input class="input__field input__field--hoshi" type="text" id="input-4" />
+                                                            <label class="input__label input__label--hoshi" for="input-4">
+                                                                <span class="input__label-content input__label-content--hoshi">Residence Name/No.</span>
+                                                            </label>
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <span class="input input--hoshi">
+                                                            <input class="input__field input__field--hoshi" type="text" id="input-4" />
+                                                            <label class="input__label input__label--hoshi" for="input-4">
+                                                                <span class="input__label-content input__label-content--hoshi">Enter Street Address</span>
+                                                            </label>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gig-service-details-blk">
+                                                <h6>Gig Description</h6>
+                                                <p>Explain what needs to be done</p>
+                                                <div class="form-style">
+                                                    <div class="hoshi-textarea">
+                                                        <span class="input input--hoshi">                                                            
+                                                            <textarea class="input__field input__field--hoshi" id="input-4"></textarea>
+                                                            <label class="input__label input__label--hoshi" for="input-4">
+                                                                <span class="input__label-content input__label-content--hoshi">Gig Description</span>
+                                                            </label>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gig-service-details-blk">
+                                                <h6>Time Estimate</h6>
+                                                <p>Estimate the time required</p>
+                                                <ul class="radio-style-2">
+                                                    <li><div><input type="radio" name="radio1"/>Est. 1 hour</div></li>
+                                                    <li><div><input type="radio" name="radio1"/>Est. 2-3 hours</div></li>
+                                                    <li><div><input type="radio" name="radio1"/>Est. 4+ hours</div></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5">
+                                            <h5>Drop Pin on gig location</h5>
+                                            <div class="map-style grow-1">
+                                                <div id="map"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center gig-service-data-btns">
+                                    <button class="grey-btn prev-btn">Back</button>
+                                    <button class="btn-small next-btn">Next</button>
+                                </div>
+                            </div>
+                            <div id="step-2">
+                                <div class="d-flex select-gigworker">
+                                    <div class="left-panel custom-scroll">
+                                        <div class="select-gigworker-blks">
+                                            <h6>Select Availability</h6>
+                                            <ul class="availbility-time-blk">
+                                                <li>
+                                                    <input type="radio" name="availbility-time" id="availbility-time-1"/>
+                                                    <label for="availbility-time-1"><div class="availbility-type">Today</div></label>
+                                                </li>
+                                                <li>
+                                                    <input type="radio" name="availbility-time" id="availbility-time-2"/>
+                                                    <label for="availbility-time-2"><div class="availbility-type">Next 3 Days</div></label>
+                                                </li>
+                                                <li>
+                                                    <input type="radio" name="availbility-time" id="availbility-time-3"/>
+                                                    <label for="availbility-time-3"><div class="availbility-type">Within a Week</div></label>
+                                                </li>
+                                                <li>
+                                                    <input type="radio" name="availbility-time" id="availbility-time-4"/>
+                                                    <label for="availbility-time-4" id="choose-date"><div class="availbility-type">Choose Dates</div></label>
+                                                </li>
+                                            </ul>
+                                            <div class="calender-blk" id="datepicker-label">
+                                                <div id="datepicker1" class="calendar"></div>
+                                            </div>
+                                        </div>
+                                        <div class="select-gigworker-blks">
+                                            <h6>Select Availability</h6>
+                                            <div class="select-time-slot">
+                                                <div class="checkbox-style"><input type="checkbox"/> Morning (6am - 12pm)</div>
+                                                <div class="checkbox-style"><input type="checkbox"/> Afternoon (12pm - 6pm) </div>
+                                                <div class="checkbox-style"><input type="checkbox"/> Evening (6pm - 10pm) </div>
+                                            </div>
+                                        </div>
+                                        <div class="select-gigworker-blks">
+                                            <h6>or select a specific time</h6>
+                                            <div class="select-style select-specific-time">
+                                                <select class="custom color" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                                                    <option value="v2">08:00 AM</option>
+                                                    <option value="v3">09:00 AM</option>
+                                                    <option value="v4">10:00 AM</option>
+                                                    <option value="v5">11:00 AM</option>
+                                                    <option value="v5">12:00 PM</option>
+                                                    <option value="v2">01:00 PM</option>
+                                                    <option value="v3">02:00 PM</option>
+                                                    <option value="v4">03:00 PM</option>
+                                                    <option value="v5">04:00 PM</option>
+                                                    <option value="v5">05:00 PM</option>
+                                                    <option value="v5">06:00 PM</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="text-center gig-service-data-btns">
+                                            <button class="grey-btn prev-btn">Back</button>
+                                        </div>
+                                    </div>
+                                    <div class="right-panel">
+                                        <div class="align-center justify-end sort-rating">
+                                            <h5>Sort by</h5>
+                                            <div class="select-style">
+                                                <select class="custom color" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                                                    <option value="v1">Recommended</option>
+                                                    <option value="v2">Price - Lowest First</option>
+                                                    <option value="v3">Price - Highest First</option>
+                                                    <option value="v4">% of positive reviews</option>
+                                                    <option value="v5"># of completed tasks</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="gig-worker-user-details-blks custom-scroll">
+                                            <div class="no-gigeorkers-blk">
+                                                <div class="d-flex align-center">
+                                                    <div class="shrink-0"><img src="images/no-found.svg" alt="no-found"/></div>
+                                                    <div>
+                                                        <h1>Oh no! No GigWorkers available</h1>
+                                                        <p>Please select a different day or time to broaden your search.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gig-worker-user-details">
+                                                <div class="d-flex">
+                                                    <div class="gig-worker-user-blue-blk">
+                                                        <div class="d-flex">
+                                                            <div class="gigifycv-user-img-blk shrink-0">
+                                                                <div class="gigifycv-logo">
+                                                                    <img src="images/footer-logo.svg" alt="footer-logo"/>
+                                                                </div>
+                                                                <div class="gigifycv-user-img" style="background: url('images/gigifycv-user.png') no-repeat center center / cover;"></div>
+                                                            </div>
+                                                            <div class="gigfycv-portfolio-info grow-1">
+                                                                <h6>JOSEPH</h6>
+                                                                <ul>
+                                                                    <li><img src="images/completed-gigs.svg" alt="completed-gigs"/> <span>11 Completed Gigs</span></li>
+                                                                    <li><img src="images/star-small.svg" alt="star"/> <span>3 Reviews</span></li>
+                                                                    <li><img src="images/reliability.svg" alt="reliability"/> <span>97% Reliability</span></li>
+                                                                </ul>
+                                                                <a href="#" data-toggle="modal" data-target="#gigworker-profile-modal" data-dismiss="modal">View profile and reviews</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="align-center justify-space-between select-continue">
+                                                            <!-- <button class="btn-small margin-0" data-toggle="modal" data-target="#login-modal" data-dismiss="modal">Select & Continue</button> -->
+                                                            <a href="#" class="btn-small margin-0" data-toggle="modal" data-target="#login-modal" data-dismiss="modal">Select & Continue</a>
+                                                            <div class="gigworker-hr-price"><span>€28</span>/hr</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="gig-worker-user-wt-blk">
+                                                        <div class="add-portfolio-text">
+                                                            <h6>How can I help?</h6>
+                                                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat…</p>
+                                                        </div>
+                                                        <div class="add-portfolio-text">
+                                                            <h6>When I’m working I always make sure to…</h6>
+                                                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat…</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gig-worker-user-details">
+                                                <div class="d-flex">
+                                                    <div class="gig-worker-user-blue-blk">
+                                                        <div class="d-flex">
+                                                            <div class="gigifycv-user-img-blk shrink-0">
+                                                                <div class="gigifycv-logo">
+                                                                    <img src="images/footer-logo.svg" alt="footer-logo"/>
+                                                                </div>
+                                                                <div class="gigifycv-user-img" style="background: url('images/gigifycv-user.png') no-repeat center center / cover;"></div>
+                                                            </div>
+                                                            <div class="gigfycv-portfolio-info grow-1">
+                                                                <h6>JOSEPH</h6>
+                                                                <ul>
+                                                                    <li><img src="images/completed-gigs.svg" alt="completed-gigs"/> <span>11 Completed Gigs</span></li>
+                                                                    <li><img src="images/star-small.svg" alt="star"/> <span>3 Reviews</span></li>
+                                                                    <li><img src="images/reliability.svg" alt="reliability"/> <span>97% Reliability</span></li>
+                                                                </ul>
+                                                                <a href="#">View profile and reviews</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="align-center justify-space-between select-continue">
+                                                            <button class="btn-small margin-0 next-btn">Select & Continue</button>
+                                                            <div class="gigworker-hr-price"><span>€28</span>/hr</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="gig-worker-user-wt-blk">
+                                                        <div class="add-portfolio-text">
+                                                            <h6>How can I help?</h6>
+                                                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat…</p>
+                                                        </div>
+                                                        <div class="add-portfolio-text">
+                                                            <h6>When I’m working I always make sure to…</h6>
+                                                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat…</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gig-worker-user-details">
+                                                <div class="d-flex">
+                                                    <div class="gig-worker-user-blue-blk">
+                                                        <div class="d-flex">
+                                                            <div class="gigifycv-user-img-blk shrink-0">
+                                                                <div class="gigifycv-logo">
+                                                                    <img src="images/footer-logo.svg" alt="footer-logo"/>
+                                                                </div>
+                                                                <div class="gigifycv-user-img" style="background: url('images/gigifycv-user.png') no-repeat center center / cover;"></div>
+                                                            </div>
+                                                            <div class="gigfycv-portfolio-info grow-1">
+                                                                <h6>JOSEPH</h6>
+                                                                <ul>
+                                                                    <li><img src="images/completed-gigs.svg" alt="completed-gigs"/> <span>11 Completed Gigs</span></li>
+                                                                    <li><img src="images/star-small.svg" alt="star"/> <span>3 Reviews</span></li>
+                                                                    <li><img src="images/reliability.svg" alt="reliability"/> <span>97% Reliability</span></li>
+                                                                </ul>
+                                                                <a href="#">View profile and reviews</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="align-center justify-space-between select-continue">
+                                                            <!-- <button class="btn-small margin-0">Select & Continue</button> -->
+                                                            <a href="#" class="btn-small margin-0" data-toggle="modal" data-target="#gigworker-date-availbility" data-dismiss="modal">Select & Continue</a>
+                                                            <div class="gigworker-hr-price"><span>€28</span>/hr</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="gig-worker-user-wt-blk">
+                                                        <div class="add-portfolio-text">
+                                                            <h6>How can I help?</h6>
+                                                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat…</p>
+                                                        </div>
+                                                        <div class="add-portfolio-text">
+                                                            <h6>When I’m working I always make sure to…</h6>
+                                                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat…</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gig-worker-user-details">
+                                                <div class="d-flex">
+                                                    <div class="gig-worker-user-blue-blk">
+                                                        <div class="d-flex">
+                                                            <div class="gigifycv-user-img-blk shrink-0">
+                                                                <div class="gigifycv-logo">
+                                                                    <img src="images/footer-logo.svg" alt="footer-logo"/>
+                                                                </div>
+                                                                <div class="gigifycv-user-img" style="background: url('images/gigifycv-user.png') no-repeat center center / cover;"></div>
+                                                            </div>
+                                                            <div class="gigfycv-portfolio-info grow-1">
+                                                                <h6>JOSEPH</h6>
+                                                                <ul>
+                                                                    <li><img src="images/completed-gigs.svg" alt="completed-gigs"/> <span>11 Completed Gigs</span></li>
+                                                                    <li><img src="images/star-small.svg" alt="star"/> <span>3 Reviews</span></li>
+                                                                    <li><img src="images/reliability.svg" alt="reliability"/> <span>97% Reliability</span></li>
+                                                                </ul>
+                                                                <a href="#">View profile and reviews</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="align-center justify-space-between select-continue">
+                                                            <button class="btn-small margin-0">Select & Continue</button>
+                                                            <div class="gigworker-hr-price"><span>€28</span>/hr</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="gig-worker-user-wt-blk">
+                                                        <div class="add-portfolio-text">
+                                                            <h6>How can I help?</h6>
+                                                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat…</p>
+                                                        </div>
+                                                        <div class="add-portfolio-text">
+                                                            <h6>When I’m working I always make sure to…</h6>
+                                                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat…</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="step-3">
+                                <div class="review-confirm-blk">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="booking-overview">
+                                                <h3>BOOKING OVERVIEW</h3>
+                                                <div class="booking-overview-detail-blks">
+                                                    <h5>Gig Location</h5>
+                                                    <a href="#" class="map-display">Flat No. / House Name, Street Name, Locality</a>
+                                                    <div class="map-style">
+                                                        <div id="map"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="booking-overview-detail-blks">
+                                                    <h5>Gig Duration</h5>
+                                                    <p>Medium Task (2-4 hours)</p>
+                                                </div>
+                                                <div class="booking-overview-detail-blks">
+                                                    <h5>Gig Description</h5>
+                                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.</p>
+                                                </div>
+                                                <div class="booking-overview-detail-blks">
+                                                    <h5>Gig Date & Time</h5>
+                                                    <p>19th December 2019 - 10am - 2pm</p>
+                                                </div>
+                                                <div class="booking-overview-detail-blks">
+                                                    <h5>GigWorker</h5>
+                                                    <p>Joseph Calleja - €28/hr</p>
+                                                </div>
+                                                <div class="text-center back-btn">
+                                                    <button class="grey-btn prev-btn">Back</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="payment-method-details">
+                                                <div class="payment-gigworker-details">
+                                                    <div class="total-price-gigworker">
+                                                        <ul>
+                                                            <li><h5>DURATION OF GIG:</h5> 4</li>
+                                                            <li><h5>GIGWORKER RATE:</h5> 28</li>
+                                                            <li><h5>GIG COST:</h5> 112</li>
+                                                            <li><h5>VAT:</h5> 20.16</li>
+                                                        </ul>
+                                                        <div class="total-amt"><span><b>Total:</b></span>132.16</div>
+                                                    </div>
+                                                    <div class="promocode-blk d-flex align-center m-20">
+                                                        <div class="grow-1">
+                                                            <span class="input input--hoshi">
+                                                                <input class="input__field input__field--hoshi" type="text" id="input-4" />
+                                                                <label class="input__label input__label--hoshi" for="input-4">
+                                                                    <span class="input__label-content input__label-content--hoshi">Enter Promo Code</span>
+                                                                </label>
+                                                            </span>
+                                                        </div>
+                                                        <div>
+                                                            <button class="btn-small">Apply</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="paymnet-select-dropdown">
+                                                        <h5>Select Payment Method</h5>
+                                                        <div class="select-style">
+                                                            <select class="custom color" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                                                                <option value="v2">VISA</option>
+                                                                <option value="v2">Option 1</option>
+                                                                <option value="v2">Option 2</option>
+                                                                <option value="v2">Option 3</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="text-center">
+                                                            <a class="btn-small m-20 select-payment-method">Select</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="payment-method-card-details">
+                                                    <a href="#" class="back-method">Back to payment method</a>
+                                                    <div class="total-amt m-20"><span><b>Total:</b></span>€132.16</div>
+                                                    <div class="paymnet-select-dropdown">
+                                                        <h5>Select Payment Method</h5>
+                                                        <div class="text-center">
+                                                            <div class="payment-type-img"><img src="images/visa.svg" alt="visa"/></div>
+                                                        </div>
+                                                        <div class="form-style card-details">
+                                                            <div>
+                                                                <span class="input input--hoshi">
+                                                                    <input class="input__field input__field--hoshi" type="tel" id="input-4" />
+                                                                    <label class="input__label input__label--hoshi" for="input-4">
+                                                                        <span class="input__label-content input__label-content--hoshi">Card Number</span>
+                                                                    </label>
+                                                                </span>
+                                                            </div>
+                                                            <div>
+                                                                <span class="input input--hoshi">
+                                                                    <input class="input__field input__field--hoshi" type="text" id="input-4" />
+                                                                    <label class="input__label input__label--hoshi" for="input-4">
+                                                                        <span class="input__label-content input__label-content--hoshi">Card Holder Name</span>
+                                                                    </label>
+                                                                </span>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div>
+                                                                        <span class="input input--hoshi">
+                                                                            <input class="input__field input__field--hoshi" type="text" id="input-4" />
+                                                                            <label class="input__label input__label--hoshi" for="input-4">
+                                                                                <span class="input__label-content input__label-content--hoshi">Expiry Date</span>
+                                                                            </label>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div>
+                                                                        <span class="input input--hoshi">
+                                                                            <input class="input__field input__field--hoshi" type="text" id="input-4" />
+                                                                            <label class="input__label input__label--hoshi" for="input-4">
+                                                                                <span class="input__label-content input__label-content--hoshi">CCV</span>
+                                                                            </label>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-center">
+                                                            <a href="" data-toggle="modal" data-target="#booking-completed-modal" data-dismiss="modal" class="btn-small m-30">Confirm & Pay</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+<!--******************* Middle Section End ******************-->
+<!--******************* Model Start ******************-->
+<div id="gigworker-profile-modal" class="modal fade gigworker-profile-modal" role="dialog" aria-labelledby="gigworkerprofileModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12.268" height="12.043" viewBox="0 0 12.268 12.043">
+                    <g id="Group_1129" data-name="Group 1129" transform="translate(-860.9 -417.513)">
+                      <g id="Group_513" data-name="Group 513" transform="translate(861.607 418.22)">
+                        <line id="Line_85" data-name="Line 85" x1="15.031" transform="translate(0 0) rotate(45)" fill="none" stroke="#152c53" stroke-linecap="round" stroke-width="1"/>
+                        <line id="Line_86" data-name="Line 86" x1="15.031" transform="translate(10.854 0) rotate(135)" fill="none" stroke="#152c53" stroke-linecap="round" stroke-width="1"/>
+                      </g>
+                    </g>
+                </svg>
+            </button>
+            <div class="modal-body">
+                <div class="gigfy-cv-profile">
+                    <form>
+                        <div class="container">
+                            <div class="d-flex align-center gigifycv-user-blks">
+                                <div class="gigifycv-user-img-blk shrink-0">
+                                    <div class="gigifycv-logo">
+                                        <img src="images/footer-logo.svg" alt="footer-logo"/>
+                                    </div>
+                                    <div class="gigifycv-user-img" style="background: url('images/gigifycv-user.png') no-repeat center center / cover;"></div>
+                                </div>
+                                <div class="gigfycv-portfolio-info grow-1">
+                                    <h3>JOSEPH</h3>
+                                    <ul>
+                                        <li><img src="images/euro-sign.svg" alt="euro-sign"/> <span>Home Repairs for <b>€28 an hour</b></span></li>
+                                        <li><img src="images/check.svg" alt="check"/> <span>9 Home Repair Gigs</span></li>
+                                        <li><img src="images/reliability.svg" alt="reliability"/> <span>97% Reliability</span></li>
+                                    </ul>
+                                </div>
+                                <div class="shrink-o">
+                                    <button class="btn-small margin-0">Select & Continue</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="add-portfolio-text custom-scroll">
+                            <div class="add-portfolio-text-blk">
+                                <div class="form-group with-text">
+                                    <h6>How can I help?</h6>
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat…</p>
+                                </div>
+                                <div class="form-group with-text">
+                                    <h6>When I’m working I always make sure to…</h6>
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat…</p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="other-gigcv-info margin-0">
+                        <div class="reviews-title d-flex justify-space-between m-20">
+                            <h5 class="align-center"><img src="images/star.svg" alt="star"/>Reviews</h5>
+                            <div class="select-style">
+                                <select class="custom color" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                                    <option value="v2">Home Repairs (2)</option>
+                                    <option value="v2">Cleaning (1)</option>
+                                    <option value="v2">Painting (3)</option>
+                                    <option value="v2">Pet Care (2)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="other-gigcv-blks custom-scroll">
+                            <div class="other-gigcv-blk d-flex">
+                                <div class="other-gigcv-user-img shrink-0" style="background: url('images/gigifycv-user.png') no-repeat center center / cover;"></div>
+                                <div class="other-gigcv-details">
+                                    <div class="d-flex">
+                                        <h6>Home Repair:</h6>
+                                        <div class="rating-star">
+                                            <fieldset class="rating">
+                                                <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars" ></label>
+                                                <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                                <input type="radio" id="star4" name="rating" value="4"/><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                                                <input type="radio" id="star3half" name="rating" value="3 and a half" checked="checked"/><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                                <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                                                <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                                <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                                                <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                                <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                                                <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="other-gigcv-excerpt"><p>“Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat… ”</p></div>
+                                    <div class="other-gigcv-nm">C. Fenech - <span>December 23 2019</span></div>
+                                </div>
+                            </div>
+                            <div class="other-gigcv-blk d-flex">
+                                <div class="other-gigcv-user-img shrink-0" style="background: url('images/gigifycv-user.png') no-repeat center center / cover;"></div>
+                                <div class="other-gigcv-details">
+                                    <div class="d-flex">
+                                        <h6>Home Repair:</h6>
+                                        <div class="rating-star">
+                                            <fieldset class="rating">
+                                                <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                                                <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                                <input type="radio" id="star4" name="rating" value="4"/><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                                                <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                                <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                                                <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                                <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                                                <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                                <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                                                <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="other-gigcv-excerpt"><p>“Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat… ”</p></div>
+                                    <div class="other-gigcv-nm">C. Fenech - <span>December 23 2019</span></div>
+                                </div>
+                            </div>
+                            <div class="other-gigcv-blk d-flex">
+                                <div class="other-gigcv-user-img shrink-0" style="background: url('images/gigifycv-user.png') no-repeat center center / cover;"></div>
+                                <div class="other-gigcv-details">
+                                    <div class="d-flex">
+                                        <h6>Home Repair:</h6>
+                                        <div class="rating-star">
+                                            <fieldset class="rating">
+                                                <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                                                <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                                <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                                                <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                                <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                                                <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                                <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                                                <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                                <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                                                <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="other-gigcv-excerpt"><p>“Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat… ”</p></div>
+                                    <div class="other-gigcv-nm">C. Fenech - <span>December 23 2019</span></div>
+                                </div>
+                            </div>
+                            <div class="other-gigcv-blk d-flex">
+                                <div class="other-gigcv-user-img shrink-0" style="background: url('images/gigifycv-user.png') no-repeat center center / cover;"></div>
+                                <div class="other-gigcv-details">
+                                    <div class="d-flex">
+                                        <h6>Home Repair:</h6>
+                                        <div class="rating-star">
+                                            <fieldset class="rating">
+                                                <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                                                <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                                <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                                                <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                                <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                                                <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                                <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                                                <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                                <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                                                <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="other-gigcv-excerpt"><p>“Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat… ”</p></div>
+                                    <div class="other-gigcv-nm">C. Fenech - <span>December 23 2019</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="login-modal" class="modal fade" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12.268" height="12.043" viewBox="0 0 12.268 12.043">
+                    <g id="Group_846" data-name="Group 846" transform="translate(-860.9 -417.513)">
+                      <g id="Group_513" data-name="Group 513" transform="translate(861.607 418.22)">
+                        <line id="Line_85" data-name="Line 85" x1="15.031" transform="translate(0 0) rotate(45)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+                        <line id="Line_86" data-name="Line 86" x1="15.031" transform="translate(10.854 0) rotate(135)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+                      </g>
+                    </g>
+                </svg>
+            </button>
+            <div class="modal-body">
+                <div class="containter">
+                    <div class="login-tab">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#login-tab" role="tab" data-toggle="tab">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#signup-tab" role="tab" data-toggle="tab">Sign Up</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <form>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane in active" id="login-tab">
+                                <div class="login-bg">
+                                    <div class="row align-center">
+                                        <div class="col-lg-6">
+                                            <div class="login-form">
+                                                <h2 class="text-center">Looking to book this gig?</h2>
+                                                <h6 class="text-center">Log in to continue</h6>
+                                                <form>
+                                                    <div class="social-login">
+                                                        <a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i> Facbook</a>
+                                                        <a href="#" class="google"><i class="fa fa-google" aria-hidden="true"></i> Google</a>
+                                                    </div>
+                                                    <div class="title-seprator text-center">
+                                                        <h5>Or Login</h5>
+                                                    </div>
+                                                    <div class="form-style">
+                                                        <div>
+                                                            <span class="input input--hoshi">
+                                                                <input class="input__field input__field--hoshi" type="text" id="input-4" />
+                                                                <label class="input__label input__label--hoshi" for="input-4">
+                                                                    <span class="input__label-content input__label-content--hoshi">Email Address</span>
+                                                                </label>
+                                                            </span>
+                                                        </div>
+                                                        <div class="error-style">
+                                                            <span class="input input--hoshi">
+                                                                <input class="input__field input__field--hoshi" type="password" id="input-4" />
+                                                                <label class="input__label input__label--hoshi" for="input-4">
+                                                                    <span class="input__label-content input__label-content--hoshi">Password</span>
+                                                                </label>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="forgot-link justify-space-between">
+                                                        <div><input type="checkbox"/> Remember me</div>
+                                                        <div><a href="forgot-pwd.html">Forgot Password</a></div>
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <button class="btn-small">Login</button>
+                                                    </div>
+                                                    <div class="signup-link">
+                                                        <p>New to Gigify? <a href="signup.html">Create Account</a></p>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 text-center login-img">
+                                            <img src="images/login-img.svg" alt="login-img"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade in" id="signup-tab">
+                                <div class="login-bg">
+                                    <div class="row align-center">
+                                        <div class="col-lg-6">
+                                            <div class="login-form">
+                                                <h2 class="text-center">Sign up to gigify</h2>
+                                                <h6 class="text-center">Create account to complete booking</h6>
+                                                <form>
+                                                    <div class="form-style">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <div>
+                                                                    <span class="input input--hoshi">
+                                                                        <input class="input__field input__field--hoshi" type="text" id="input-4" />
+                                                                        <label class="input__label input__label--hoshi" for="input-4">
+                                                                            <span class="input__label-content input__label-content--hoshi">First Name</span>
+                                                                        </label>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div>
+                                                                    <span class="input input--hoshi">
+                                                                        <input class="input__field input__field--hoshi" type="text" id="input-4" />
+                                                                        <label class="input__label input__label--hoshi" for="input-4">
+                                                                            <span class="input__label-content input__label-content--hoshi">Last Name</span>
+                                                                        </label>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <span class="input input--hoshi">
+                                                                <input class="input__field input__field--hoshi" type="text" id="input-4" />
+                                                                <label class="input__label input__label--hoshi" for="input-4">
+                                                                    <span class="input__label-content input__label-content--hoshi">Email Address</span>
+                                                                </label>
+                                                            </span>
+                                                        </div>
+                                                        <div>
+                                                            <span class="input input--hoshi">
+                                                                <input class="input__field input__field--hoshi" type="text" id="input-4" />
+                                                                <label class="input__label input__label--hoshi" for="input-4">
+                                                                    <span class="input__label-content input__label-content--hoshi">Password</span>
+                                                                </label>
+                                                            </span>
+                                                        </div>
+                                                        <div class="error-style">
+                                                            <span class="input input--hoshi">
+                                                                <input class="input__field input__field--hoshi" type="text" id="input-4" />
+                                                                <label class="input__label input__label--hoshi" for="input-4">
+                                                                    <span class="input__label-content input__label-content--hoshi">Confirm Password</span>
+                                                                </label>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <button class="btn-small">Create Account</button>
+                                                    </div>
+                                                    <div class="signup-link">
+                                                        <p>Already have an account?<a href="login.html"> Login</a></p>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 text-center login-img">
+                                            <img src="images/login-img.svg" alt="login-img"/>
+                                        </div>
+                                    </div>
+                                    <div class="terms-signup">
+                                        <p>By signing up you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="booking-completed-modal" class="modal fade" role="dialog" aria-labelledby="bookingcompletedModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12.268" height="12.043" viewBox="0 0 12.268 12.043">
+                    <g id="Group_1129" data-name="Group 1129" transform="translate(-860.9 -417.513)">
+                      <g id="Group_513" data-name="Group 513" transform="translate(861.607 418.22)">
+                        <line id="Line_85" data-name="Line 85" x1="15.031" transform="translate(0 0) rotate(45)" fill="none" stroke="#152c53" stroke-linecap="round" stroke-width="1"/>
+                        <line id="Line_86" data-name="Line 86" x1="15.031" transform="translate(10.854 0) rotate(135)" fill="none" stroke="#152c53" stroke-linecap="round" stroke-width="1"/>
+                      </g>
+                    </g>
+                </svg>
+            </button>
+            <div class="modal-body">
+                <div class="booking-completed">
+                    <div class="booking-completed-text">
+                        <h2>Booking Complete!</h2>
+                        <p>Thank you for using gigify. Your booking card is now available, you can review it at any time.</p>
+                        <div class="text-center">
+                            <a href="#" class="btn-small m-30">View Booking</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="gigworker-date-availbility" class="gigworker-date-availbility modal fade" role="dialog" aria-labelledby="gigworkeravailbilityModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12.268" height="12.043" viewBox="0 0 12.268 12.043">
+                    <g id="Group_1129" data-name="Group 1129" transform="translate(-860.9 -417.513)">
+                      <g id="Group_513" data-name="Group 513" transform="translate(861.607 418.22)">
+                        <line id="Line_85" data-name="Line 85" x1="15.031" transform="translate(0 0) rotate(45)" fill="none" stroke="#152c53" stroke-linecap="round" stroke-width="1"/>
+                        <line id="Line_86" data-name="Line 86" x1="15.031" transform="translate(10.854 0) rotate(135)" fill="none" stroke="#152c53" stroke-linecap="round" stroke-width="1"/>
+                      </g>
+                    </g>
+                </svg>
+            </button>
+            <div class="modal-body">
+                <div class="gig-worker-availbility-date">
+                    <form>
+                        <h3>Select date and time from <b>Joseph’s</b> availability below</h3>
+                        <div class="d-flex justify-center">
+                            <div class="gig-worker-availbility-selected-date">
+                                <h2>
+                                    <span>Wed</span>
+                                    <b>8</b>
+                                    <span>Dec</span>
+                                </h2>
+                            </div>
+                            <div class="calender-blk" id="datepicker-label">
+                                <div id="datepicker" class="calendar"></div>
+                            </div>
+                            <div class="gig-worker-availbility-selected-date-availbility">
+                                <h5>Time Slots Available</h5>
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10">
+                                                <path id="check" d="M4.075,74.9l-3.9-4.358a.727.727,0,0,1,0-.948l.849-.949a.556.556,0,0,1,.849,0L4.5,71.582l5.626-6.288a.556.556,0,0,1,.849,0l.849.948a.727.727,0,0,1,0,.948l-6.9,7.71a.556.556,0,0,1-.849,0Z" transform="translate(0 -65.098)" fill="#21ba45"/>
+                                            </svg>
+                                            <span>Morning (6am  - 12pm)</span>                                          
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10">
+                                                <path id="check" d="M4.075,74.9l-3.9-4.358a.727.727,0,0,1,0-.948l.849-.949a.556.556,0,0,1,.849,0L4.5,71.582l5.626-6.288a.556.556,0,0,1,.849,0l.849.948a.727.727,0,0,1,0,.948l-6.9,7.71a.556.556,0,0,1-.849,0Z" transform="translate(0 -65.098)" fill="#21ba45"/>
+                                            </svg>
+                                            <span>Afternoon (12pm  - 6pm)</span>                                          
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="10.74" height="10.893" viewBox="0 0 10.74 10.893">
+                                                <g id="Group_1292" data-name="Group 1292" transform="translate(8.972 1.768) rotate(90)">
+                                                    <g id="Group_513" data-name="Group 513" transform="translate(0 0)">
+                                                    <line id="Line_85" data-name="Line 85" x1="10.189" transform="translate(0 0) rotate(45)" fill="none" stroke="#ba5151" stroke-linecap="round" stroke-width="2.5"/>
+                                                    <line id="Line_86" data-name="Line 86" x1="10.189" transform="translate(7.357 0) rotate(135)" fill="none" stroke="#ba5151" stroke-linecap="round" stroke-width="2.5"/>
+                                                    </g>
+                                                </g>
+                                            </svg>  
+                                            <span>Evening (6pm  - 10pm)</span>                                          
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="set-start-time">
+                            <h3>Set a Start Time</h3>
+                            <div class="select-style">
+                                <select class="custom color" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                                    <option value="v2">08:00 AM</option>
+                                    <option value="v3">09:00 AM</option>
+                                    <option value="v4">10:00 AM</option>
+                                    <option value="v5">11:00 AM</option>
+                                    <option value="v5">12:00 PM</option>
+                                    <option value="v2">01:00 PM</option>
+                                    <option value="v3">02:00 PM</option>
+                                    <option value="v4">03:00 PM</option>
+                                    <option value="v5">04:00 PM</option>
+                                    <option value="v5">05:00 PM</option>
+                                    <option value="v5">06:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="grey-btn prev-btn">Back</button>
+                            <button class="btn-small next-btn">Next</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--******************* Model End ******************-->
+<!--******************* Footer Section Start ******************-->
+<footer>
+    <div class="footer-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-links">
+                        <h6>Discover</h6>
+                        <ul>
+                            <li><a href="#">All Services</a></li>
+                            <li><a href="#">Become a GigWorker</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-links">
+                        <h6>Company</h6>
+                        <ul>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">FAQ’s</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 align-center justify-end">
+                    <div class="social-link text-right">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 align-center justify-end">
+                    <div class="footer-logo text-right">
+                        <img src="images/footer-logo.svg" alt="footer-logo"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--******************* Footer Section End ******************-->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtc0b_oAykroc2auPTfMoHDcbaESZzNqk&callback=initMap" type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+    /********** Slide Dropdown **********/
+    $(".all-services a").click(function(){
+        $(".all-services-list").slideToggle();  
+    });
+    /********** User Profile Dropdown **********/
+    $(".user-profile a").click(function(){
+        $(".user-settings").slideToggle();    	
+    });
+    /********** User Profile Dropdown **********/
+    $(".notification-gigs a").click(function(){
+        $(".gigs-notificatiob-blk").slideToggle();    	
+    });
+    /********** Map Toggle **********/
+    $(".booking-overview-detail-blks a.map-display").click(function(){
+        $(".map-style").slideToggle();    	
+    });
+    /********** Choosedate **********/
+    $("#choose-date").click(function(){
+        $(".calender-blk").slideToggle();    	
+    });
+    /********** JCF **********/
+    $(function() {
+        jcf.replace('.select-style select');
+        jcf.replace('input[type="radio"]');
+        jcf.replace('input[type="checkbox"]');
+    });
+    /********** Calender **********/
+    $('#activate').click(function (e) {
+    e.preventDefault();
+    var formData = {
+      campaign_name: $('#campaignName').val(),
+      start_date: $('#start-date').val(),
+      end_date: $('#end-date').val(),
+      days: {
+        sunday: $('#sunday').prop('checked'),
+        monday: $('#monday').prop('checked'),
+        tuesday: $('#tuesday').prop('checked'),
+        wednesday: $('#wednesday').prop('checked'),
+        thurday: $('#thursday').prop('checked'),
+        friday: $('#friday').prop('checked'),
+        saturday: $('#saturday').prop('checked'),
+      },
+      start_time: $('#start-time').val(),
+      end_time: $('#end-time').val()
+    }
+    alert(JSON.stringify(formData));
+  });
+    /********** Payment Method Select **********/
+    $(".select-payment-method").click(function(){
+        $(".review-confirm-blk").addClass('payment-details');     	
+    });
+    $(".back-method").click(function(){
+        $(".review-confirm-blk").removeClass('payment-details');   	
+    });
+    // banner input
+    $('.service-search-sec input').bind('blur', function () {
+        $('body').removeClass('overlay-open');
+        $('.autosearch-container').removeClass('show');
+    }).bind('focus', function () {
+        $('body').addClass('overlay-open');
+        $('.autosearch-container').addClass('show');
+    });
+    // popular-blk slider
+    $('.popular-blk-slides').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true,
+        responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1
+            }
+        }
+        ]
+    });
+    // testimonial slider
+    $('.testimonial-slides').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false,
+        responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+            }
+        }
+        ]
+    });
+    // popular-blk slider
+    $('[data-fancybox="fancybox"]').fancybox({
+        //
+    });
+    // booking step form
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepNumber, stepDirection, index) {
+            if($('.step-form').hasClass('step-'+ (stepNumber - 1))){
+                $('.step-form').removeClass('step-'+ (stepNumber - 1));
+            }
+            $('.step-form').addClass("step-"+ stepNumber);
+        });
+    $('#smartwizard').smartWizard({
+        toolbarSettings: {
+                showNextButton: false, // show/hide a Next button
+                showPreviousButton: false // show/hide a Previous button
+        },
+        showStepURLhash: false
+    });
+    $("button.btn-small.next-btn").on("click", function() {
+    // Navigate next
+        $('#smartwizard').smartWizard("next");
+        return false;
+    });
+    $("button.grey-btn.prev-btn").on("click", function() {
+    // Navigate next
+        $('#smartwizard').smartWizard("prev");
+        return false;
+    });
+    
+});
+</script>
+<script type="text/javascript">
+    function initMap() {
+    var mapDiv = document.getElementById('map');
+    var latlng= new google.maps.LatLng(35.938610,14.454170); //     (Latitude and Longitude of your location)
+    var map = new google.maps.Map(mapDiv, {
+    center: latlng,
+    zoom: 15,
+    mapTypeId: google.maps.MapTypeId.MAP
+    });
+    var contentString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<div id="bodyContent">'+
+            '<p>Gigify</p>'+
+            '</div>'+
+            '</div>';   
+    var infowindow = new google.maps.InfoWindow({
+        content: contentString
+    });
+    var marker = new google.maps.Marker({
+    draggable: true,
+    position: latlng,
+         title: "My Location",    // Title for your location(optional)
+         icon: 'images/map-pin.png' // Map marker image(optional)
+    });
+    marker.addListener('click', function() {
+          infowindow.open(map, marker);
+    });
+    marker.setMap(map);
+    map.set('styles', [
+    {
+        "featureType": "landscape.natural",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape.natural",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "labels.text",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.park",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.park",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    }
+]);
+    }
+</script>
+<script src="js/classie.js"></script>
+<script>
+    $(document).ready(function(){
+    /********** Input Style **********/
+    (function() {
+        // trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+        if (!String.prototype.trim) {
+            (function() {
+                // Make sure we trim BOM and NBSP
+                var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+                String.prototype.trim = function() {
+                    return this.replace(rtrim, '');
+                };
+            })();
+        }
+
+        [].slice.call( document.querySelectorAll( 'input.input__field, textarea.input__field' ) ).forEach( function( inputEl ) {
+            // in case the input is already filled..
+            if( inputEl.value.trim() !== '' ) {
+                classie.add( inputEl.parentNode, 'input--filled' );
+            }
+
+            // events:
+            inputEl.addEventListener( 'focus', onInputFocus );
+            inputEl.addEventListener( 'blur', onInputBlur );
+        } );
+
+        function onInputFocus( ev ) {
+            classie.add( ev.target.parentNode, 'input--filled' );
+        }
+
+        function onInputBlur( ev ) {
+            if( ev.target.value.trim() === '' ) {
+                classie.remove( ev.target.parentNode, 'input--filled' );
+            }
+        }
+    })();
+});
+</script>
+<!--*********************** All End ************************-->
+</body>
+</html>

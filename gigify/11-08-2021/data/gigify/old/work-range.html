@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <title>Gigify</title>
+    <!--Favicon Included-->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--Font Awsome Included-->
+    <link href="css/font-awesome.css" type="text/css" rel="stylesheet" />
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!--Extra Style Included-->
+    <link href="css/jcf.css" rel="stylesheet">
+    <link href="css/slick-theme.css" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+     <!--Main Style Included-->
+     <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <!--Main Js Included-->
+	<script src="js/lib/jquery.js" type="text/javascript"></script>
+    <script src="js/modernizr.js" type="text/javascript"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.js" type="text/javascript"></script>
+    <!--Extra Js Included-->
+    <script src="js/jcf.js"></script>
+    <script src="js/jcf.select.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+    	<!--
+    	if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+      	  var msViewportStyle = document.createElement('style');
+      	  msViewportStyle.appendChild(
+      	    document.createTextNode(
+      	      '@-ms-viewport{width:auto!important}'
+      	    )
+      	  );
+      	  document.querySelector('head').appendChild(msViewportStyle);
+      	}
+    	-->
+    </script>
+    <script>
+        (function($){
+            $(window).on("load",function(){
+                $(".custom-scroll").mCustomScrollbar();
+            });
+        })(jQuery);
+    </script>
+</head>
+<body>
+<!--******************* Header Section Start *********************-->
+<header>
+    <div class="main-header">
+        <div class="container">
+            <div class="justify-space-between">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.svg" alt="logo"/></a>
+                </div>
+                <div class="header-menu-content">
+                    <ul>
+                        <li class="all-services">
+                            <a href="javascript:;">All Services</a>
+                            <div class="all-services-list">
+                                <ul class="custom-scroll">
+                                    <li><a href="#">Home Repairs</a></li>
+                                    <li><a href="#">Cleaning</a></li>
+                                    <li><a href="#">Moving & Packing</a></li>
+                                    <li><a href="#">Furniture Assembly</a></li>
+                                    <li><a href="#">Painting</a></li>
+                                    <li><a href="#">Pet Care</a></li>
+                                    <li><a href="#">Home Beauty</a></li>
+                                    <li><a href="#">Painting</a></li>
+                                    <li><a href="#">Pet Care</a></li>
+                                    <li><a href="#">Home Beauty</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="login.html">Login</a>
+                        </li>
+                        <li>
+                            <a href="gigworker-signup.html" class="btn-1">Become a GigWorker</a>
+                        </li>
+                        <li class="notification-gigs">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16.625" height="19" viewBox="0 0 16.625 19">
+                                    <path id="bell" d="M16.3,13.444c-.717-.77-2.058-1.929-2.058-5.726A5.86,5.86,0,0,0,9.5,1.961V1.187a1.187,1.187,0,1,0-2.374,0v.773A5.86,5.86,0,0,0,2.377,7.719c0,3.8-1.342,4.955-2.058,5.726A1.159,1.159,0,0,0,0,14.25a1.189,1.189,0,0,0,1.191,1.187H15.433a1.188,1.188,0,0,0,1.191-1.187A1.159,1.159,0,0,0,16.3,13.444Zm-13.8.212A9.293,9.293,0,0,0,4.158,7.74c0-.007,0-.014,0-.022a4.156,4.156,0,0,1,8.313,0c0,.007,0,.014,0,.022a9.291,9.291,0,0,0,1.652,5.916ZM8.312,19a2.375,2.375,0,0,0,2.374-2.375H5.938A2.375,2.375,0,0,0,8.312,19Z" transform="translate(0.001)" fill="#fff"/>
+                                  </svg>  
+                                  <div class="gigs-notification-no"><span>4</span></div>                                
+                            </a>
+                            <div class="gigs-notificatiob-blk">
+                                <h5>My Gig Notifications</h5>
+                                <div class="gigs-notification-list custom-scroll">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <div class="justify-space-between tb-border">
+                                                    <div class="d-flex align-center">
+                                                        <div class="profile-img-small" style="background:url('images/user-profile.png') no-repeat center center / cover;"></div>
+                                                        <div>
+                                                            <div class="nofification-user-nm">Francesca<span>sent you a message</span></div>
+                                                            <div class="notification-timer">4 min ago</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <img src="images/notification-ic-1.svg" alt="notification-ic-1"/>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="justify-space-between tb-border">
+                                                    <div class="d-flex align-center">
+                                                        <div class="profile-img-small" style="background:url('images/user-profile.png') no-repeat center center / cover;"></div>
+                                                        <div>
+                                                            <div class="nofification-user-nm">A. Borg<span>has accepted your time change</span></div>
+                                                            <div class="notification-timer">4 min ago</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <img src="images/notification-ic-2.svg" alt="notification-ic-2"/>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="justify-space-between tb-border">
+                                                    <div class="d-flex align-center">
+                                                        <div class="profile-img-small" style="background:url('images/user-profile.png') no-repeat center center / cover;"></div>
+                                                        <div>
+                                                            <div class="nofification-user-nm">J. Cilia<span>has cancelled the gig</span></div>
+                                                            <div class="notification-timer">4 min ago</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <img src="images/notification-ic-3.svg" alt="notification-ic-3"/>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="justify-space-between tb-border">
+                                                    <div class="d-flex align-center">
+                                                        <div class="profile-img-small" style="background:url('images/user-profile.png') no-repeat center center / cover;"></div>
+                                                        <div>
+                                                            <div class="nofification-user-nm">J. Micallef<span>sent you a message</span></div>
+                                                            <div class="notification-timer">4 min ago</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <img src="images/notification-ic-4.svg" alt="notification-ic-4"/>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="justify-space-between tb-border">
+                                                    <div class="d-flex align-center">
+                                                        <div class="profile-img-small" style="background:url('images/user-profile.png') no-repeat center center / cover;"></div>
+                                                        <div>
+                                                            <div class="nofification-user-nm">D. Vella<span>is requesting a re-schedule</span></div>
+                                                            <div class="notification-timer">4 min ago</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <img src="images/notification-ic-2.svg" alt="notification-ic-2"/>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="justify-space-between tb-border">
+                                                    <div class="d-flex align-center">
+                                                        <div class="profile-img-small" style="background:url('images/user-profile.png') no-repeat center center / cover;"></div>
+                                                        <div>
+                                                            <div class="nofification-user-nm">B. Azzopardi<span>has rated your gig</span></div>
+                                                            <div class="notification-timer">4 min ago</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <img src="images/notification-ic-5.svg" alt="notification-ic-5"/>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="justify-space-between tb-border">
+                                                    <div class="d-flex align-center">
+                                                        <div class="profile-img-small" style="background:url('images/user-profile.png') no-repeat center center / cover;"></div>
+                                                        <div>
+                                                            <div class="nofification-user-nm">B. Azzopardi<span>has rated your gig</span></div>
+                                                            <div class="notification-timer">4 min ago</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <img src="images/notification-ic-5.svg" alt="notification-ic-1"/>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="view-all">
+                                    <a href="#">View All Gigs</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="my-gigs-title">My Gigs</a>
+                        </li>
+                        <li class="user-profile">
+                            <a href="javascript:;"><img src="images/user-ic.svg" alt="user-ic"/></a>
+                            <div class="user-settings">
+                                <ul>
+                                    <li class="user-profile-nm d-flex align-center">
+                                        <div class="profile-img-small" style="background:url('images/user-profile.png') no-repeat center center / cover;"></div>
+                                        <div class="user-nm-1">Carl Vella</div>
+                                    </li>
+                                    <li><a href="#">Manage My Account</a></li>
+                                    <li><a href="#">Refer & Earn</a></li>
+                                    <li><a href="#">Gig Points</a></li>
+                                    <li><a href="#">Log in as GigWorker</a></li>
+                                    <li><a href="#">Log Out</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--******************* Header Section End *********************-->
+<!--******************* Middle Section Start ******************-->
+<main class="width-100">
+    <div class="main-title">
+        <div class="container">
+            <div class="title-panel">
+                <h3 class="text-center">My Work Range</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="d-flex">
+            <div class="leftsidebar">
+                <div class="left-panel custom-scroll">
+                    <ul>
+                        <li>
+                            <a href="my-gigs.html">
+                                <svg width="17px" height="15px" viewBox="0 0 17 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.498860677">
+                                        <g id="my-gigs-ic" transform="translate(0.000000, -1.000000)" fill-rule="nonzero">
+                                            <path d="M7.3,3.092 C6.62921853,3.25699492 6.00760591,3.57997291 5.487,4.034 L5.472,4.047 C5.397,4.113 5.323,4.18 5.252,4.247 C3.54402709,5.96351432 3.54402709,8.73748568 5.252,10.454 L5.252,10.454 L5.252,10.454 C6.92039124,12.1294683 9.62158068,12.1654427 11.334,10.535 C11.364,10.507 11.394,10.479 11.423,10.45 L11.423,10.45 C11.489,10.384 11.55,10.316 11.611,10.25 L11.661,10.191 C11.7076667,10.1356667 11.753,10.0793333 11.797,10.022 L11.834,9.974 C11.8893333,9.89933333 11.9423333,9.82333333 11.993,9.746 L12.002,9.73 C12.05,9.656 12.095,9.58066667 12.137,9.504 L12.157,9.468 C13.0980403,7.75660391 12.7983277,5.62970284 11.421,4.245 L8.185,0.993 C7.59100851,1.52515576 7.26633313,2.29520505 7.3,3.092 Z M9.94,8.964 C9.51640466,9.38975882 8.94058604,9.62913034 8.34,9.62913034 C7.73941396,9.62913034 7.16359534,9.38975882 6.74,8.964 C5.85671662,8.07355729 5.85671662,6.63744271 6.74,5.747 C7.16359534,5.32124118 7.73941396,5.08186966 8.34,5.08186966 C8.94058604,5.08186966 9.51640466,5.32124118 9.94,5.747 C10.8224623,6.63794119 10.822016,8.07360761 9.939,8.964 L9.94,8.964 Z" id="Path_12" fill="#152C53"></path>
+                                            <g id="Group_5" transform="translate(0.000000, 9.661000)" fill="#152C53">
+                                                <path d="M13.874,0.961 C13.5331133,1.55874817 13.0997501,2.09876467 12.59,2.561 C10.1362515,4.78588843 6.39474848,4.78588843 3.941,2.561 C3.4308328,2.09889837 2.99712039,1.55886735 2.656,0.961 C1.90672111,0.346172064 0.969218121,0.00696258674 5.68434189e-14,-5.68434189e-14 C1.01388845,3.73262869 4.39713833,6.32747696 8.265,6.339 L8.265,6.339 C12.1328617,6.32747696 15.5161115,3.73262869 16.53,-5.68434189e-14 C15.5608108,0.00712420499 14.6233601,0.346314786 13.874,0.961 Z" id="Path_13"></path>
+                                            </g>
+                                            <path d="M8.541,15.99 L8.618,15.984 C8.69,15.978 8.76166667,15.9703333 8.833,15.961 L8.893,15.953 C8.985,15.9396667 9.076,15.9236667 9.166,15.905 L9.184,15.905 C9.27,15.886 9.355,15.865 9.439,15.842 L9.478,15.831 C9.8469247,15.7242048 10.2000169,15.5688443 10.528,15.369 C11.6523121,14.6822984 12.4088852,13.5270653 12.589,12.222 C10.1350716,14.446422 6.39392842,14.446422 3.94,12.222 C4.22999551,14.3377741 6.00543914,15.9348279 8.14,16 C8.181,16 8.221,16 8.262,16 L8.262,16 C8.359,16 8.45,15.996 8.541,15.99 Z" id="Path_14" fill="#000000"></path>
+                                            <path d="M7.3,3.092 C6.62921853,3.25699492 6.00760591,3.57997291 5.487,4.034 L5.472,4.047 C5.397,4.113 5.323,4.18 5.252,4.247 C3.54402709,5.96351432 3.54402709,8.73748568 5.252,10.454 L5.252,10.454 L5.252,10.454 C6.92039124,12.1294683 9.62158068,12.1654427 11.334,10.535 C11.364,10.507 11.394,10.479 11.423,10.45 L11.423,10.45 C11.489,10.384 11.55,10.316 11.611,10.25 L11.661,10.191 C11.7076667,10.1356667 11.753,10.0793333 11.797,10.022 L11.834,9.974 C11.8893333,9.89933333 11.9423333,9.82333333 11.993,9.746 L12.002,9.73 C12.05,9.656 12.095,9.58066667 12.137,9.504 L12.157,9.468 C13.0980403,7.75660391 12.7983277,5.62970284 11.421,4.245 L8.185,0.993 C7.59100851,1.52515576 7.26633313,2.29520505 7.3,3.092 Z M9.94,8.964 C9.51640466,9.38975882 8.94058604,9.62913034 8.34,9.62913034 C7.73941396,9.62913034 7.16359534,9.38975882 6.74,8.964 C5.85671662,8.07355729 5.85671662,6.63744271 6.74,5.747 C7.16359534,5.32124118 7.73941396,5.08186966 8.34,5.08186966 C8.94058604,5.08186966 9.51640466,5.32124118 9.94,5.747 C10.8224623,6.63794119 10.822016,8.07360761 9.939,8.964 L9.94,8.964 Z" id="Path_23" fill="#152C53"></path>
+                                        </g>
+                                    </g>
+                                </svg>
+                                My Gigs
+                            </a>
+                        </li>
+                        <li>
+                            <a href="my-availability.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13.125" height="15" viewBox="0 0 13.125 15">
+                                    <path id="calendar" d="M11.719,1.875H10.313V.352A.353.353,0,0,0,9.961,0H8.789a.353.353,0,0,0-.352.352V1.875H4.687V.352A.353.353,0,0,0,4.336,0H3.164a.353.353,0,0,0-.352.352V1.875H1.406A1.407,1.407,0,0,0,0,3.281V13.594A1.407,1.407,0,0,0,1.406,15H11.719a1.407,1.407,0,0,0,1.406-1.406V3.281A1.407,1.407,0,0,0,11.719,1.875Zm-.176,11.719H1.582a.176.176,0,0,1-.176-.176V4.687H11.719v8.73A.176.176,0,0,1,11.543,13.594Z" fill="#152c53" opacity="0.5"/>
+                                </svg>
+                                My Availability
+                            </a>
+                        </li>
+                        <li>
+                            <a href="earnings.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                    <g id="earnings" opacity="0.5">
+                                      <path id="Path_558" data-name="Path 558" d="M61.439,7.91a.438.438,0,0,0,.311-.129l3.2-3.2L66.4,6.024a.439.439,0,0,0,.621,0L71.547,1.5v.7a.439.439,0,0,0,.879,0V.439c0-.014,0-.029,0-.043s0-.014,0-.021,0-.014,0-.021,0-.017-.006-.025l0-.016C72.4.3,72.4.3,72.4.287L72.393.272,72.381.246,72.375.233,72.358.206,72.353.2c-.008-.012-.016-.023-.025-.034h0A.45.45,0,0,0,72.264.1h0L72.229.073,72.22.067,72.192.051,72.18.045,72.154.033,72.139.028,72.113.019l-.016,0L72.072.008l-.021,0L72.03,0l-.043,0H70.229a.439.439,0,1,0,0,.879h.7L66.713,5.091,65.266,3.644a.439.439,0,0,0-.621,0L61.129,7.16a.439.439,0,0,0,.311.75Zm0,0" transform="translate(-59.213 0)" fill="#152c53"/>
+                                      <path id="Path_559" data-name="Path 559" d="M0,476.615a.439.439,0,0,0,.439.439H3.955a.439.439,0,0,0,.439-.439V476H0Zm0,0" transform="translate(0 -462.055)" fill="#152c53"/>
+                                      <path id="Path_560" data-name="Path 560" d="M3.955,410H.439a.439.439,0,0,0-.439.439v.615H4.395v-.615A.439.439,0,0,0,3.955,410Zm0,0" transform="translate(0 -397.988)" fill="#152c53"/>
+                                      <path id="Path_561" data-name="Path 561" d="M181,476.615a.439.439,0,0,0,.439.439h3.516a.439.439,0,0,0,.439-.439V476H181Zm0,0" transform="translate(-175.697 -462.055)" fill="#152c53"/>
+                                      <path id="Path_562" data-name="Path 562" d="M362,410h4.395v1.055H362Zm0,0" transform="translate(-351.395 -397.988)" fill="#152c53"/>
+                                      <path id="Path_563" data-name="Path 563" d="M365.955,212h-3.516a.439.439,0,0,0-.439.439v.615h4.395v-.615A.439.439,0,0,0,365.955,212Zm0,0" transform="translate(-351.395 -205.789)" fill="#152c53"/>
+                                      <path id="Path_564" data-name="Path 564" d="M362,278h4.395v1.055H362Zm0,0" transform="translate(-351.395 -269.855)" fill="#152c53"/>
+                                      <path id="Path_565" data-name="Path 565" d="M362,344h4.395v1.055H362Zm0,0" transform="translate(-351.395 -333.922)" fill="#152c53"/>
+                                      <path id="Path_566" data-name="Path 566" d="M362,476.615a.439.439,0,0,0,.439.439h3.516a.439.439,0,0,0,.439-.439V476H362Zm0,0" transform="translate(-351.395 -462.055)" fill="#152c53"/>
+                                      <path id="Path_567" data-name="Path 567" d="M181,410h4.395v1.055H181Zm0,0" transform="translate(-175.697 -397.988)" fill="#152c53"/>
+                                      <path id="Path_568" data-name="Path 568" d="M184.955,344h-3.516a.439.439,0,0,0-.439.439v.615h4.395v-.615A.439.439,0,0,0,184.955,344Zm0,0" transform="translate(-175.697 -333.922)" fill="#152c53"/>
+                                    </g>
+                                </svg>                                  
+                                Earnings
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="work-range.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19.172" height="15" viewBox="0 0 19.172 15">
+                                    <g id="placeholder-on-map-paper-in-perspective" opacity="0.5">
+                                      <path id="Path_569" data-name="Path 569" d="M16.174,75.073l2.952,6.064a.288.288,0,0,1-.28.448H.325a.288.288,0,0,1-.28-.448L3,75.073a.342.342,0,0,1,.28-.175H5.808a.354.354,0,0,1,.234.108c.172.2.347.392.521.584s.332.367.5.556h-3a.342.342,0,0,0-.28.175L1.821,80.338H17.349l-1.955-4.017a.342.342,0,0,0-.28-.175H12.1c.165-.189.332-.373.5-.556s.351-.386.523-.584a.354.354,0,0,1,.234-.108h2.537A.342.342,0,0,1,16.174,75.073Zm-2.248-4.144c0,3.314-2.759,3.935-4.056,7.119a.31.31,0,0,1-.575,0c-1.17-2.871-3.529-3.658-3.98-6.216a4.437,4.437,0,0,1,3.845-5.225A4.344,4.344,0,0,1,13.925,70.929Zm-2.05,0a2.294,2.294,0,1,0-2.294,2.294A2.294,2.294,0,0,0,11.876,70.929Z" transform="translate(0.001 -66.585)" fill="#152c53"/>
+                                    </g>
+                                </svg>
+                                Work Range
+                            </a>
+                        </li>
+                        <li>
+                            <a href="gig-services.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12.571" height="16" viewBox="0 0 12.571 16">
+                                    <g id="clipboard" opacity="0.5">
+                                      <g id="Group_795" data-name="Group 795" transform="translate(0 0)">
+                                        <g id="Group_794" data-name="Group 794" transform="translate(0 0)">
+                                          <path id="Path_570" data-name="Path 570" d="M58.008,2.1H56.56V1.449c0-.21-.229-.3-.438-.3H55A1.7,1.7,0,0,0,53.3,0a1.733,1.733,0,0,0-1.7,1.143H50.5c-.21,0-.419.1-.419.3V2.1H48.637a1.619,1.619,0,0,0-1.6,1.543V14.553A1.532,1.532,0,0,0,48.637,16h9.371a1.532,1.532,0,0,0,1.6-1.448V3.639A1.619,1.619,0,0,0,58.008,2.1Zm-7.161-.19h1.048a.419.419,0,0,0,.362-.343A1.1,1.1,0,0,1,53.3.706a1.086,1.086,0,0,1,1.028.857.419.419,0,0,0,.381.343H55.8V3.43H50.846Zm8,12.647a.773.773,0,0,1-.838.686H48.637a.773.773,0,0,1-.838-.686V3.639a.857.857,0,0,1,.838-.781h1.448V3.83a.4.4,0,0,0,.419.362h5.619a.419.419,0,0,0,.438-.362V2.858h1.448a.857.857,0,0,1,.838.781V14.553Z" transform="translate(-47.037 0)" fill="#152c53"/>
+                                          <path id="Path_571" data-name="Path 571" d="M102.291,230.43a.381.381,0,0,0-.533-.019l-1.219,1.162-.514-.533a.381.381,0,0,0-.533-.019.4.4,0,0,0,0,.552l.781.8a.343.343,0,0,0,.267.114.381.381,0,0,0,.267-.114l1.486-1.409a.362.362,0,0,0,.022-.511Z" transform="translate(-97.473 -221.915)" fill="#152c53"/>
+                                          <path id="Path_572" data-name="Path 572" d="M203.31,256.034h-4.381a.381.381,0,0,0,0,.762h4.381a.381.381,0,1,0,0-.762Z" transform="translate(-193.025 -246.7)" fill="#152c53"/>
+                                          <path id="Path_573" data-name="Path 573" d="M102.291,146.838a.381.381,0,0,0-.533-.019l-1.219,1.162-.514-.533a.381.381,0,0,0-.533-.019.4.4,0,0,0,0,.552l.781.8a.343.343,0,0,0,.267.114.381.381,0,0,0,.267-.114l1.486-1.409a.362.362,0,0,0,.022-.511Z" transform="translate(-97.473 -141.371)" fill="#152c53"/>
+                                          <path id="Path_574" data-name="Path 574" d="M203.31,172.442h-4.381a.381.381,0,0,0,0,.762h4.381a.381.381,0,1,0,0-.762Z" transform="translate(-193.025 -166.156)" fill="#152c53"/>
+                                          <path id="Path_575" data-name="Path 575" d="M102.291,314.022a.381.381,0,0,0-.533-.019l-1.219,1.162-.514-.533a.381.381,0,0,0-.533-.019.4.4,0,0,0,0,.552l.781.8a.343.343,0,0,0,.267.114.381.381,0,0,0,.267-.114l1.486-1.409a.362.362,0,0,0,.022-.511Z" transform="translate(-97.473 -302.459)" fill="#152c53"/>
+                                          <path id="Path_576" data-name="Path 576" d="M203.31,339.626h-4.381a.381.381,0,0,0,0,.762h4.381a.381.381,0,1,0,0-.762Z" transform="translate(-193.025 -327.245)" fill="#152c53"/>
+                                        </g>
+                                      </g>
+                                    </g>
+                                </svg>
+                                Gig Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mygigify-cv.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18.001" height="15" viewBox="0 0 18.001 15">
+                                    <g id="portfolio" transform="translate(0 -42.676)" opacity="0.5">
+                                      <g id="Group_1314" data-name="Group 1314" transform="translate(0.001 45.076)">
+                                        <g id="Group_1313" data-name="Group 1313">
+                                          <path id="Path_894" data-name="Path 894" d="M16.884,106.676H1.134a1.12,1.12,0,0,0-1.125,1.112v10.376a1.12,1.12,0,0,0,1.125,1.112h15.75a1.12,1.12,0,0,0,1.125-1.112V107.788A1.12,1.12,0,0,0,16.884,106.676Zm.375,11.488a.373.373,0,0,1-.375.371H1.134a.373.373,0,0,1-.375-.371V107.788a.373.373,0,0,1,.375-.371h15.75a.373.373,0,0,1,.375.371Z" transform="translate(-0.009 -106.676)" fill="#152c53"/>
+                                        </g>
+                                      </g>
+                                      <g id="Group_1316" data-name="Group 1316" transform="translate(5.8 42.676)">
+                                        <g id="Group_1315" data-name="Group 1315">
+                                          <path id="Path_895" data-name="Path 895" d="M175.877,42.676h-4a1.2,1.2,0,0,0-1.2,1.2v1.6a.4.4,0,0,0,.4.4h5.6a.4.4,0,0,0,.4-.4v-1.6A1.2,1.2,0,0,0,175.877,42.676Zm.4,2.4h-4.8v-1.2a.4.4,0,0,1,.4-.4h4a.4.4,0,0,1,.4.4v1.2Z" transform="translate(-170.676 -42.676)" fill="#152c53"/>
+                                        </g>
+                                      </g>
+                                      <g id="Group_1318" data-name="Group 1318" transform="translate(0 49.33)">
+                                        <g id="Group_1317" data-name="Group 1317" transform="translate(0)">
+                                          <path id="Path_896" data-name="Path 896" d="M17.989,234.98a.376.376,0,0,0-.457-.286l-5.975,1.663a9.525,9.525,0,0,1-5.111,0L.47,234.693a.375.375,0,0,0-.457.286.4.4,0,0,0,.268.488l5.974,1.663a10.249,10.249,0,0,0,5.49,0l5.974-1.663A.4.4,0,0,0,17.989,234.98Z" transform="translate(0 -234.681)" fill="#152c53"/>
+                                        </g>
+                                      </g>
+                                      <g id="Group_1320" data-name="Group 1320" transform="translate(7.401 47.838)">
+                                        <g id="Group_1319" data-name="Group 1319">
+                                          <path id="Path_897" data-name="Path 897" d="M214.942,192.009a1.6,1.6,0,1,0,1.6,1.6A1.6,1.6,0,0,0,214.942,192.009Zm0,2.4a.8.8,0,1,1,.8-.8A.8.8,0,0,1,214.942,194.409Z" transform="translate(-213.342 -192.009)" fill="#152c53"/>
+                                        </g>
+                                      </g>
+                                    </g>
+                                </svg>
+                                My Gigify CV
+                            </a>
+                        </li>
+                        <li>
+                            <a href="loyalty-points.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16.021" height="15" viewBox="0 0 16.021 15">
+                                    <g id="gift" opacity="0.5">
+                                      <g id="Group_797" data-name="Group 797" transform="translate(1.001 7.991)">
+                                        <g id="Group_796" data-name="Group 796" transform="translate(0 0)">
+                                          <path id="Path_577" data-name="Path 577" d="M32,271.692V277.7a1,1,0,0,0,1,1h5.006v-7.009Z" transform="translate(-32 -271.692)" fill="#152c53"/>
+                                        </g>
+                                      </g>
+                                      <g id="Group_799" data-name="Group 799" transform="translate(0 0)">
+                                        <g id="Group_798" data-name="Group 798">
+                                          <path id="Path_578" data-name="Path 578" d="M15.019,20.294H11.851a3.89,3.89,0,0,0,.559-.448,2.093,2.093,0,0,0,0-2.946,2.116,2.116,0,0,0-2.937,0c-.435.436-1.586,2.209-1.427,3.393H7.974c.158-1.185-.993-2.958-1.427-3.393a2.118,2.118,0,0,0-2.937,0,2.1,2.1,0,0,0,0,2.946,3.962,3.962,0,0,0,.56.448H1a1,1,0,0,0-1,1v1.5a.5.5,0,0,0,.5.5H7.009v-2h2v2H15.52a.5.5,0,0,0,.5-.5V21.3A1,1,0,0,0,15.019,20.294ZM6.95,20.261a.33.33,0,0,1-.185.033A4.924,4.924,0,0,1,4.321,19.14a1.092,1.092,0,0,1,0-1.534,1.067,1.067,0,0,1,1.517,0C6.512,18.285,7.183,20.02,6.95,20.261Zm2.3.033c-.142,0-.184-.032-.184-.033-.233-.241.438-1.976,1.112-2.654A1.079,1.079,0,1,1,11.7,19.14,4.923,4.923,0,0,1,9.255,20.294Z" transform="translate(0 -16.308)" fill="#152c53"/>
+                                        </g>
+                                      </g>
+                                      <g id="Group_801" data-name="Group 801" transform="translate(9.012 7.991)">
+                                        <g id="Group_800" data-name="Group 800" transform="translate(0 0)">
+                                          <path id="Path_579" data-name="Path 579" d="M288,271.692V278.7h5.006a1,1,0,0,0,1-1v-6.008Z" transform="translate(-288 -271.692)" fill="#152c53"/>
+                                        </g>
+                                      </g>
+                                    </g>
+                                </svg>                                  
+                                Loyalty Points
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-content margin-0">
+                <div class="work-range-blk map-step">
+                    <form>
+                        <div class="d-flex align-center">
+                            <div class="map-notification-sec shrink-0">
+                                <div class="map-area-blks d-flex align-center justify-space-between">
+                                    <div>
+                                        <h5>
+                                        <span>NORTH</span> 
+                                            <a href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                                                <g id="Group_1926" data-name="Group 1926" transform="translate(-122 -22)">
+                                                    <g id="Group_1804" data-name="Group 1804" transform="translate(122 22)">
+                                                    <g id="Group_1803" data-name="Group 1803" transform="translate(0 0)">
+                                                        <path id="Path_1779" data-name="Path 1779" d="M7,0a7,7,0,1,0,7,7A6.992,6.992,0,0,0,7,0ZM7,12.838A5.838,5.838,0,1,1,12.838,7,5.848,5.848,0,0,1,7,12.838Z" transform="translate(0 0)" fill="#152c53"/>
+                                                    </g>
+                                                    </g>
+                                                    <g id="Group_1806" data-name="Group 1806" transform="translate(128.366 27.305)">
+                                                    <g id="Group_1805" data-name="Group 1805">
+                                                        <path id="Path_1780" data-name="Path 1780" d="M230.989,192a.591.591,0,0,0-.589.589v4.775a.59.59,0,0,0,1.179.029v-4.8A.591.591,0,0,0,230.989,192Z" transform="translate(-230.4 -192)" fill="#152c53"/>
+                                                    </g>
+                                                    </g>
+                                                    <g id="Group_1808" data-name="Group 1808" transform="translate(128.307 24.564)">
+                                                    <g id="Group_1807" data-name="Group 1807">
+                                                        <path id="Path_1781" data-name="Path 1781" d="M228.856,92.8a.591.591,0,0,0-.589.589v.56a.591.591,0,0,0,.589.589.611.611,0,0,0,.589-.589v-.56A.591.591,0,0,0,228.856,92.8Z" transform="translate(-228.267 -92.8)" fill="#152c53"/>
+                                                    </g>
+                                                    </g>
+                                                </g>
+                                                </svg>                                                                  
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="map-area-blks d-flex align-center justify-space-between">
+                                    <div>
+                                        <h5>
+                                            <span>CENTRAL</span>
+                                            <a href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                                                <g id="Group_1926" data-name="Group 1926" transform="translate(-122 -22)">
+                                                    <g id="Group_1804" data-name="Group 1804" transform="translate(122 22)">
+                                                    <g id="Group_1803" data-name="Group 1803" transform="translate(0 0)">
+                                                        <path id="Path_1779" data-name="Path 1779" d="M7,0a7,7,0,1,0,7,7A6.992,6.992,0,0,0,7,0ZM7,12.838A5.838,5.838,0,1,1,12.838,7,5.848,5.848,0,0,1,7,12.838Z" transform="translate(0 0)" fill="#152c53"/>
+                                                    </g>
+                                                    </g>
+                                                    <g id="Group_1806" data-name="Group 1806" transform="translate(128.366 27.305)">
+                                                    <g id="Group_1805" data-name="Group 1805">
+                                                        <path id="Path_1780" data-name="Path 1780" d="M230.989,192a.591.591,0,0,0-.589.589v4.775a.59.59,0,0,0,1.179.029v-4.8A.591.591,0,0,0,230.989,192Z" transform="translate(-230.4 -192)" fill="#152c53"/>
+                                                    </g>
+                                                    </g>
+                                                    <g id="Group_1808" data-name="Group 1808" transform="translate(128.307 24.564)">
+                                                    <g id="Group_1807" data-name="Group 1807">
+                                                        <path id="Path_1781" data-name="Path 1781" d="M228.856,92.8a.591.591,0,0,0-.589.589v.56a.591.591,0,0,0,.589.589.611.611,0,0,0,.589-.589v-.56A.591.591,0,0,0,228.856,92.8Z" transform="translate(-228.267 -92.8)" fill="#152c53"/>
+                                                    </g>
+                                                    </g>
+                                                </g>
+                                                </svg>                                                                  
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="map-area-blks d-flex align-center justify-space-between">
+                                    <div>
+                                        <h5>
+                                            <span>SOUTH</span>
+                                            <a href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                                                <g id="Group_1926" data-name="Group 1926" transform="translate(-122 -22)">
+                                                    <g id="Group_1804" data-name="Group 1804" transform="translate(122 22)">
+                                                    <g id="Group_1803" data-name="Group 1803" transform="translate(0 0)">
+                                                        <path id="Path_1779" data-name="Path 1779" d="M7,0a7,7,0,1,0,7,7A6.992,6.992,0,0,0,7,0ZM7,12.838A5.838,5.838,0,1,1,12.838,7,5.848,5.848,0,0,1,7,12.838Z" transform="translate(0 0)" fill="#152c53"/>
+                                                    </g>
+                                                    </g>
+                                                    <g id="Group_1806" data-name="Group 1806" transform="translate(128.366 27.305)">
+                                                    <g id="Group_1805" data-name="Group 1805">
+                                                        <path id="Path_1780" data-name="Path 1780" d="M230.989,192a.591.591,0,0,0-.589.589v4.775a.59.59,0,0,0,1.179.029v-4.8A.591.591,0,0,0,230.989,192Z" transform="translate(-230.4 -192)" fill="#152c53"/>
+                                                    </g>
+                                                    </g>
+                                                    <g id="Group_1808" data-name="Group 1808" transform="translate(128.307 24.564)">
+                                                    <g id="Group_1807" data-name="Group 1807">
+                                                        <path id="Path_1781" data-name="Path 1781" d="M228.856,92.8a.591.591,0,0,0-.589.589v.56a.591.591,0,0,0,.589.589.611.611,0,0,0,.589-.589v-.56A.591.591,0,0,0,228.856,92.8Z" transform="translate(-228.267 -92.8)" fill="#152c53"/>
+                                                    </g>
+                                                    </g>
+                                                </g>
+                                                </svg>                                                                  
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="map-area-blks d-flex align-center justify-space-between">
+                                    <div>
+                                        <p>I will work across all Malta for Gigs over 4 hours</p>
+                                    </div>
+                                    <div>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grow-1">
+                                <div class="map-images text-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="390.576" height="360.289" viewBox="0 0 390.576 360.289">
+                                        <g id="malta2" transform="translate(-151.894 -79.782)">
+                                          <path id="Path_710" data-name="Path 710" d="M485.064,285.418l-2.27-2.918C482.6,282.759,485.064,285.418,485.064,285.418Z" transform="translate(-116.105 -71.01)" fill="#152c53" stroke="#fafafa" stroke-width="1"/>
+                                          <path id="Path_711" data-name="Path 711" d="M575.754,371.889V371.5l-.454.648Z" transform="translate(-148.628 -102.296)" fill="#152c53" stroke="#fafafa" stroke-width="1"/>
+                                          <path id="Path_712" data-name="Path 712" d="M493.389,258.065,493,258v3.891Z" transform="translate(-119.697 -62.397)" fill="#152c53" stroke="#fafafa" stroke-width="1"/>
+                                          <path id="Path_713" data-name="Path 713" d="M342.85,178.2l2.918-3.631,7.587-1.038V171H348.3l-4.15,2.529h-3.372l-1.686,1.556-.389,2.594.778,1.038Z" transform="translate(-65.455 -31.814)" fill="#152c53" stroke="#fafafa" stroke-width="1"/>
+                                          <path id="Path_714" class="north-map" data-name="Path 714" d="M201.265,261.747l8.689,7.976,5.317-5.317v-6.744l5.058,2.594h5.317l1.686-4.28,6.485.973,6.031,5.058,4.8-8.43,6.485-.713,10.829.973,2.918-1.945h7l9.662-1.232,13.034,12.775L297.5,262.2l18.806.454,10.375,7,1.232-9.468,3.631-4.993,15.693,2.4v-2.659l1.881-4.8V238.078l6.744-3.372,9.662,1.686,5.058,6.031,5.317-8.236V230.3l-4.345-1.232-4.928-7,2.27-7.717s-2.4-2.659-2.27-2.918l-6.614-2.659v-3.631l6.485,1.232,4.6-1.945,2.14-5.058v-3.891l-6.1-1.232-2.529-3.113-.843-4.6-1.686.519-.843,2.594-1.686-.519v-8.236l-2.529-5.188-3.372.519-.454,4.669,1.232,1.038-3.761,1.038-1.686-5.188-3.372-2.075,1.232-3.113-2.529-1.556-1.686-3.113h-5.447l-5.9-4.669-3.372.519-1.232-1.556-2.075.519-2.529,6.16-1.686.519-3.372,4.15h-3.372l-1.232,1.038-2.529,3.631-.843,3.631h-1.232l1.686-6.679,3.761-5.707-.843-5.707,2.918-5.188V154.1l5.836.519-.454-2.594h-7.976l-3.372,2.594-3.761,1.038-4.28,3.631-.843,4.669-2.918.519-.843,1.556h-5.447l-2.529,1.038v4.15l-.843.519-3.372-1.038-.843,2.075-2.529-1.556-.454,1.556h-5.058l.454-1.556-2.918-1.038-1.232,2.594-6.679,1.556-1.232,1.556-2.529.519-.843,2.075h-2.529l-3.761,2.075L251,180.04l.389-4.15,2.918-1.556.843-2.594,3.372-1.038,1.686-5.188,2.529-3.113.843-3.631-2.529-1.038v-2.075l2.529-.519,2.529,2.075h3.761l1.232-1.556-.389-3.113-1.686-1.038,3.372-5.188-3.372-3.631,2.918-2.594v-2.075h-3.761l-.843-1.038-1.232,2.075h-1.686l-2.918-2.075-4.215.519-2.918-3.631-3.761,2.075-.389,1.556h-2.918l-2.075-3.113.454-2.075L244,130.756l-2.918,2.075-6.744,2.075-1.232,1.556-7.133,2.075-20.556,2.594-2.075-1.556-2.529-5.707-.389-4.15,1.232-2.075,12.191-6.679,2.529-3.631,5.836-4.15-.843-2.075.843-1.556H223.9l2.075-2.594h7.976l6.29-4.15-.454-4.15-2.918-3.113-2.918-.519V89.838l-2.075-1.556-.843-3.113-2.075-1.038L226.879,80.5h0l-1.621,1.1.389,3.631L220.2,83.159l-2.075,2.075.389,5.188,4.215,2.075-.454,1.038-6.679-.519-1.686,4.669h-3.761l-.843-3.113-1.232-.519h-4.6l-1.232,8.754-2.918-2.594h-5.058l-.843,1.556,1.232,2.594-5.836-2.594-2.918.519-1.232,1.556h-2.529l-5.058-2.594-7.522,1.038-1.686-2.075,1.232-1.038.389-2.594-2.529.519-1.232,6.744,9.208,3.113-.843,3.631-1.686.519-.389-1.038h-2.335l-4.215,7.717h-4.6l-2.918,2.594-2.075,4.15-.843,4.669-2.529,2.594,2.075,4.15,5.058,2.594h4.6L168,135.944l10.894.519.843,5.188,1.686,2.594-.843,2.594h-2.464l-.843,1.556.843,2.594,5.447,2.594-.389,1.556h-2.529l2.075,3.631-.843,4.15,1.686,1.556h2.918v1.556l-5.058,3.113v4.15l-2.918,2.075v5.707h-6.29L168,183.671l-.843,5.188,2.529,5.707,7.976,1.038,3.761,1.556.843,1.038-.843,1.038,2.918,3.113,6.744-1.038.843,2.075-2.918,1.556v3.113l.843,2.075h2.918l-.843,1.556-8.819-.519-.454,1.556,1.232,4.669,6.29-.519-.843,5.642.843,3.631-1.232-.519-.389,1.556h-1.686L183.108,222l-2.918-.519h-4.215l-1.686,2.075-1.232,9.273,1.232,6.679,3.372.519.454,2.594,3.761,2.075.389,2.075-.843,1.038,1.232,3.113,2.529.519.389,2.075,4.28,8.819Z" fill="#152c53" stroke="#fafafa" stroke-width="1"/>
+                                          <path id="Path_715" class="south-map" data-name="Path 715" d="M630.448,431.9l-2.14-3.113-4.993-3.048-3.372.519-.389,1.556-5.9.519-.389.973h-1.686v-1.491l1.686-1.556h4.993l2.529-3.113,5.058,1.038,1.621-1.556h4.669l.389-1.556-4.6-3.567-2.529-6.225-2.529-1.038-3.761-4.8-5.447-7-5.058-3.113L603.6,394.8l-.454-4.085-2.075-2.075H599l-3.826-6.225-6.29-1.491-8.754-9.792H577.6l-2.075-1.556-4.215.519-2.529-2.594H566.7l-2.918-2.075h-3.372l-1.3,1.556-1.232-3.113-3.761-2.01-1.3.973,1.3,3.631-.454,2.075,4.215,4.085-2.918.519-2.14,3.113,3.372,5.188h2.075v.973l-7.911-2.01-3.826-4.669-.843,1.556,2.14,2.075,1.686,6.679h-1.686l-3.761-5.642-5.447-1.556,4.993,12.84-.389,3.113-1.3-4.6H540.7l-1.232-3.631-2.529-1.556-3.372,2.075-6.29,1.038-1.232,3.048h-1.3l-2.529,2.594h-2.464l-1.3-3.048,3.761-1.038,2.529-4.15,3.761-1.038,2.529-2.075,2.918-7.2,2.983-1.556v-2.01l2.918-3.631,1.232-1.038h3.826l1.621-1.556,1.686-10.829h-2.529l-4.15,3.113-4.6-1.038-2.983,3.113-3.761.519-1.232,2.01h-1.686l-1.686,3.113H523.9l-1.232,2.075h-2.14l-2.464,3.631-2.983.519v-.648l-1.427,1.556V380.6l4.474,1.038-4.474,6.1-4.8,3.177-7.068.454-5.253,4.41-3.177,6.874-6.355,8.171-2.594,4.085-1.1,4.669-2.529,1.621-4.15,8.56-1.816,4.345v6.29l-5.058,5.447-5.253,2.334-3.761,5.836-7.976,5.577-3.5,2.853.713,5.642-7.393,1.491-2.4,5.512-7-.843-.195,4.6-3.5,1.167,1.427,5.966-2.4,4.41-7.457-2.529-7.393,10.505-.065.065,4.669.454,6.679,6.679,1.686-1.556h2.075l16.8,8.236h4.6l1.3-1.038v-1.556l1.621.519.454-1.038.389,1.038,4.6,1.556,7.976.519,5.447,5.642h2.983v1.038l2.918-.519.389,1.038h1.686V521h4.6l.454-1.556,3.761,1.038.454-1.556,2.464-.519,1.3,2.075,3.307,1.556h3.826l.843-1.038,8.365.519,2.529,1.556,4.15.519,1.3,1.492h2.918l.389,1.556h1.686l7.133,4.669,3.761.519,2.14,2.01,7.133,1.556,7.976-1.556,1.621,1.038,13.877,1.038,2.918-2.594h3.372l2.075-2.01,3.372-1.037v-1.556l5.447-3.631,1.232-8.236,2.983,3.631,4.6-5.642,1.686-.519v-1.556h-.843l-3.826,2.075-.389-4.15-5.058-4.6h-6.29l1.3,3.567,2.529,2.075,1.232,3.113-3.761-.519-7.976-8.754L566.7,507.12l-.843,2.01h-1.686v-3.048l-1.232-.519-2.14-6.16,6.744-.519,1.232-1.556-1.232-6.225h-3.372l1.686-2.529-1.3-1.556h5.058l6.29-1.556,4.6,6.16,1.686.519,4.215-1.038,2.464-4.6-1.621-4.15.843-2.529h-1.686l-1.686-5.188.389-1.491,7.976,2.01,2.529,2.594,5.836,15.952,2.14,1.556-.843,6.679,2.918,3.631.454,4.6,1.232,2.075h3.372l-.843-5.123h2.918v-2.075l-3.372-2.594,3.372.519.454-4.085,1.232-.519.389-4.15L612.42,491.1l-.454-3.048,2.918-4.669-.389-1.038-5.447-1.491-.843-3.631,1.232-2.075h3.826l-1.686-4.085,2.464-2.594,5.512,1.038,3.761,5.642,4.993-2.529v-2.075l-2.075-3.113-3.372-1.556-1.232-2.529h-1.3l.843-4.15h1.686l.454-1.556h1.232l.843-3.567-7.522-.519-1.686-1.038-2.14-2.075.454-3.113,2.075-2.01h2.983l-.454-1.038,3.761-2.594,3.372-.519,2.529-4.085,4.993-3.631v-1.038Z" transform="translate(-91.785 -96.355)" fill="#152c53" stroke="#fafafa" stroke-width="1"/>
+                                          <path id="Path_716" data-name="Path 716" d="M570.1,377.3h0l3.372-4.8-3.372,1.816Z" transform="translate(-146.8 -102.647)" fill="none" stroke="#fafafa" stroke-width="1"/>
+                                          <path id="Path_717" data-name="Path 717" d="M472.5,278.5l6.614,2.659C479.244,280.9,472.5,278.5,472.5,278.5Z" transform="translate(-112.49 -69.603)" fill="#152c53" stroke="#fafafa" stroke-width="1"/>
+                                          <path id="Path_718" data-name="Path 718" d="M570.1,379.9Z" transform="translate(-146.8 -105.249)" fill="none" stroke="#fafafa" stroke-width="1"/>
+                                          <path id="Path_719" data-name="Path 719" d="M569.327,379.9l-1.427,1.556Z" transform="translate(-146.026 -105.249)" fill="#152c53" stroke="#fafafa" stroke-width="1"/>
+                                          <path id="Path_720" class="central-map" data-name="Path 720" d="M457.037,311.3l-5.836-2.075-1.686-4.669L445.754,303l.454-5.188-2.918-1.038-4.215-3.631-6.679-2.594-1.232.519v4.6l-1.686,1.038H427.4l-2.529-2.075v-2.075l-1.686-.519v-1.556l3.761-.519.454-7.717h-1.686V278.62l2.529-2.075-1.686-1.556-2.075,1.556-1.686-1.038-2.075.519-.454-1.556,3.372-3.113-2.529-3.631-2.918-.519-2.075-1.556h-3.372l-.843-2.075-4.215-1.556.454-3.631-.843-1.038-6.29-1.556-3.761-2.594-6.679,3.113-.389,1.556-8.56-1.751-.584,4.085-2.2,5.058-4.6,1.945-6.485-1.232v3.631s6.744,2.4,6.614,2.659l2.27,2.918-2.27,7.717,4.928,7,4.345,1.232v3.891l-5.188,8.041L373.45,297.1l-9.662-1.686-6.744,3.372v12.061l-1.881,4.8v2.659l-15.693-2.4-3.631,4.993-1.232,9.468-10.375-7-18.806-.454a10.791,10.791,0,0,1-2.918,1.232c-.778,0-13.034-12.775-13.034-12.775l-9.662,1.232h-7l-2.918,1.945-10.829-.973-6.485.713-4.8,8.43-6.031-5.058-6.485-.973-1.686,4.28h-5.317l-5.058-2.594v6.679l-5.317,5.317L209,322.456l-11.348.259-4.28-8.819-10.051.519L174.5,312.34v3.631l3.372,5.123-.454,3.113-2.529,2.594v3.631l3.761,5.642,4.6,3.113,4.215,12.9L185.783,362.4,190,368.044l3.761,3.113,1.232,4.085,8.365,5.642,10.051.519-2.918,3.113v1.038h1.232l-.843,1.038,2.918,2.075,4.215.519,1.686,1.556.843,3.113,2.529,2.075,2.918,6.679,9.208,6.16,4.6,5.642,6.29,1.556,2.075,4.085,6.29,5.188,5.058-.519,2.075,2.075,4.993.519,3.372,5.123,3.761.519,2.075,7.2,2.529,1.556,5.058-.519-.389,1.038,2.075,1.038,2.075,3.113,1.686-2.075,7.133,3.113,8.819,1.556V452.6l2.529,5.642,5.058,2.594h5.9l4.6,1.556,6.679.584.065-.065,7.393-10.7,7.457,2.464,2.4-4.41-1.427-5.9,3.5-1.232.259-4.6,7,.843,2.4-5.577,7.393-1.427-.713-5.642,3.5-2.853,7.976-5.642,3.826-5.771,5.253-2.334,5.058-5.447v-6.355l1.816-4.345-.195.065,4.15-8.43L399.194,384l1.1-4.734,2.594-4.085,6.355-8.171,3.178-6.874,5.253-4.41,7.068-.454,4.8-3.177,4.474-6.16-4.474-.973v-8.106l1.427-1.556v-2.983l3.307-1.816.454-.648V325.7l-1.232-1.556h-2.075l-2.918-4.085h4.215l3.372,1.556.843,1.556,3.761.519,3.372-2.075.454-4.669-5.447-2.075-8.819,1.038.843-3.113,6.679-3.567h4.215l2.918,1.556.454,1.556,6.29,3.113h2.918l2.918-2.075Z" transform="translate(-7.734 -60.71)" fill="#152c53" stroke="#fafafa" stroke-width="1"/>
+                                          <path id="Path_721" data-name="Path 721" d="M374.518,360.7l-2.918,1.232A10.791,10.791,0,0,0,374.518,360.7Z" transform="translate(-77.021 -98.499)" fill="#152c53" stroke="#fafafa" stroke-width="0"/>
+                                          <!-- <path id="Path_722" data-name="Path 722" d="M364.634,355.675,351.6,342.9C351.6,342.835,363.856,355.675,364.634,355.675Z" transform="translate(-69.99 -92.242)" fill="#152c53" stroke="#fafafa" stroke-width="1"/> -->
+                                          <text id="NORTH" transform="translate(242.5 211.5)" fill="#152c53" font-size="13" font-family="Helvetica"><tspan x="0" y="0">NORTH</tspan></text>
+                                          <text id="CENTRAL" transform="translate(297.5 302.5)" fill="#152c53" font-size="13" font-family="Helvetica"><tspan x="0" y="0">CENTRAL</tspan></text>
+                                          <text id="SOUTH" transform="translate(428.5 361.5)" fill="#152c53" font-size="13" font-family="Helvetica"><tspan x="0" y="0">SOUTH</tspan></text>
+                                        </g>
+                                      </svg>
+                                </div>
+                                <!-- <div class="map-city-blk north-city text-center">
+                                    <div class="map-nm">
+                                        <h5>North
+                                            <a href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12.268" height="12.043" viewBox="0 0 12.268 12.043">
+                                                <g id="Group_1930" data-name="Group 1930" transform="translate(-860.9 -417.513)">
+                                                    <g id="Group_513" data-name="Group 513" transform="translate(861.607 418.22)">
+                                                    <line id="Line_85" data-name="Line 85" x1="15.031" transform="translate(0 0) rotate(45)" fill="none" stroke="#152c53" stroke-linecap="round" stroke-width="1"/>
+                                                    <line id="Line_86" data-name="Line 86" x1="15.031" transform="translate(10.854 0) rotate(135)" fill="none" stroke="#152c53" stroke-linecap="round" stroke-width="1"/>
+                                                    </g>
+                                                </g>
+                                                </svg>                                                                  
+                                            </a>
+                                        </h5>
+                                        <ul class="custom-scroll">
+                                            <li>Pembroke</li>
+                                            <li>Tal-Pietà, Malta</li>
+                                            <li>Il-Qrendi</li>
+                                            <li>Ir-Rabat</li>
+                                            <li>Ħal Safi</li>
+                                            <li>San Ġiljan</li>
+                                            <li>San Ġwann</li>
+                                            <li>San Pawl il-Baħar</li>
+                                            <li>Santa Luċija</li>
+                                            <li>Santa Venera</li>
+                                            <li>Tas-Sliema</li>
+                                            <li>Pembroke</li>
+                                            <li>Tal-Pietà, Malta</li>
+                                            <li>Il-Qrendi</li>
+                                            <li>Ir-Rabat</li>
+                                            <li>Ħal Safi</li>
+                                            <li>San Ġiljan</li>
+                                            <li>San Ġwann</li>
+                                            <li>San Pawl il-Baħar</li>
+                                            <li>Santa Luċija</li>
+                                            <li>Santa Venera</li>
+                                            <li>Tas-Sliema</li>
+                                            <li>Pembroke</li>
+                                            <li>Tal-Pietà, Malta</li>
+                                            <li>Il-Qrendi</li>
+                                            <li>Ir-Rabat</li>
+                                            <li>Ħal Safi</li>
+                                            <li>San Ġiljan</li>
+                                            <li>San Ġwann</li>
+                                            <li>San Pawl il-Baħar</li>
+                                            <li>Santa Luċija</li>
+                                            <li>Santa Venera</li>
+                                            <li>Tas-Sliema</li>
+                                        </ul>
+                                    </div>
+                                </div>   -->
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn-small">Update</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!--******************* Middle Section End ******************-->
+<!--******************* Footer Section Start ******************-->
+<footer>
+    <div class="footer-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-links">
+                        <h6>Discover</h6>
+                        <ul>
+                            <li><a href="#">All Services</a></li>
+                            <li><a href="#">Become a GigWorker</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-links">
+                        <h6>Company</h6>
+                        <ul>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">FAQ’s</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 align-center justify-end">
+                    <div class="social-link text-right">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 align-center justify-end"">
+                    <div class="footer-logo text-right">
+                        <img src="images/footer-logo.svg" alt="footer-logo"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--******************* Footer Section End ******************-->
+<script type="text/javascript">
+    $(document).ready(function(){
+    /********** Slide Dropdown **********/
+    $(".all-services a").click(function(){
+        $(".all-services-list").slideToggle();  
+    });
+    /********** User Profile Dropdown **********/
+    $(".user-profile a").click(function(){
+        $(".user-settings").slideToggle();    	
+    });
+    /********** User Profile Dropdown **********/
+    $(".notification-gigs a").click(function(){
+        $(".gigs-notificatiob-blk").slideToggle();    	
+    });
+    /********** JCF **********/
+    $(function() {
+        jcf.replaceAll();
+    });
+});
+</script>
+<!--*********************** All End ************************-->
+</body>
+</html>

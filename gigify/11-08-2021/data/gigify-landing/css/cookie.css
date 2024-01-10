@@ -1,0 +1,20 @@
+.cookieConsentContainer {
+	z-index: 999;
+	width: 350px;
+	min-height: 20px;
+	box-sizing: border-box;
+	padding: 25px;
+	background: #232323;
+	overflow: hidden;
+	position: fixed;
+    bottom: 30px;
+	right: 30px;
+	display: none;
+}
+/* .cookieConsentContainer .cookieTitle a {
+	font-family: OpenSans, arial, "sans-serif";
+	color: #FFFFFF;
+	font-size: 22px;
+	line-height: 20px;
+	display: block;
+} */

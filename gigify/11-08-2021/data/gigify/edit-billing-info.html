@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <title>Gigify</title>
+    <!--Favicon Included-->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--Font Awsome Included-->
+    <link href="css/font-awesome.css" type="text/css" rel="stylesheet" />
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!--Extra Style Included-->
+    <link href="css/jcf.css" rel="stylesheet">
+    <link href="css/slick-theme.css" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+     <!--Main Style Included-->
+     <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <!--Main Js Included-->
+	<script src="js/lib/jquery.js" type="text/javascript"></script>
+    <script src="js/modernizr.js" type="text/javascript"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <!--Extra Js Included-->
+    <script src="js/jcf.js"></script>
+    <script src="js/jcf.select.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+    	<!--
+    	if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+      	  var msViewportStyle = document.createElement('style');
+      	  msViewportStyle.appendChild(
+      	    document.createTextNode(
+      	      '@-ms-viewport{width:auto!important}'
+      	    )
+      	  );
+      	  document.querySelector('head').appendChild(msViewportStyle);
+      	}
+    	-->
+    </script>
+    <script>
+        (function($){
+            $(window).on("load",function(){
+                $(".custom-scroll").mCustomScrollbar();
+            });
+        })(jQuery);
+    </script>
+</head>
+<body>
+<!--******************* Header Section Start *********************-->
+<header>
+    <div class="main-header">
+        <div class="container">
+            <div class="justify-space-between">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.svg" alt="logo"/></a>
+                </div>
+                <div class="header-menu-content">
+                    <ul>
+                        <li class="all-services">
+                            <a href="javascript:;">All Services</a>
+                            <div class="all-services-list">
+                                <ul class="custom-scroll">
+                                    <li><a href="#">Home Repairs</a></li>
+                                    <li><a href="#">Cleaning</a></li>
+                                    <li><a href="#">Moving & Packing</a></li>
+                                    <li><a href="#">Furniture Assembly</a></li>
+                                    <li><a href="#">Painting</a></li>
+                                    <li><a href="#">Pet Care</a></li>
+                                    <li><a href="#">Home Beauty</a></li>
+                                    <li><a href="#">Painting</a></li>
+                                    <li><a href="#">Pet Care</a></li>
+                                    <li><a href="#">Home Beauty</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="login.html">Login</a>
+                        </li>
+                        <li>
+                            <a href="gigworker-signup.html" class="btn-1">Become a GigWorker</a>
+                        </li>
+                        <li class="notification-gigs">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16.625" height="19" viewBox="0 0 16.625 19">
+                                    <path id="bell" d="M16.3,13.444c-.717-.77-2.058-1.929-2.058-5.726A5.86,5.86,0,0,0,9.5,1.961V1.187a1.187,1.187,0,1,0-2.374,0v.773A5.86,5.86,0,0,0,2.377,7.719c0,3.8-1.342,4.955-2.058,5.726A1.159,1.159,0,0,0,0,14.25a1.189,1.189,0,0,0,1.191,1.187H15.433a1.188,1.188,0,0,0,1.191-1.187A1.159,1.159,0,0,0,16.3,13.444Zm-13.8.212A9.293,9.293,0,0,0,4.158,7.74c0-.007,0-.014,0-.022a4.156,4.156,0,0,1,8.313,0c0,.007,0,.014,0,.022a9.291,9.291,0,0,0,1.652,5.916ZM8.312,19a2.375,2.375,0,0,0,2.374-2.375H5.938A2.375,2.375,0,0,0,8.312,19Z" transform="translate(0.001)" fill="#fff"/>
+                                  </svg>  
+                                  <div class="gigs-notification-no"><span>4</span></div>                                
+                            </a>
+                            <div class="gigs-notificatiob-blk">
+                                <h5>My Gig Notifications</h5>
+                                <div class="gigs-notification-list custom-scroll">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <div class="justify-space-between tb-border">
+                                                    <div class="d-flex align-center">
+                                                        <div class="profile-img-small" style="background:url('images/user-profile.png') no-repeat center center / cover;"></div>
+                                                        <div>
+                                                            <div class="nofification-user-nm">Francesca<span>sent you a message</span></div>
+                                                            <div class="notification-timer">4 min ago</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <img src="images/notification-ic-1.svg" alt="notification-ic-1"/>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="justify-space-between tb-border">
+                                                    <div class="d-flex align-center">
+                                                        <div class="profile-img-small" style="background:url('images/user-profile.png') no-repeat center center / cover;"></div>
+                                                        <div>
+                                                            <div class="nofification-user-nm">A. Borg<span>has accepted your time change</span></div>
+                                                            <div class="notification-timer">4 min ago</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <img src="images/notification-ic-2.svg" alt="notification-ic-2"/>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="justify-space-between tb-border">
+                                                    <div class="d-flex align-center">
+                                                        <div class="profile-img-small" style="background:url('images/user-profile.png') no-repeat center center / cover;"></div>
+                                                        <div>
+                                                            <div class="nofification-user-nm">J. Cilia<span>has cancelled the gig</span></div>
+                                                            <div class="notification-timer">4 min ago</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <img src="images/notification-ic-3.svg" alt="notification-ic-3"/>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="justify-space-between tb-border">
+                                                    <div class="d-flex align-center">
+                                                        <div class="profile-img-small" style="background:url('images/user-profile.png') no-repeat center center / cover;"></div>
+                                                        <div>
+                                                            <div class="nofification-user-nm">J. Micallef<span>sent you a message</span></div>
+                                                            <div class="notification-timer">4 min ago</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <img src="images/notification-ic-4.svg" alt="notification-ic-4"/>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="justify-space-between tb-border">
+                                                    <div class="d-flex align-center">
+                                                        <div class="profile-img-small" style="background:url('images/user-profile.png') no-repeat center center / cover;"></div>
+                                                        <div>
+                                                            <div class="nofification-user-nm">D. Vella<span>is requesting a re-schedule</span></div>
+                                                            <div class="notification-timer">4 min ago</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <img src="images/notification-ic-2.svg" alt="notification-ic-2"/>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="justify-space-between tb-border">
+                                                    <div class="d-flex align-center">
+                                                        <div class="profile-img-small" style="background:url('images/user-profile.png') no-repeat center center / cover;"></div>
+                                                        <div>
+                                                            <div class="nofification-user-nm">B. Azzopardi<span>has rated your gig</span></div>
+                                                            <div class="notification-timer">4 min ago</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <img src="images/notification-ic-5.svg" alt="notification-ic-5"/>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="justify-space-between tb-border">
+                                                    <div class="d-flex align-center">
+                                                        <div class="profile-img-small" style="background:url('images/user-profile.png') no-repeat center center / cover;"></div>
+                                                        <div>
+                                                            <div class="nofification-user-nm">B. Azzopardi<span>has rated your gig</span></div>
+                                                            <div class="notification-timer">4 min ago</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <img src="images/notification-ic-5.svg" alt="notification-ic-1"/>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="view-all">
+                                    <a href="#">View All Gigs</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="my-gigs-title">My Gigs</a>
+                        </li>
+                        <li class="user-profile gigworker-profile">
+                            <a href="javascript:;"><img src="images/user-ic.svg" alt="user-ic"/></a>
+                            <div class="user-settings">
+                                <ul>
+                                    <li class="user-profile-nm d-flex align-center">
+                                        <div class="profile-img-small" style="background:url('images/user-profile.png') no-repeat center center / cover;"></div>
+                                        <div class="user-nm-1">Carl Vella</div>
+                                    </li>
+                                    <li><a href="#">Manage My Account</a></li>
+                                    <li><a href="#">Refer & Earn</a></li>
+                                    <li><a href="#">Gig Points</a></li>
+                                    <li><a href="#">Log in as GigWorker</a></li>
+                                    <li><a href="#">Log Out</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--******************* Header Section End *********************-->
+<!--******************* Middle Section Start ******************-->
+<main class="width-100">
+    <div class="main-title">
+        <div class="container">
+            <div class="title-panel">
+                <h3 class="text-center">Edit Billing Info</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="d-flex">
+            <div class="leftsidebar">
+                <div class="left-panel custom-scroll">
+                    <ul>
+                        <li>
+                            <a href="my-profile.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15.732" height="15.691" viewBox="0 0 15.732 15.691">
+                                    <g id="Group_1296" data-name="Group 1296" transform="translate(-423.748 -354.269)" opacity="0.5">
+                                      <path id="Path_818" data-name="Path 818" d="M13.3.725A6.8,6.8,0,0,1,12,2.335,6.7,6.7,0,0,1,7.489,4.074,6.694,6.694,0,0,1,2.983,2.335,6.755,6.755,0,0,1,1.675.724,3.219,3.219,0,0,0,0,0,8,8,0,0,0,7.49,5.3,8,8,0,0,0,14.978,0,3.208,3.208,0,0,0,13.3.725Z" transform="translate(439.103 369.646) rotate(180)" fill="#152c53" stroke="#152c53" stroke-width="0.5"/>
+                                      <path id="Path_819" data-name="Path 819" d="M427.08,364.125a3.851,3.851,0,0,0,2.677-1.089l.044-.042c.058-.059.113-.119.166-.179l.045-.053c.041-.048.152-.191.152-.191.05-.067.1-.135.151-.214s.081-.131.136-.231a3.9,3.9,0,0,0-.65-4.607l-2.857-2.873a2.184,2.184,0,0,0-.462,1.43l.013.341-.331.081a3.85,3.85,0,0,0-1.611.842c-.066.058-.131.117-.194.181a3.9,3.9,0,0,0,0,5.478A3.809,3.809,0,0,0,427.08,364.125Zm-1.86-5.734a2.623,2.623,0,0,1,3.721,0,2.658,2.658,0,0,1,0,3.733,2.624,2.624,0,0,1-3.721,0A2.658,2.658,0,0,1,425.22,358.391Z" transform="translate(4.606)" fill="#152c53" stroke="#152c53" stroke-width="0.5"/>
+                                    </g>
+                                </svg>
+                                My Profile
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="billing-info.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10.486" height="10.486" viewBox="0 0 10.486 10.486">
+                                    <path id="Path_321" data-name="Path 321" d="M9.991,12.03A3.775,3.775,0,0,1,6.635,9.991H9.991V8.826H6.251a3.664,3.664,0,0,1,0-1.165h3.74V6.5H6.635a3.779,3.779,0,0,1,5.82-1.124L13.486,4.34A5.235,5.235,0,0,0,5.051,6.5H3V7.66H4.783a4.872,4.872,0,0,0,0,1.165H3V9.991H5.051a5.235,5.235,0,0,0,8.435,2.155l-1.037-1.031A3.732,3.732,0,0,1,9.991,12.03Z" transform="translate(-3 -3)" fill="#152c53" opacity="0.5"/>
+                                </svg>
+                                Billing Info
+                            </a>
+                        </li>
+                        <li>
+                            <a href="notifications.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12.308" height="15" viewBox="0 0 12.308 15">
+                                    <path id="notifications-24px" d="M10.154,17.5a1.543,1.543,0,0,0,1.538-1.538H8.615A1.538,1.538,0,0,0,10.154,17.5Zm4.615-4.615V9.038a4.687,4.687,0,0,0-3.462-4.862V3.654A1.154,1.154,0,1,0,9,3.654v.523A4.673,4.673,0,0,0,5.538,9.038v3.846L4,14.423v.769H16.308v-.769Z" transform="translate(-4 -2.5)" fill="#152c53" opacity="0.5"/>
+                                </svg>
+                                Notifications
+                            </a>
+                        </li>
+                        <li>
+                            <a href="change-pwd.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16.763" height="15.5" viewBox="0 0 16.763 15.5">
+                                    <g id="padlock" transform="translate(0.289 0.25)" opacity="0.5">
+                                      <g id="Group_515" data-name="Group 515">
+                                        <path id="Path_323" data-name="Path 323" d="M14.044,22.31a7.4,7.4,0,0,0-10.588.067.41.41,0,0,0,.007.572.4.4,0,0,0,.567-.007,6.564,6.564,0,0,1,4.753-2.019,6.691,6.691,0,1,1-6.639,6.689v-.084L2.8,28.2a.4.4,0,0,0,.284.118.4.4,0,0,0,.284-.69L2.03,26.267a.4.4,0,0,0-.567,0L.118,27.623a.406.406,0,0,0,0,.572.4.4,0,0,0,.284.118A.406.406,0,0,0,.685,28.2l.661-.666v.084a7.483,7.483,0,0,0,2.18,5.3,7.4,7.4,0,0,0,10.522,0,7.544,7.544,0,0,0,0-10.606Z" transform="translate(0 -20.113)" fill="#152c53" stroke="#152c53" stroke-width="0.5"/>
+                                        <path id="Path_324" data-name="Path 324" d="M161.92,113.413a2.379,2.379,0,0,0-2.36,2.394v1.155h-.734a.4.4,0,0,0-.4.406v4.053a.4.4,0,0,0,.4.406h6.192a.4.4,0,0,0,.4-.406v-4.05a.4.4,0,0,0-.4-.406h-.734V115.81A2.385,2.385,0,0,0,161.92,113.413Zm-1.559,2.4a1.559,1.559,0,1,1,3.118,0v1.155h-3.118V115.81Zm4.256,5.2h-5.391v-3.24h5.391Z" transform="translate(-153.137 -110.299)" fill="#152c53" stroke="#152c53" stroke-width="0.5"/>
+                                      </g>
+                                    </g>
+                                </svg>
+                                Change Password
+                            </a>
+                        </li>
+                        <li>
+                            <a href="logout.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15.05" height="15" viewBox="0 0 15.05 15">
+                                    <g id="logout" opacity="0.5">
+                                      <g id="Group_517" data-name="Group 517">
+                                        <g id="Group_516" data-name="Group 516">
+                                          <path id="Path_325" data-name="Path 325" d="M7.5,14.6H1.875a.625.625,0,0,1-.625-.625V2.725A.625.625,0,0,1,1.875,2.1H7.5A.625.625,0,0,0,7.5.85H1.875A1.877,1.877,0,0,0,0,2.725v11.25A1.877,1.877,0,0,0,1.875,15.85H7.5a.625.625,0,1,0,0-1.25Z" transform="translate(0 -0.85)" fill="#152c53"/>
+                                        </g>
+                                      </g>
+                                      <g id="Group_519" data-name="Group 519" transform="translate(5 3.125)">
+                                        <g id="Group_518" data-name="Group 518">
+                                          <path id="Path_326" data-name="Path 326" d="M179.964,111.095l-3.8-3.75a.625.625,0,1,0-.877.89l2.716,2.68h-7.277a.625.625,0,0,0,0,1.25H178l-2.716,2.68a.625.625,0,1,0,.877.89l3.8-3.75a.625.625,0,0,0,0-.89Z" transform="translate(-170.1 -107.165)" fill="#152c53"/>
+                                        </g>
+                                      </g>
+                                    </g>
+                                </svg>                                  
+                                Log out
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="billing-info-blks">
+                    <form>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h5 class="m-20">Billing Address:</h5>
+                                <div class="form-style">
+                                    <div>
+                                        <span class="input input--hoshi">
+                                            <input class="input__field input__field--hoshi" type="text" id="input-4" value="Flat 3, Block B, High Court Apts."/>
+                                            <label class="input__label input__label--hoshi" for="input-4">
+                                                <span class="input__label-content input__label-content--hoshi">Adddress Line 1</span>
+                                            </label>
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <span class="input input--hoshi">
+                                            <input class="input__field input__field--hoshi" type="text" id="input-4" value="St. Augustine Str."/>
+                                            <label class="input__label input__label--hoshi" for="input-4">
+                                                <span class="input__label-content input__label-content--hoshi">Adddress Line 2</span>
+                                            </label>
+                                        </span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div>
+                                                <span class="input input--hoshi">
+                                                    <input class="input__field input__field--hoshi" type="text" id="input-4" value="Mosta"/>
+                                                    <label class="input__label input__label--hoshi" for="input-4">
+                                                        <span class="input__label-content input__label-content--hoshi">Town</span>
+                                                    </label>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div>
+                                                <span class="input input--hoshi">
+                                                    <input class="input__field input__field--hoshi" type="text" id="input-4" value="MST 9349"/>
+                                                    <label class="input__label input__label--hoshi" for="input-4">
+                                                        <span class="input__label-content input__label-content--hoshi">Post Code</span>
+                                                    </label>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="input input--hoshi">
+                                            <input class="input__field input__field--hoshi" type="text" id="input-4" value="7958-5588"/>
+                                            <label class="input__label input__label--hoshi" for="input-4">
+                                                <span class="input__label-content input__label-content--hoshi">VAT Number</span>
+                                            </label>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="grey-btn">Cancel Changes</button>
+                            <button class="btn-small">Save</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!--******************* Middle Section End ******************-->
+<!--******************* Footer Section Start ******************-->
+<footer>
+    <div class="footer-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-links">
+                        <h6>Discover</h6>
+                        <ul>
+                            <li><a href="#">All Services</a></li>
+                            <li><a href="#">Become a GigWorker</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-links">
+                        <h6>Company</h6>
+                        <ul>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">FAQ’s</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 align-center justify-end">
+                    <div class="social-link text-right">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 align-center justify-end"">
+                    <div class="footer-logo text-right">
+                        <img src="images/footer-logo.svg" alt="footer-logo"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--******************* Footer Section End ******************-->
+<script src="js/classie.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+    /********** Slide Dropdown **********/
+    $(".all-services a").click(function(){
+        $(".all-services-list").slideToggle();  
+    });
+    /********** User Profile Dropdown **********/
+    $(".user-profile a").click(function(){
+        $(".user-settings").slideToggle();    	
+    });
+    /********** User Profile Dropdown **********/
+    $(".notification-gigs a").click(function(){
+        $(".gigs-notificatiob-blk").slideToggle();    	
+    });
+        /********** Input Style **********/
+        (function() {
+    // trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+    if (!String.prototype.trim) {
+        (function() {
+            // Make sure we trim BOM and NBSP
+            var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+            String.prototype.trim = function() {
+                return this.replace(rtrim, '');
+            };
+        })();
+    }
+
+    [].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+        // in case the input is already filled..
+        if( inputEl.value.trim() !== '' ) {
+            classie.add( inputEl.parentNode, 'input--filled' );
+        }
+
+        // events:
+        inputEl.addEventListener( 'focus', onInputFocus );
+        inputEl.addEventListener( 'blur', onInputBlur );
+    } );
+
+    function onInputFocus( ev ) {
+        classie.add( ev.target.parentNode, 'input--filled' );
+    }
+
+    function onInputBlur( ev ) {
+        if( ev.target.value.trim() === '' ) {
+            classie.remove( ev.target.parentNode, 'input--filled' );
+        }
+    }
+})();
+});
+</script>
+<!--*********************** All End ************************-->
+</body>
+</html>

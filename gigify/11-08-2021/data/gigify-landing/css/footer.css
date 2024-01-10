@@ -1,0 +1,44 @@
+
+
+/******* Footer Section CSS Start *********/
+footer { padding: 0px !important; }
+.footer-sec                                 { padding: 50px 0; background: #142A4E;}
+.footer-sec h1                              { font-family: 'Cera Basic Black'; font-size: 34px; line-height: 41px;}
+.footer-sec h1,
+.footer-sec p                               { color: #ffffff; }
+.footer-sec p                               { font-size: 20px !important; line-height: 28px !important; }
+.privacy-text                               { text-align: right;}
+.footer-sec ul li                           { padding: 0px 25px; display: inline-block;}
+.footer-sec ul li a                         { padding: 4px; height: 35px; width: 35px; text-align: center; font-size: 18px; color: #ffffff !important; border: 2px solid #ffffff; border-radius: 50px; display: inline-block;}
+/* .footer-sec ul li a:hover                   { background: #fff;} */
+.copyright-text                             { padding-bottom: 20px; background:#142A4E;}
+.copyright-text p,
+.privacy-text a                             { font-size: 13px !important; line-height: 20px !important; color: #ffffff;}        
+.privacy-text a                             { padding-left: 25px; display: inline-block;}
+/******* Footer Section CSS End *********/
+
+
+@media (min-width: 768px) and (max-width: 991px){
+    /******* Footer Section CSS Start *********/
+    .footer-sec                             { padding: 25px 0;}
+    .footer-sec p                           { font-size: 16px; line-height: 25px;}
+    .footer-sec ul li                       { padding: 0px 8px;}
+    .terms-sec                               { margin-top: 83px; padding: 35px 0;}
+    .terms-condition-content h2              { margin: 35px 0 10px;}
+   /******* Footer Section CSS End *********/
+}
+@media (max-width: 767px){
+   /******* Footer Section CSS Start *********/
+   .copyright-text,                          
+   .footer-logo, .privacy-text,
+   .footer-sec h1,
+   .footer-sec p                            { text-align: center;}   
+   .footer-sec                              { padding: 20px 0;}    
+   .footer-sec ul                           { margin: 15px 0; text-align: center;}
+   .footer-sec ul li                        { padding: 0 8px;}     
+   .terms-sec                               { margin-top: 83px; padding: 35px 0;}
+   .terms-condition-content h2              { margin: 35px 0 10px;}
+   .privacy-text a                          { padding: 10px 15px;}
+   /******* Footer Section CSS End *********/
+}
+

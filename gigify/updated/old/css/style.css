@@ -1,0 +1,612 @@
+@charset "utf-8";
+/* CSS Document */
+
+/******* Fonts Face CSS Start **********/
+@font-face {
+    font-family: 'Cera Basic Bold';
+    src: url('../fonts/CeraBasic-Bold.eot');
+    src: url('../fonts/CeraBasic-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CeraBasic-Bold.woff2') format('woff2'),
+        url('../fonts/CeraBasic-Bold.woff') format('woff'),
+        url('../fonts/CeraBasic-Bold.ttf') format('truetype'),
+        url('../fonts/CeraBasic-Bold.svg#CeraBasic-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Basic Regular';
+    src: url('../fonts/CeraBasic-Regular.eot');
+    src: url('../fonts/CeraBasic-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CeraBasic-Regular.woff2') format('woff2'),
+        url('../fonts/CeraBasic-Regular.woff') format('woff'),
+        url('../fonts/CeraBasic-Regular.ttf') format('truetype'),
+        url('../fonts/CeraBasic-Regular.svg#CeraBasic-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Basic Black';
+    src: url('../fonts/CeraBasic-Black.eot');
+    src: url('../fonts/CeraBasic-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CeraBasic-Black.woff2') format('woff2'),
+        url('../fonts/CeraBasic-Black.woff') format('woff'),
+        url('../fonts/CeraBasic-Black.ttf') format('truetype'),
+        url('../fonts/CeraBasic-Black.svg#CeraBasic-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Basic Reg-italic';
+    src: url('../fonts/CeraBasic-RegularItalic.eot');
+    src: url('../fonts/CeraBasic-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CeraBasic-RegularItalic.woff2') format('woff2'),
+        url('../fonts/CeraBasic-RegularItalic.woff') format('woff'),
+        url('../fonts/CeraBasic-RegularItalic.ttf') format('truetype'),
+        url('../fonts/CeraBasic-RegularItalic.svg#CeraBasic-RegularItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'GillSans';
+    src: url('../fonts/GillSans.eot');
+    src: url('../fonts/GillSans.eot') format('embedded-opentype'),
+         url('../fonts/GillSans.woff2') format('woff2'),
+         url('../fonts/GillSans.woff') format('woff'),
+         url('../fonts/GillSans.ttf') format('truetype'),
+         url('../fonts/GillSans.svg#GillSans') format('svg');
+}
+@font-face {
+    font-family: 'GillSansLight';
+    src: url('../fonts/GillSansLight.eot');
+    src: url('../fonts/GillSansLight.eot') format('embedded-opentype'),
+         url('../fonts/GillSansLight.woff2') format('woff2'),
+         url('../fonts/GillSansLight.woff') format('woff'),
+         url('../fonts/GillSansLight.ttf') format('truetype'),
+         url('../fonts/GillSansLight.svg#GillSansLight') format('svg');
+}
+/********* Fonts Face CSS End **********/
+
+/******* Common Element CSS Start ******/
+.loading		{ overflow: hidden; }
+*							{ margin: 0px; padding: 0px;}
+body						{ font-family: 'Cera Basic Regular'; font-size:14px; line-height: 22px; color: #152C53;}
+h1,h2,h3,h4,h5,h6           { margin: 0;}
+.clear						{ clear:both;}
+img							{ border: 0px; max-width: 100%;}
+ul,ol						{ margin: 0; list-style: none; }
+a							{ text-decoration: none; outline: none; transition: 0.3s all; -webkit-transition: 0.3s all; -moz-transition: 0.3s all; cursor: pointer;}
+a:hover,
+a:focus         	        { outline: none; text-decoration: none; color: #5BD17A !important;}
+a:active                    { color: #30975D !important;}
+input[type="submit"]:focus,
+button:focus                { outline: none;}
+h1                          { font-family: 'Cera Basic Black'; font-size: 34px; line-height: 41px;}
+h2                          { font-family: 'Cera Basic Bold'; font-size: 20px; line-height: 24px; text-transform: capitalize;}
+h3                         { font-family: 'Cera Basic Bold'; font-size: 22px; line-height: 26px; text-transform: capitalize;}
+p							{ font-family: 'Cera Basic Regular'; font-size:20px; line-height: 28px;}
+p:last-child                { margin: 0 !important;}
+.justify-space-between      { display: flex; display: -webkit-flex; align-items: center; -webkit-align-items: center; justify-content: space-between; -webkit-justify-content: space-between;}
+.align-center               { display: flex; display: -webkit-flex; align-items: center; -webkit-align-items: center;}
+.align-end                  { display: flex; display: -webkit-flex; align-items: flex-end; -webkit-align-items: flex-end;}
+.justify-end                { display: flex; display: -webkit-flex; justify-content: flex-end; -webkit-justify-content: flex-end;}
+.justify-center             { display: flex; display: -webkit-flex; align-items: center; -webkit-align-items: center; justify-content: center; -webkit-justify-content: center;}
+.btn-small                  { padding: 7px 35px 10px; background: #51BA6C; font-family: 'Cera Basic Bold'; font-size: 15px; line-height: 25px; color: #ffffff !important; min-width: 160px; border-radius: 50px; border: none; display: inline-block; text-align: center;}
+.btn-small:hover            { background: #5BD17A; color: #ffffff !important;}
+.no-padding                 { padding: 0 !important;}
+.margin-0                   { margin: 0 !important;}
+textarea                    { resize: none;}
+button                      { cursor: pointer;}
+.multi-btns button          { margin: 0px 15px 0 0;}
+.m-20                       { margin: 20px 0;}
+.m-30                       { margin: 30px 0;}
+.section-padding-top        { padding-top: 70px;}
+    /******* Input Style Css *********/
+    .error-style .input__field:focus {
+        border-color: #BA5151;
+    }
+    .input {
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        margin: 8px 0;
+        width: 100%;
+        vertical-align: top;
+    }
+    .input__field {
+        position: relative;
+        display: block;
+        float: right;
+        padding: 0;
+        width: 60%;
+        border: none;
+        border-radius: 0;
+        background: #ffffff;
+        color: #152C53;
+        font-family: 'Cera Basic Regular';
+        -webkit-appearance: none; /* for box shadows to show on iOS */
+    }
+    .input__field:focus,
+    .input--filled .input__field--hoshi {
+        outline: none;
+        border: 1px solid #51BA6C;
+    }
+    .input__label {
+        display: inline-block;
+        padding: 0 1em;
+        width: 100%;
+        color: #152C53;
+        font-size: 15px;
+        line-height: 22px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .input__label-content {
+        position: relative;
+        display: block;
+        padding: 15px 0;
+        width: auto;
+        font-size: 15px;
+        color: #78849E;
+        background: #ffffff;
+        line-height: 12px;
+    }
+    /* Individual styles */
+
+    /* Hoshi */
+    .input--filled .input__label-content    { padding: 0px 8px 5px; font-size: 12px; line-height: 9px;} 
+    .input--filled .input__label--hoshi     { padding: 0px 7px;}
+    .input--hoshi {
+        overflow: hidden;
+    }
+    .input__field--hoshi {
+        margin-top: 10px;
+        padding: 10px 15px;
+        width: 100%;
+        background: #fff;
+        color: #152C53;
+        border: 1px solid #D8D8D8;
+        border-radius: 5px;
+    }
+    .input__label--hoshi {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 0 15px;
+        width: 100%;
+        height: calc(100% - 19px);
+        text-align: left;
+        pointer-events: none;
+    }
+    .input__label-content--hoshi {
+        position: absolute;
+    }
+    .input__label--hoshi::before,
+    .input__label--hoshi::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .input__label--hoshi::after {
+        margin-top: 2px;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+        -webkit-transition: -webkit-transform 3s;
+        transition: transform 3s;
+    }
+    .input__field--hoshi:focus + .input__label--hoshi::after,
+    .input--filled .input__label--hoshi::after {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    .input__field--hoshi:focus + .input__label--hoshi .input__label-content--hoshi,
+    .input--filled .input__label-content--hoshi {
+        -webkit-animation: anim-1 0.3s forwards;
+        animation: anim-1 0.3s forwards;
+    }
+    @-webkit-keyframes anim-1 {
+        50% {
+            opacity: 0;
+            -webkit-transform: translate3d(1em, 0, 0);
+            transform: translate3d(1em, 0, 0);
+        }
+        51% {
+            opacity: 0;
+            -webkit-transform: translate3d(-1em, -40%, 0);
+            transform: translate3d(-1em, -40%, 0);
+        }
+        100% {
+            opacity: 1;
+            -webkit-transform: translate3d(0, -40%, 0);
+            transform: translate3d(0, -40%, 0);
+        }
+    }
+    @keyframes anim-1 {
+        50% {
+            opacity: 0;
+            -webkit-transform: translate3d(1em, 0, 0);
+            transform: translate3d(1em, 0, 0);
+        }
+        51% {
+            opacity: 0;
+            -webkit-transform: translate3d(-1em, -40%, 0);
+            transform: translate3d(-1em, -40%, 0);
+        }
+        100% {
+            opacity: 1;
+            -webkit-transform: translate3d(0, -40%, 0);
+            transform: translate3d(0, -40%, 0);
+        }
+    }
+    /******* Loader CSS *********/
+    .loader         { position: absolute; top: 0; left: 0; background: rgba(255,255,255,0.8); height: 100%; width: 100%; z-index: 100;}
+    .lds-ripple {
+        display: inline-block;
+        position: relative;
+        width: 80px;
+        height: 80px;
+        top: 50%; left: 50%; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%);
+        }
+        .lds-ripple div {
+        position: absolute;
+        border: 4px solid #51BA6C;
+        opacity: 1;
+        border-radius: 50%;
+        animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+        }
+        .lds-ripple div:nth-child(2) {
+        animation-delay: -0.5s;
+        }
+        @keyframes lds-ripple {
+        0% {
+            top: 36px;
+            left: 36px;
+            width: 0;
+            height: 0;
+            opacity: 1;
+        }
+        100% {
+            top: 0px;
+            left: 0px;
+            width: 72px;
+            height: 72px;
+            opacity: 0;
+        }
+        }
+.green-text                                 { padding: 10px 0; color: #51BA6C;}
+.section-title                              { text-align: center;}
+/******* Common Element CSS End *********/
+
+/******* Header Section CSS Start *******/
+header                                      { padding: 25px 0px; position: fixed; top: 0; width: 100%; z-index: 1040; background: #152C53;}
+header.sticky-header                        { background: rgba(0,0,0,0.8); transition: all 0.5s ease-in-out 0s;}
+.header-menu-content li                     { padding: 0px 25px; display: inline-block; position: relative;}
+.header-menu-content li a                   { font-family: 'Cera Basic Bold'; font-size: 16px; line-height: 19px; color: #ffffff;   }
+.header-menu-content li a:hover             { color: #51BA6C;}
+/******* Header Section CSS End *********/
+
+/******* Banner Section CSS Start *********/
+.banner-video                               { margin-top: 90px; position: relative;}
+.video-blk                                  { height: 700px; overflow: hidden;}
+.banner-video video                         { width: 100%;}
+.play-btn,
+.pause-btn                                  { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); z-index: 10;}
+.pause-btn,                                 
+.show .play-btn                             { display: none;}
+.show.banner-video:hover .pause-btn         { display: block;}
+.banner-content                             { width: 100%; position: absolute; top: 70px; left: 0;}
+.banner-text                                { max-width: 530px;}
+.banner-content h1,
+.banner-content h2                          { color: #ffffff;}
+.banner-content h1                          { padding: 35px 0 45px;}
+/******* Banner Section CSS End *********/
+
+/******* Category Section CSS Start *********/
+.pattern                                   { position: relative;}
+.pattern::before                           { content: ''; background: url('../images/pattern.png') no-repeat left center; height: 100%; width: 100%; position: absolute; top: 0; left: -25%; display: block; z-index: -1;}                                    
+.pattern-2::before                         { top: 40px; background-size: 71% auto;}
+.category-slider                           { margin-top: 50px;}
+.category-slide-blk                        { text-align: center;}
+.category-slide-blk h3                     { padding: 18px 0;}
+.slick-slide img                           { display: inline-block;}
+.category-slider .slick-prev::before, 
+.category-slider .slick-next::before       { font-family: unset; opacity: 1; font-size: 35px; line-height: 28px; color: rgba(230,232,236,0.70); font-family: 'FontAwesome';}
+.category-slider .slick-prev::before       { content: '\f0d9';}
+.category-slider .slick-next::before       { content: '\f0da';}
+.category-slider .slick-prev, 
+.category-slider .slick-next               { top: 40%; height: 25px; width: 25px;}
+.category-slider .slick-prev               { left: -30px;}
+.category-slider .slick-next               { right: -30px;}
+/******* Category Section CSS End *********/
+
+/******* Discover Work Section CSS Start *********/
+.work-text                                 { margin: 0 auto; padding-bottom: 70px; max-width: 790px; text-align: center;}
+.work-text p                               { margin: 25px 0;}
+.works-blk                                 { text-align: center;}
+.works-blk img                             { width: 70px;}
+.works-blk h3                              { padding: 35px 0 10px;}
+/******* Discover Work Section CSS End *********/
+
+/******* Comming Soon Section CSS Start *********/
+.comming-soon-sec                          { margin-top: 200px; background: #F2F3F5;}
+.comming-soon-man-img                      { margin-top: -100px;}
+.comming-soon-text                         { padding: 35px 0 20px;}
+.comming-soon-text h1                      { padding-bottom: 15px;}
+/******* Comming Soon Section CSS End *********/
+
+/******* How Work Section CSS Start *********/
+.how-it-work-sec                          { padding: 100px 0;}
+.how-it-work-sec h1                       { padding-bottom: 100px;}
+.how-work-blks img                        { margin: 45px 0;}
+.how-work-blks h2                         { text-transform: none; position: relative; display: inline-block;}
+.how-works-title span                     { position: absolute; top: -40px; left: -30px; font-family: 'Cera Basic Black'; font-size: 94px; line-height: 55px; color: rgba(81,186,108,0.40); display: inline-block;}   
+/******* How Work Section CSS End *********/
+
+/******* All You Need Section CSS Start *********/
+.all-you-need-sec                         { padding: 120px 0 80px; background: #152C53; position: relative;}
+.all-you-need-sec::before                 { content: ''; background: #ffffff; position: absolute; height: 100%; width: 27%; top: 0; left: 0; display: block;}
+.all-you-need-text h1,
+.all-you-need-text p                      { color: #ffffff;}
+.all-you-need-text p                      { margin-bottom: 0; padding: 15px 0 35px;}
+.all-you-need-text ul li                  { padding: 12px 0 12px 35px; position: relative;}
+.all-you-need-text ul li::before          { content: ''; background: url('../images/check.png') no-repeat; position: absolute; top: 18px; left: 0; height: 14px; width: 18px; display: block;}
+.all-you-need-text ul li a                { cursor: pointer; font-size: 18px; line-height: 25px; color: #ffffff !important;}
+.all-you-need-text ul li a:hover          { color: #51BA6C !important;}
+.nav-tabs                                 { border: none;}
+.panel-default img                        { width: 100%;}
+/******* All You Need Section CSS End *********/
+
+/******* Earn More Section CSS Start *********/
+.earning-more-sec                         { padding: 100px 0;}
+.earning-more-slider .slick-slide                      { padding: 35px; background: url('../images/earning-more-slider-bg.jpg') no-repeat center center / cover; height: 300px; width: 100%; display: block; border-radius: 12px; position: relative;}
+.earning-more-slider .slick-slide::before              { content: ''; background: -moz-linear-gradient(left, rgba(21,44,83,1) 0%, rgba(21,44,83,0.62) 65%, rgba(21,44,83,0.8) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(21,44,83,1) 0%,rgba(21,44,83,0.62) 65%,rgba(21,44,83,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(21,44,83,1) 0%,rgba(21,44,83,0.62) 65%,rgba(21,44,83,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    height: 100%; width: 100%; position: absolute; top: 0; left: 0; display: block; border-radius: 12px;
+}
+.earning-more-slides h3                   { padding-top: 70px; font-size: 30px; line-height: 36px; color: #ffffff; text-transform: none;}
+.earning-more-img                         { margin-top: -74px; text-align: right;}
+.earning-more-slider .slick-track         { padding-top: 42px;}
+.slick-dots                               { bottom: -35px;}
+.earning-more-slider .slick-dots li button::before { font-size: 30px; line-height: 25px; color: rgba(120,132,158,0.50); opacity: 1;}
+.earning-more-slider .slick-dots li.slick-active button::before     { color: #78849E;}
+/******* Earn More Section CSS End *********/
+
+/******* Join News Letter Section CSS Start *********/
+.join-news-letter-sec                       { padding: 100px 0; position: relative;}
+.join-news-letter-sec::before               { content: ''; background: #51BA6C; width: 27%; height: 5px; position: absolute; top: 165px; left: 0; border-radius: 33px; display: block;}
+.join-news-letter-sec h1                    { text-align: left;}
+.join-news-letter-sec p                     { margin: 0; padding: 50px 0 35px; text-align: left;}
+.join-news-letter-sec .input                { min-width: 300px;} 
+.subscribe-btn                              { margin: 10px 0 0 25px;}
+/******* Join News Letter Section CSS End *********/
+
+/******* Footer Section CSS Start *********/
+.footer-sec                                 { padding: 50px 0; background: #142A4E;}
+.footer-sec h1,
+.footer-sec p                               { color: #ffffff;}
+.footer-logo,
+.privacy-text                               { text-align: right;}
+.footer-sec ul li                           { padding: 0px 25px; display: inline-block;}
+.footer-sec ul li a                         { padding: 4px; height: 35px; width: 35px; text-align: center; font-size: 18px; color: #ffffff; border: 2px solid #ffffff; border-radius: 50px; display: inline-block;}
+.footer-sec ul li a:hover                   { background: #fff;}
+.copyright-text                             { padding: 10px 0; background: #000000;}
+.copyright-text p,
+.privacy-text a                             { font-size: 13px; line-height: 20px; color: #ffffff;}                             
+/******* Footer Section CSS End *********/
+
+/******* Terms and Condition CSS Start ******/   
+.terms-sec                                  { margin-top: 90px; padding: 70px 0;}
+.terms-condition-content p                  { font-size: 14px; line-height: 22px;}                                                                 
+.terms-condition-content h5                 { padding-top: 10px; font-size: 18px; line-height: 25px;}
+.terms-condition-content h2                 { margin: 50px 0 10px; color: #152C53; text-transform: uppercase;}
+.terms-condition-content a                  { color: #152C53;}
+.terms-condition-content h4                 { font-family: 'Cera Basic Bold'; font-size: 14px; line-height: 22px; color: #152C53; text-transform: uppercase;}
+.terms-condition-content ul                 { padding-left: 25px;}
+.terms-condition-content ul li              { padding: 10px 10px 10px 25px; position: relative;}
+.terms-condition-content ul li::before      { content: ''; background: #152C53; height: 5px; width: 5px; border-radius: 50px; position: absolute; top: 20px; left: 0; display: block;}
+/******* Terms and Condition CSS End ******/
+
+/****** Responsive Css *******/
+@media (min-width: 1200px) and (max-width: 1500px){
+    .video-blk                              { height: 600px;}
+    .video-blk img                           { width: 80px;}
+    .join-news-letter-sec::before            { width: 15%;}
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    .section-padding-top                    { padding-top: 45px;}  
+    p                                       { font-size: 18px; line-height: 28px;}
+    /******* Banner CSS Start ******/  
+    .banner-video                            { margin-top: 90px;}
+    .video-blk                               { height: 100%;}
+    .video-blk img                           { width: 80px;}
+    .banner-content h1                       { padding: 30px 0; font-size: 25px; line-height: 35px;}
+    .banner-text                             { width: 350px;}
+    /******* Banner CSS End ******/
+    /******* Category Section CSS Start *********/
+   .category-slider                         { margin-top: 35px;}
+   .category-slider .slick-prev             { left: 0;}
+   .category-slider .slick-next             { right: 0;}
+   .pattern::before                         { background-position: center center; background-size: 100% auto;}
+   /******* Category Section CSS End *********/
+    /******* Comming Soon Section CSS Start *********/
+    .comming-soon-sec                        { margin-top: 180px;}
+    .comming-soon-text                       { padding-bottom: 0;}
+    .comming-soon-text p                     { font-size: 16px; line-height: 25px;}
+    /******* Comming Soon Section CSS End *********/
+    /******* How Work Section CSS Start *********/
+    .how-it-work-sec                         { padding: 45px 0 70px;}      
+    /******* How Work Section CSS End *********/
+    /******* All You Need Section CSS Start *********/
+    .all-you-need-sec::before                { width: 15%;}     
+    .all-you-need-sec                        { padding: 50px 0 35px;} 
+    .all-you-need-text ul li a               { font-size: 18px; line-height: 25px;}
+    /******* All You Need Section CSS End *********/
+    /******* Earn More Section CSS Start *********/
+   .earning-more-sec                        { padding: 70px 0 50px;}
+   /******* Earn More Section CSS End *********/
+    /******* Join News Letter Section CSS Start *********/
+    .join-news-letter-sec                    { padding: 50px 0;}
+    .join-news-letter-sec::before            { width: 15%; top: 115px;}    
+    /******* Join News Letter Section CSS End *********/
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .section-padding-top                     { padding-top: 45px;}   
+    h1                                      { font-size: 28px; line-height: 35px;}
+    h2                                      { font-size: 20px; line-height: 28px;} 
+    h3                                      { font-size: 18px; line-height: 25px;} 
+    p                                       { font-size: 18px; line-height: 28px;}
+    /******* Header CSS Start ******/   
+    header                                   { padding: 15px 0;}
+    .header-menu-content li                  { padding: 0px 10px;}
+    /******* Header CSS End ******/
+    /******* Banner CSS Start ******/  
+    .banner-video                            { margin-top: 70px;}
+    .video-blk                               { height: 100%;}
+    .video-blk img                           { width: 70px;}
+    .banner-content                          { top: 25px;}
+    .banner-content h1                       { padding: 20px 0; font-size: 18px; line-height: 28px;}
+    .banner-text                             { width: 350px;}
+    /******* Banner CSS End ******/
+    /******* Category Section CSS Start *********/
+   .category-slider                         { margin-top: 35px;}
+   .category-slider .slick-prev             { left: 0;}
+   .category-slider .slick-next             { right: 0;}
+   .pattern::before                         { background-position: center center; background-size: 100% auto;}
+   /******* Category Section CSS End *********/
+    /******* Comming Soon Section CSS Start *********/
+    .comming-soon-sec                        { margin-top: 150px; text-align: center;}
+    .comming-soon-text                       { padding: 20px 0; text-align: center;}
+    /******* Comming Soon Section CSS End *********/
+    /******* How Work Section CSS Start *********/
+   .how-it-work-sec                         { padding: 45px 0 25px;}
+   .how-it-work-sec h1                      { padding-bottom: 40px;}
+   .how-work-blks h2                        { font-size: 15px; line-height: 25px;}
+   .how-works-title span                    { font-size: 65px; top: -33px;}   
+   .how-work-blks                           { margin-bottom: 40px;}
+   .how-work-blks img                       { margin: 25px 0; width: 150px;} 
+   .how-works-title span                    { top: -29px; left: -22px;}  
+   .how-work-blks p                         { font-size: 15px; line-height: 25px;}        
+   /******* How Work Section CSS End *********/
+    /******* All You Need Section CSS Start *********/
+    .all-you-need-sec::before                { display: none;}     
+    .all-you-need-sec                        { padding: 50px 0 35px;} 
+    .panel-default img                       { margin-bottom: 20px;}
+    .all-you-need-text p                     { padding: 15px 0 25px;}
+    .all-you-need-text ul li a               { font-size: 14px; line-height: 22px;}
+    /******* All You Need Section CSS End *********/
+   /******* Earn More Section CSS Start *********/
+   .earning-more-sec                        { padding: 45px 0;}
+   .earning-more-slider .slick-slide        { padding: 25px; height: 270px;}
+   .earning-more-slider .slick-track        { padding-top: 55px;}
+   .earning-more-slides h3                  { font-size: 22px; line-height: 32px;} 
+   /******* Earn More Section CSS End *********/
+    /******* Join News Letter Section CSS Start *********/
+    .join-news-letter-sec                    { padding: 45px 0;}
+    .join-news-letter-sec::before            { width: 20%; top: 94px;}    
+    .join-news-letter-sec p                  { padding: 35px 0 20px;} 
+    .join-news-letter-sec form               { padding-bottom: 35px;}
+    /******* Join News Letter Section CSS End *********/
+    /******* Footer Section CSS Start *********/
+    .footer-sec                             { padding: 25px 0;}
+    .footer-sec p                           { font-size: 16px; line-height: 25px;}
+    .footer-sec ul li                       { padding: 0px 8px;}
+    .terms-sec                               { margin-top: 83px; padding: 35px 0;}
+    .terms-condition-content h2              { margin: 35px 0 10px;}
+   /******* Footer Section CSS End *********/
+}
+@media (max-width: 767px){
+    .section-padding-top                    { padding-top: 35px;}
+    .btn-small                              { min-width:  100px;}
+    h1                                      { font-size: 20px; line-height: 25px;}
+    h2                                      { font-size: 16px; line-height: 25px;}
+    .green-text                             { padding: 5px 0;}
+    p                                       { font-size: 15px; line-height: 22px;}
+    /******* Header CSS Start ******/
+    header                                  { padding: 12px 0;}
+   .main-header .justify-space-between      { display: block;}
+   .logo,
+   .header-menu-content                     { text-align: center;}
+   .logo img                                { margin-bottom: 10px; width: 100px;}
+   .header-menu-content li                  { padding: 0px 10px;}
+   /******* Header CSS End ******/
+   /******* Banner CSS Start ******/
+   .banner-content .btn-small               { margin-top: 0px; position: absolute; bottom: 20px;}    
+   .banner-video                            { margin-top: 83px;}
+   .video-blk                               { height: 100%;}
+   .video-blk img                           { width: 50px;}
+   .banner-content                          { top: 5px; left: 50%; transform: translateX(-50%); -webkit-transform: translateX(-50%); height: 100%;}
+   .banner-content h1                       { padding: 12px 0; font-size: 15px; line-height: 22px;}
+   /******* Banner CSS End ******/
+   /******* Category Section CSS Start *********/
+   .category-slider                         { margin-top: 25px;}
+   .category-slider .slick-prev             { left: 0;}
+   .category-slider .slick-next             { right: 0;}
+   .pattern::before                         { background-position: center center; background-size: 100% auto;}
+   .work-text                               { padding-bottom: 35px;}
+   .work-text p                             { margin: 15px 0;}
+   .works-blk                               { margin-bottom: 25px;}
+   .works-blk h3                            { padding: 20px 0 10px;}
+   /******* Category Section CSS End *********/
+   /******* Comming Soon Section CSS Start *********/
+   .comming-soon-sec                        { margin-top: 120px;}
+   .comming-soon-text                       { padding: 20px 0; text-align: center;}
+   /******* Comming Soon Section CSS End *********/
+   /******* How Work Section CSS Start *********/
+   .how-it-work-sec                         { padding: 35px 0 0;}
+   .how-it-work-sec h1                      { padding-bottom: 40px;}
+   .how-works-title span                    { font-size: 65px; top: -33px;}   
+   .how-work-blks                           { margin-bottom: 40px;}
+   .how-work-blks img                       { margin: 25px 0;} 
+   .how-works-title span                    { left: -22px;}          
+   /******* How Work Section CSS End *********/
+   /******* All You Need Section CSS Start *********/
+   .all-you-need-sec::before                { display: none;}     
+   .all-you-need-sec                        { padding: 50px 0 35px;} 
+   .panel-default img                       { margin-bottom: 20px;}
+   .all-you-need-text p                     { padding: 15px 0 25px;}
+   .all-you-need-text ul li a               { font-size: 14px; line-height: 22px;}
+   /******* All You Need Section CSS End *********/
+   /******* Earn More Section CSS Start *********/
+   .earning-more-sec                        { padding: 35px 0;}
+   .earning-more-slider .slick-slide        { padding: 20px;}
+   .earning-more-slider .slick-track        { padding-top: 0;}
+   .earning-more-slides h3                  { padding-top: 0px; font-size: 16px; line-height: 22px; text-align: center;}
+   .earning-more-img                        { margin-top: 22px;}
+   .earning-more-img img                    { width: 160px;}
+   /******* Earn More Section CSS End *********/
+   /******* Join News Letter Section CSS Start *********/
+   .join-news-letter-sec                    { padding: 0px 0 35px;}
+   .join-news-letter-sec::before            { width: 30%; top: 40px;}    
+   .join-news-letter-sec p                  { padding: 35px 0 20px;} 
+   .join-news-letter-sec form .d-flex       { display: block !important;} 
+   .join-news-letter-sec .input             { min-width: 100%;}
+   .subscribe-btn                           { margin: 15px 0 25px; text-align: center;}
+   /******* Join News Letter Section CSS End *********/
+   /******* Footer Section CSS Start *********/
+   .copyright-text,                          
+   .footer-logo, .privacy-text,
+   .footer-sec h1,
+   .footer-sec p                            { text-align: center;}   
+   .footer-sec                              { padding: 20px 0;}    
+   .footer-sec ul                           { margin: 15px 0; text-align: center;}
+   .footer-sec ul li                        { padding: 0 8px;}     
+   .terms-sec                               { margin-top: 83px; padding: 35px 0;}
+   .terms-condition-content h2              { margin: 35px 0 10px;}
+   /******* Footer Section CSS End *********/
+}
+@media (max-width: 359px){
+    .banner-content .btn-small               { margin-top: 40px;}
+    .banner-content h1                       { padding: 12px 0; font-size: 13px; line-height: 18px;} 
+}

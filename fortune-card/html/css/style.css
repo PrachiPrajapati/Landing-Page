@@ -1,0 +1,91 @@
+/* font face included  */
+@font-face {
+    font-family: 'Martian Wars';
+    src: url('../fonts/MartianWars.eot');
+    src: url('../fonts/MartianWars.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MartianWars.woff2') format('woff2'),
+        url('../fonts/MartianWars.woff') format('woff'),
+        url('../fonts/MartianWars.ttf') format('truetype'),
+        url('../fonts/MartianWars.svg#MartianWars') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* { margin:0; padding:0; box-sizing: border-box; }
+body { background-color: #000; text-align:center;  font-family: 'Martian Wars'; }
+.container  { padding:0 15px; max-width:1340px; margin:0 auto; }
+img { max-width:100%;} 
+/* header Css Start*/
+header { padding:60px 0;}
+.logo  { text-align:center; }
+/* header Css End*/
+.counter-section { max-width: 60%; margin:60px auto 20px; padding:15px; border:10px solid #F8AA24; text-align: center; }
+.game-box { display:flex; justify-content: center; align-items: center; flex-wrap: wrap; }
+.game-box li { margin:50px 15px; width:calc(50% - 30px); }
+.games-section { margin-bottom:200px; }
+/* counter */
+ .count-box span         { color: #F8AA24; }
+ .count-box , .count-box li { display: flex; align-items: center; justify-content: center; }
+ .count-box li           { padding-right:20px; margin-right: 20px; flex-direction: column; position: relative; }
+ .count-box li:last-child { padding-right: 0; margin-right: 0; }
+ .count-box li:after     { content:":"; position: absolute; right:0; top:0; transform: translate(50%); font-size: 50px; line-height: 60px; color:#F8AA24; }
+ .count-box li:last-child:after { display: none; }
+ .count-box .count-item  ,.date-item   { margin-bottom: 4px; font-size: 50px; line-height: 60px; }
+ .count-box .count-item-title { font-size: 16px; line-height: 28px; }
+ .btn-ply-game { text-align: center; }
+ .btn-ply-game a { transition: all 0.5s ease; display: inline-block; padding:12px 60px; font-size: 24px; line-height: 35px; background-color: #F8AA24;  border-radius: 50px; font-family: 'Martian Wars'; color:#000; text-decoration:none; } 
+ .btn-ply-game a:hover { transform: scale(1.05); }
+ /******Responsive Css Sstart*/
+@media(min-width:1200px) and (max-width:1399px){
+    .container { max-width: 1140px;   }
+}
+@media(min-width:992px) and (max-width:1199px)/* laptop */
+{
+    /* header Css Start*/
+header { padding:40px 0;}
+/* header Css End*/
+.counter-section { max-width: 60%; margin:40px auto 15px; padding:10px; border-width: 6px; }
+.game-box li { margin:30px 12px; width:calc(50% - 24px); }
+.games-section { margin-bottom:100px; }
+   .container { max-width: 960px;   }
+    .count-box li           { padding-right:18px; margin-right: 18px; }
+ .count-box li:after     {font-size: 38px; line-height: 50px;}
+ .count-box .count-item ,.date-item { margin-bottom: 4px; font-size: 38px; line-height: 50px; }
+ .count-box .count-item-title { font-size: 15px; line-height: 24px; }
+
+}
+@media(min-width:768px) and (max-width:991px)/* for tablet */
+{
+     /* header Css Start*/
+header { padding:30px 0;}
+/* header Css End*/
+.counter-section { max-width: 80%; margin:30px auto 12px; padding:10px; border-width: 4px; }
+.game-box li { margin:20px 10px; width:calc(50% - 20px); }
+.games-section { margin-bottom:60px; }
+    .container { max-width: 720px; }
+     .count-box li           { padding-right:18px; margin-right: 18px; }
+ .count-box li:after     {font-size: 26px; line-height: 34px;}
+ .count-box .count-item,.date-item  { margin-bottom: 4px; font-size: 26px; line-height: 34px; }
+ .count-box .count-item-title { font-size: 15px; line-height: 24px; }
+}
+@media(max-width:767px)/* for mobile */
+{
+/* header Css Start*/
+header { padding:15px 0;}
+.logo img { max-width: 23%; }
+/* header Css End*/
+.counter-section { max-width: 100%; margin:20px 15px 10px; padding:8px; border-width: 3px; }
+.game-box li { margin:20px 8px; width:100%; }
+.games-section { margin-bottom:50px; }
+.container { max-width: 100%;  }
+.count-box li           { padding-right:8px; margin-right: 8px; }
+ .count-box li:after     { font-size: 20px; line-height: 30px;}
+ .count-box .count-item ,.date-item { margin-bottom: 4px; font-size: 20px; line-height: 30px;}
+ .count-box .count-item-title { font-size: 13px; line-height: 22px; }
+ .btn-ply-game a { padding:12px 50px; font-size:20px; line-height: 30px;  }
+}
+@media ( min-width:576px) and (max-width:767px)/* for mobile */
+{
+    .container { max-width: 540px;  }
+}

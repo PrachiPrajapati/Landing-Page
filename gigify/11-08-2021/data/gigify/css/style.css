@@ -1,0 +1,2292 @@
+@charset "utf-8";
+/* CSS Document */
+
+/******* Fonts Face CSS Start **********/
+@font-face {
+    font-family: 'Cera Basic Bold';
+    src: url('../fonts/CeraBasic-Bold.eot');
+    src: url('../fonts/CeraBasic-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CeraBasic-Bold.woff2') format('woff2'),
+        url('../fonts/CeraBasic-Bold.woff') format('woff'),
+        url('../fonts/CeraBasic-Bold.ttf') format('truetype'),
+        url('../fonts/CeraBasic-Bold.svg#CeraBasic-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Basic Regular';
+    src: url('../fonts/CeraBasic-Regular.eot');
+    src: url('../fonts/CeraBasic-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CeraBasic-Regular.woff2') format('woff2'),
+        url('../fonts/CeraBasic-Regular.woff') format('woff'),
+        url('../fonts/CeraBasic-Regular.ttf') format('truetype'),
+        url('../fonts/CeraBasic-Regular.svg#CeraBasic-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Basic Black';
+    src: url('../fonts/CeraBasic-Black.eot');
+    src: url('../fonts/CeraBasic-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CeraBasic-Black.woff2') format('woff2'),
+        url('../fonts/CeraBasic-Black.woff') format('woff'),
+        url('../fonts/CeraBasic-Black.ttf') format('truetype'),
+        url('../fonts/CeraBasic-Black.svg#CeraBasic-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Basic Reg-italic';
+    src: url('../fonts/CeraBasic-RegularItalic.eot');
+    src: url('../fonts/CeraBasic-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CeraBasic-RegularItalic.woff2') format('woff2'),
+        url('../fonts/CeraBasic-RegularItalic.woff') format('woff'),
+        url('../fonts/CeraBasic-RegularItalic.ttf') format('truetype'),
+        url('../fonts/CeraBasic-RegularItalic.svg#CeraBasic-RegularItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'GillSans';
+    src: url('../fonts/GillSans.eot');
+    src: url('../fonts/GillSans.eot') format('embedded-opentype'),
+         url('../fonts/GillSans.woff2') format('woff2'),
+         url('../fonts/GillSans.woff') format('woff'),
+         url('../fonts/GillSans.ttf') format('truetype'),
+         url('../fonts/GillSans.svg#GillSans') format('svg');
+}
+@font-face {
+    font-family: 'GillSansLight';
+    src: url('../fonts/GillSansLight.eot');
+    src: url('../fonts/GillSansLight.eot') format('embedded-opentype'),
+         url('../fonts/GillSansLight.woff2') format('woff2'),
+         url('../fonts/GillSansLight.woff') format('woff'),
+         url('../fonts/GillSansLight.ttf') format('truetype'),
+         url('../fonts/GillSansLight.svg#GillSansLight') format('svg');
+}
+/********* Fonts Face CSS End **********/
+
+/******* Common Element CSS Start ******/
+.loading		{ overflow: hidden; }
+*							{ margin: 0px; padding: 0px;}
+body						{ font-family: 'Cera Basic Regular'; font-size:14px; line-height: 22px; color: #152C53;}
+h1,h2,h3,h4,h5,h6           { margin: 0;}
+.clear						{ clear:both;}
+img							{ border: 0px; max-width: 100%;}
+ul,ol						{ margin: 0; list-style: none; }
+a							{ text-decoration: none; outline: none; transition: 0.3s all; -webkit-transition: 0.3s all; -moz-transition: 0.3s all; cursor: pointer;}
+a:hover,
+a:focus         	        { outline: none; text-decoration: none; color: #5BD17A !important;}
+a:active                    { color: #30975D !important;}
+input[type="submit"]:focus,
+button:focus                { outline: none;}
+h2                          { font-family: 'Cera Basic Black'; font-size: 34px; line-height: 41px;}
+h3                          { font-family: 'Cera Basic Bold'; font-size: 20px; line-height: 24px; text-transform: capitalize;}
+h6                          { font-family: 'Cera Basic Bold'; font-size: 14px; line-height: 20px; color: #ffffff; }
+h5                          { font-family: 'Cera Basic Regular'; font-size: 17px; line-height: 22px;}
+p							{ font-family: 'Cera Basic Regular'; font-size:14px; line-height: 22px;}
+p:last-child                { margin: 0 !important;}
+.justify-space-between      { display: flex; display: -webkit-flex; align-items: center; -webkit-align-items: center; justify-content: space-between; -webkit-justify-content: space-between;}
+.align-center               { display: flex; display: -webkit-flex; align-items: center; -webkit-align-items: center;}
+.align-end                  { display: flex; display: -webkit-flex; align-items: flex-end; -webkit-align-items: flex-end;}
+.justify-end                { display: flex; display: -webkit-flex; justify-content: flex-end; -webkit-justify-content: flex-end;}
+.justify-center             { display: flex; display: -webkit-flex; align-items: center; -webkit-align-items: center; justify-content: center; -webkit-justify-content: center;}
+.btn-1                      { padding: 12px 35px; background: #51BA6C; min-width: 230px; border-radius: 50px; display: inline-block;}
+.btn-1:hover                { background: #5BD17A; color: #ffffff !important;}
+.btn-small                  { padding: 10px 35px; background: #51BA6C; font-family: 'Cera Basic Bold'; font-size: 15px; line-height: 22px; color: #ffffff !important; min-width: 160px; border-radius: 50px; border: none; display: inline-block; text-align: center;}
+.btn-small:focus            { color: #ffffff !important;}
+.btn-small:hover            { background: #5BD17A; color: #ffffff !important;}
+.grey-btn                   { padding: 10px 35px; background: #E6E8EC; font-family: 'Cera Basic Bold'; font-size: 15px; line-height: 22px; color: #152C53 !important; min-width: 160px; border-radius: 50px; border: none; display: inline-block; text-align: center;}
+.grey-btn:hover             { background: #CCD0D8; color: #152C53 !important;}
+.grey-btn:focus             { color: #152c53 !important;}
+.main-title                 { padding: 15px 0px; background: rgba(21,44,83,0.10);}
+.title-panel                { margin-left: 210px;}
+.main-title h3              { color: #152C53;}
+.no-padding                 { padding: 0 !important;}
+.margin-0                   { margin: 0 !important;}
+textarea                    { resize: none;}
+.modal-dialog               { margin: 35px auto;}
+    /******* Custom Scroll Css *********/
+    .mCSB_draggerRail  { background-color: rgba(21,44,83,0.2) !important; width: 2px !important;}
+    .mCSB_dragger_bar   { background-color: #51BA6C !important; width: 4px !important;}
+    .mCSB_inside > .mCSB_container  { margin-right: 10px;}
+button,
+input[type="submit"]                       { cursor: pointer;}
+.multi-btns button          { margin: 0px 15px 0 0;}
+.full-height                { height: calc(100vh - 140px);}
+.m-20                       { margin: 20px 0;}
+.m-30                       { margin: 30px 0;}
+.m-b-0                      { margin-bottom: 0 !important;}
+.grow-1                     { flex-grow: 1; -webkit-flex-grow: 1;}
+.shrink-0                   { flex-shrink: 0; -webkit-flex-shrink: 0;}
+.section-padding            { padding: 70px 0px;}
+.pac-container              { border: none;}
+    /******* Input Style Css *********/
+    .error-style .input__field:focus {
+        border-color: #BA5151;
+    }
+    .input {
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        margin: 2px 0;
+        width: 100%;
+        vertical-align: top;
+        -webkit-tap-highlight-color:transparent;
+        -moz-tap-highlight-color:transparent;
+        -o-tap-highlight-color:transparent;
+    }
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus, 
+    input:-webkit-autofill:active  { -webkit-box-shadow: 0 0 0 30px white inset !important;}
+    .input__field {
+        position: relative;
+        display: block;
+        float: right;
+        padding: 0;
+        width: 60%;
+        border: none;
+        border-radius: 0;
+        background: #ffffff;
+        color: #152C53;
+        font-family: 'Cera Basic Regular';
+        -webkit-appearance: none; /* for box shadows to show on iOS */
+    }
+    .input__field:focus,
+    .input--filled .input__field--hoshi {
+        outline: none;
+        border: 1px solid #51BA6C;
+    }
+    .input__label {
+        display: inline-block;
+        padding: 0 1em;
+        width: 100%;
+        color: #152C53;
+        font-size: 15px;
+        line-height: 22px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .input__label-content {
+        position: relative;
+        display: block;
+        padding: 14px 0;
+        width: auto;
+        font-size: 15px;
+        color: #78849E;
+        background: #ffffff;
+        line-height: 12px;
+    }
+    /* Individual styles */
+
+    /* Hoshi */
+    .input--filled .input__label-content    { padding: 0px 8px 5px; font-size: 12px; line-height: 9px;} 
+    .input--filled .input__label--hoshi     { padding: 0px 7px;}
+    .input--hoshi {
+        overflow: hidden;
+    }
+    .input__field--hoshi {
+        margin-top: 10px;
+        padding: 10px 15px;
+        width: 100%;
+        background: #fff;
+        color: #152C53;
+        border: 1px solid #D8D8D8;
+        border-radius: 5px;
+    }
+    .input__label--hoshi {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 0 15px;
+        width: 100%;
+        height: calc(100% - 11px);
+        text-align: left;
+        pointer-events: none;
+    }
+    .input__label-content--hoshi {
+        position: absolute;
+    }
+    .input__label--hoshi::before,
+    .input__label--hoshi::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .input__label--hoshi::after {
+        margin-top: 2px;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+        -webkit-transition: -webkit-transform 3s;
+        transition: transform 3s;
+    }
+    .input__field--hoshi:focus + .input__label--hoshi::after,
+    .input--filled .input__label--hoshi::after {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    .input__field--hoshi:focus + .input__label--hoshi .input__label-content--hoshi,
+    .input--filled .input__label-content--hoshi {
+        -webkit-animation: anim-1 0.6s forwards;
+        animation: anim-1 0.6s forwards;
+    }
+    @-webkit-keyframes anim-1 {
+        50% {
+            opacity: 0;
+            -webkit-transform: translate3d(1em, 0, 0);
+            transform: translate3d(1em, 0, 0);
+        }
+        51% {
+            opacity: 0;
+            -webkit-transform: translate3d(-1em, -40%, 0);
+            transform: translate3d(-1em, -40%, 0);
+        }
+        100% {
+            opacity: 1;
+            -webkit-transform: translate3d(0, -40%, 0);
+            transform: translate3d(0, -40%, 0);
+        }
+    }
+    @keyframes anim-1 {
+        50% {
+            opacity: 0;
+            -webkit-transform: translate3d(1em, 0, 0);
+            transform: translate3d(1em, 0, 0);
+        }
+        51% {
+            opacity: 0;
+            -webkit-transform: translate3d(-1em, -40%, 0);
+            transform: translate3d(-1em, -40%, 0);
+        }
+        100% {
+            opacity: 1;
+            -webkit-transform: translate3d(0, -40%, 0);
+            transform: translate3d(0, -40%, 0);
+        }
+    }
+/******* Loader CSS *********/
+    .loader         { position: absolute; top: 0; left: 0; background: rgba(255,255,255,1); max-height: 1000px;height: 100%; width: 100%; z-index: 100;}
+    .lds-ripple {
+        display: inline-block;
+        position: relative;
+        width: 80px;
+        height: 80px;
+        top: 50%; left: 50%; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%);
+      }
+      .lds-ripple div {
+        position: absolute;
+        border: 4px solid #51BA6C;
+        opacity: 1;
+        border-radius: 50%;
+        animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+      }
+      .lds-ripple div:nth-child(2) {
+        animation-delay: -0.5s;
+      }
+      @keyframes lds-ripple {
+        0% {
+          top: 36px;
+          left: 36px;
+          width: 0;
+          height: 0;
+          opacity: 1;
+        }
+        100% {
+          top: 0px;
+          left: 0px;
+          width: 72px;
+          height: 72px;
+          opacity: 0;
+        }
+      }
+      input {
+        filter: none;
+      }
+/******* Common Element CSS End *********/
+
+/******* Header Section CSS Start *******/
+.main-header                                { padding: 25px 0px; background: #152C53;}
+.header-menu-content li                     { padding: 0px 25px; display: inline-block; position: relative;}
+.header-menu-content li a                   { font-family: 'Cera Basic Bold'; font-size: 16px; line-height: 19px; color: #ffffff;   }
+.header-menu-content li a:hover             { color: #51BA6C;}
+.all-services,
+.user-profile,
+.gigs-notificatiob-blk                      { position: relative;}
+.all-services-list,
+.user-settings,
+.gigs-notificatiob-blk                      { display: none; position: absolute; top: 35px; right: 25px; background: #ffffff; box-shadow: 0px 3px 6px rgba(0,0,0,0.16); min-width: 215px; z-index: 15;}
+.all-services-list:before,
+.gigs-notificatiob-blk::before              { content: ''; background: #51BA6C; height: 6px; width: 100%; position: absolute; top: 0; left: 0; display: block;}
+.all-services-list ul                       { max-height: 365px; overflow-y: auto;}
+.all-services-list li,
+.user-settings li,
+.gigs-notificatiob-blk li                   { padding: 0 !important; display: block; border-bottom: 1px solid #EBEBEB; text-align: left;}
+.gigs-notificatiob-blk li                   { border: none;}
+.all-services-list li:first-child           { padding-top: 15px !important;}
+.all-services-list li a,
+.user-settings li a                         { padding: 15px; font-family: 'Cera Basic Regular'; color: #152C53; font-size: 15px; line-height: 19px; display: block;}
+.profile-img-small                          { margin-right: 15px; height: 40px; width: 40px; border-radius: 50%; display: block;}
+li .user-profile-nm                         { padding: 10px 15px !important; background: #51BA6C; color: #ffffff;}
+.gigworker-profile .user-profile-nm         { background: #6F60AA;}    
+.user-nm-1                                  { font-size: 16px; line-height: 22px;}
+.notification-gigs a                            { position: relative;}
+.my-gigs-blk                              { position: relative;}
+.my-gigs-blk .gigs-notification-no          { top: -10px; right: 10px;}  
+.gigs-notification-no                       { display: inline-block; background: #51BA6C; color: #fff !important; height: 20px; width: 20px; font-size: 12px; line-height: 16px; border-radius: 50px; position: absolute; top: -8px; right: -12px; text-align: center;}
+.notification-gigs .gigs-notification-no        { right: -8px;}
+.gigs-notificatiob-blk                      { min-width: 440px; right: 0;}
+.gigs-notification-list                     { max-height: 360px; overflow-y: auto;}
+.nofification-user-nm,
+.nofification-user-nm span                  { font-family: 'Cera Basic Bold'; font-size: 14px; line-height: 24px; color: #152C53;}
+.nofification-user-nm span                  { padding-left: 5px; font-family: 'Cera Basic Regular';}
+.notification-timer                         { font-family: 'GillSans'; font-size: 12px; line-height: 15px; color: rgba(21,44,83,0.50);}
+.gigs-notificatiob-blk h5                   { padding: 20px 35px;}
+.gigs-notificatiob-blk li a                 { padding: 0px 35px; display: block;}
+.gigs-notificatiob-blk li a:hover           { background: #E2FFE9; }
+.gigs-notificatiob-blk li a .tb-border      { padding: 15px 0px; border-bottom: 1px solid #F1F1F3;}
+.gigs-notificatiob-blk li a:first-child .tb-border     { border-top: 1px solid #F1F1F3;}
+.view-all                                   { padding: 15px; text-align: center;}
+.view-all a                                 { font-family: 'Cera Basic Regular' !important; font-size: 12px; line-height: 15px; color: #51BA6C !important;}
+.gigs-notificatiob-blk::after,
+.all-services-list::after                   { margin-left: -8px; bottom: 100%; right: 10%; border: solid transparent; border-top-width: medium; border-right-width: medium; border-bottom-color: transparent; border-bottom-width: medium; border-left-width: medium; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-bottom-color: #51BA6C; border-width: 8px;}
+.notification-gigs .gigs-notificatiob-blk::after   { right: 25px;} 
+.all-services-list .all-services-text           { padding: 0 !important;}
+.all-services-list .all-services-text a         { color: #51BA6C;}
+.header-download-btn                         { display: none; padding: 5px 15px 8px;}
+/******* Header Section CSS End *********/
+
+/******* Sidebar Panel Start *******/
+.leftsidebar                                { padding-top: 60px; margin-top: -40px; margin-bottom: 15px; background: #ffffff; width: 210px; box-shadow: 2px 0 2px rgba(0,0,0,0.10);}
+.left-panel                                 { height: calc(100vh - 160px);}
+.left-panel li a svg                        { margin-right: 10px; width: 20px;} 
+.left-panel li a:hover svg g,
+.left-panel li.active a svg g               { opacity: 1;}
+.left-panel li a:hover svg path,
+.left-panel li.active a svg path            { stroke: #5BD17A; fill: #5BD17A; opacity: 1;} 
+.left-panel a                               { font-size: 14px; line-height: 17px; color: #152C53;}
+.left-panel li.active a                     { font-family: 'Cera Basic Bold';}
+.left-panel li                              { padding: 12px 15px; position: relative;}
+.left-panel li a:hover::before,
+.left-panel li.active a::before             { content: ''; background: #51BA6C; height: 100%; width: 5px; position: absolute; top: 0; left: 0; display: block;}
+.left-panel li img                          { margin-right: 10px; object-fit: none; object-position: 0 0px; width: 15px; height: 15px;}
+.left-panel li a:hover img,
+.left-panel li.active a img                 { object-position: 0 -15px;}
+/******* Sidebar Panel End *********/
+
+/******* Login Css Start*********/
+.login-blk                                  { height: calc(100vh - 87px); padding: 70px 0;}
+.login-bg                                   { padding: 20px; background: rgba(230,232,236,0.20); border-radius: 25px; display: block; min-height: 540px;}
+.login-form                                 { max-width: 350px; margin: 0px auto;}
+.login-form h2,
+.login-form h6                               { color: #152C53;}
+.login-form h6                               { padding-top: 5px; font-family: 'Cera Basic Regular';}
+.social-login a                              { padding: 5px 15px; margin: 25px 8px; border: 3px solid transparent; border-radius: 50px; width: 145px; display: inline-block; text-align: center; font-family: 'Cera Basic Bold'; font-size: 14px; line-height: 22px; text-transform: uppercase;}
+.social-login a i                            { margin-right: 5px; font-size: 16px;}
+.social-login a.facebook                     { border-color: #4267B2; color: #4267B2;}
+.social-login a.google                       { border-color: #DE5246; color: #DE5246;}
+.social-login a.facebook:hover               { border-color: #4267B2; background: #4267B2; color: #ffffff !important;}
+.social-login a.google:hover                 { border-color: #DE5246; background: #DE5246; color: #ffffff !important;} 
+.title-seprator                              { position: relative;}
+.title-seprator::before                      { content: ''; border-top: 4px dotted #E2E2E2; height: auto; width: 100%; position: absolute; top: 12px; left: 0; display: block; z-index: -1;}
+.title-seprator h5                           { padding: 5px 20px; background: #FAFBFB; font-family: 'Cera Basic Bold'; font-size: 12px; line-height: 18px; color: #989898; text-transform: uppercase; text-align: center; display: inline-block;}      
+.forgot-link                                 { margin-top: 5px;}
+.forgot-link,
+.forgot-link a                               { color: #152C53;}
+.forgot-link a                               { text-decoration: underline;}
+.signup-link a,
+.terms-signup a                              { color: #308DD3;}
+.terms-signup                                { margin-top: 25px; text-align: center;}
+.login-signup .login-bg                      { background: #ffffff;}
+.login-tab .nav-tabs,                        
+.login-tab .nav-item .nav-link               { border: none;}
+.login-tab .nav-item .nav-link               { padding: 15px; font-size: 16px; line-height: 22px; color: #152C53 !important; border-radius: 0; text-align: center;}
+.login-tab .nav-item                         { width: calc(100% / 2);}
+.login-tab .nav-tabs .nav-link.active,
+.login-tab .nav-tabs .nav-link:hover         { background: rgba(81,186,108,0.20); font-family: 'Cera Basic Bold';}
+/******* Form Style Css *********/
+    form button                                  { margin: 20px 0 15px;}
+/******* Login Tab CSS *********/
+.login-tab-section .nav-pills                   { margin-bottom: -20px;}
+.login-tab-section .nav-pills .nav-link         { min-width: 365px; padding: 16px 16px 36px; font-family: 'Cera Basic Bold'; background: #E6E8EC; color: #78849E; border-radius: 16px 16px 0px 0px; text-align: center; }
+.login-tab-section .nav-pills .nav-link.active:hover,
+.login-tab-section .nav-pills .nav-link.active:focus,
+.login-tab-section .nav-pills .nav-link.active  { background: #51BA6C; color: #fff !important; }
+.login-tab-section .nav-pills .nav-link:hover,
+.login-tab-section .nav-pills .nav-link:focus   { background: #152C53; color: #fff !important; }
+.login-tab-section .nav-pills ~ .tab-content    { background: #FAFBFB; border-radius: 25px; overflow: hidden; position: relative; z-index: 5;}
+.login-tab-section .nav-pills ~ .tab-content .login-bg   { background: transparent; }
+/******* Login Css End *********/
+
+/******* Signup Style Css Start *********/
+.signup-img                                 { background: url('../images/signup-img.png') no-repeat right center / auto 100%; display: block; height: 100%;}
+.signup-form                                { margin: 0 70px; padding: 35px 0;}
+.signup-form .select-style                  { margin-top: 10px; }
+.signup-form .select-style .jcf-select      { height: 42px; min-width: 100%; }
+.signup-form .select-style .jcf-select .jcf-select-text { padding: 8px 10px; }
+/******* Signup Style Css End *********/
+
+/*****Steps Info Css Start*******/
+.step-info-group                          { min-height:calc(100vh - 295px); display: flex; justify-content: center; align-items: center; }
+.step-info-group .outer-box               { padding:50px; margin:30px auto;  width: 70%; text-align: center; border:6px solid #51BA6C; border-radius: 45px; }
+.step-info-group .steps-details           { margin:0 auto; max-width: 60%; }
+.step-info-group .steps-details h3        { margin-bottom:16px; }
+.step-info-group .steps-details p         { max-width: 60%; margin:0 auto 20px; font-size: 18px; line-height: 24px; }
+.step-info-group .steps-details span      { padding:0; font-size: 15px; line-height: 22px; font-weight:bold; font-family: 'Cera Basic Black'; }
+.step-info-group .steps-details button    { margin-bottom: 10px; }
+.step-info-group .steps-details .btn-box  { margin-top:30px; }
+.btn-small.gray-btn                       { background-color: #929292; font-size: 18px; line-height: 24px; }
+.btn-small.gray-btn:hover,
+.btn-small.gray-btn.btn-active            { background-color: #51BA6C; }
+.btn-box .btn-small.gray-btn:last-child   { margin-bottom: 0; }
+.step-info-group .congrats-box h1         { padding:0; }
+.step-info-group .congrats-box .desc       { margin:35px 0; }
+.step-info-group .congrats-box h5         { margin-bottom:14px; font-size: 18px; line-height: 24px; font-weight:bold; font-family: 'Cera Basic Black'; }
+.step-info-group .congrats-box p         {  margin:0 auto 15px !important; max-width: 86%; font-size: 16px; line-height: 24px; }
+.step-info-group .congrats-box .close-btn { margin-top:20px; padding:5px 28px 7px; font-size: 18px; line-height: 22px; min-width: auto; }
+/*****Steps Info Css End*******/
+
+/******* Forgot Screen Css Start *********/
+.forgotpwd-bg                               { height: calc(100vh - 87px); background: url('../images/hand.svg') no-repeat right bottom / 75% auto;}
+.forgot-blk                                 { padding: 70px; max-width: 550px;}
+.forgot-blk h6                              { padding-top: 5px; font-family: 'Cera Basic Regular'; color: #152C53;}   
+.forgot-blk .form-style                     { margin: 50px 0px;}  
+.forgot-popup-info                          { padding: 20px 15px;}
+.forgot-popup-info h6                       { margin-top: 5px; font-family: 'Cera Basic Regular'; color: #152C53;}    
+#forgot-popup.modal.fade .modal-dialog      { max-width: 560px;}                   
+/******* Forgot Screen Css End *********/
+
+/******* Middle section CSS Start ******/
+.main-content                               { margin-left: 100px; padding: 15px 0px; width: calc(100% - 210px);}
+/******** Middle section CSS End *******/
+
+/******* Gigs Listing CSS Start ******/
+    /******* Gigs Tab CSS Start ******/
+    .gigs-tab .nav-tabs                         { border: none; justify-content: center;}
+    .gigs-tab .nav-tabs .nav-item               { margin-bottom: 0;}
+    .gigs-tab .nav-tabs .nav-link.active,
+    .gigs-tab .nav-tabs .nav-link:hover         { background: transparent; color: #152C53 !important; border: none; font-family: 'Cera Basic Bold';}
+    .gigs-tab .nav-tabs .nav-link               { color: #152C53; position: relative; border: none;}
+    .gigs-tab .nav-tabs .nav-link.active::after,
+    .gigs-tab .nav-tabs .nav-link:hover::after      { content: ''; background: #51BA6C; height: 5px; width: 5px; border-radius: 50px; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); display: block;}
+    /******* Gigs Tab CSS End ******/
+.gigs-listing-blk                           { width: 88%;}
+.gigs-listing-height                        { padding-top: 35px; height: calc(100vh - 180px);}
+.my-gigs-list                               { margin: 10px 5px 25px; background: #ffffff; box-shadow: 0px 2px 6px rgba(0,0,0,0.16); display: block;}
+.my-gigs-list:last-child                    { margin-bottom: 35px;}
+.gigs-status                                { position: absolute; top: 0; left: 15px; width: calc(100% - 30px); background: #2B4063; }
+.gigs-status::before                        { content: ''; border: 5px solid transparent; width: 100%; position: absolute; top:0; left: 0; display: block; border-bottom-left-radius: 35px;  border-bottom-right-radius: 35px; }
+.accept-gigs .gigs-status::before           { border-color:#51BA6C;}
+.pending-gigs .gigs-status::before          { border-color:#FFAF41;}
+.cancelled-gigs .gigs-status::before        { border-color:#BA5151;}
+.accept-gigs .gigs-date { background: #51BA6C;}
+.pending-gigs .gigs-date { background: #FFAF41;}
+.cancelled-gigs .gigs-date { background: #BA5151;}
+.gigs-date                                  { width: 13%; padding: 0 12px 12px; background: rgba(21,44,83,0.90); text-align: center; position: relative; display: flex; display: -webkit-flex; justify-content: center; -webkit-justify-content: center; flex-direction: column; -webkit-flex-direction: column;}
+.gigs-date .date                            { padding-top: 10px; font-family: 'Cera Basic Bold'; font-size: 40px; line-height: 50px; color: #ffffff;}
+.gigs-date .month                           { font-family: 'Cera Basic Regular'; font-size: 23px; line-height: 30px; color: #ffffff; text-transform: uppercase;}
+.gigs-date .time                            { color: #ffffff;}
+.gig-desc > div                             { padding: 15px 12px;}
+.gig-desc a                                 { display: inline-block;}
+.gig-desc h6                                { margin-right: 12px; margin-bottom: 10px; font-size: 17px; line-height: 22px; color: #152C53; text-transform: uppercase; display: inline-block;}
+.img-blk-ic                                 { flex-shrink: 0; -moz-flex-shrink: 0; -webkit-flex-shrink: 0;}
+.gigs-details-blk                           { width: 47%; display: flex; display: -webkit-flex; justify-content: space-around; -webkit-justify-content: space-around; flex-direction: column; -webkit-flex-direction: column;}
+.gigs-details-blk .img-blk-ic               { margin-right: 12px;}
+.gig-excerpt p                              { font-size: 13px; line-height: 19px; color: #152C53 !important; word-break: break-all;}
+.gig-excerpt p .read-more                   { padding-left: 5px; font-family: 'Cera Basic Reg-italic'; color: #51BA6C; text-decoration: underline;}
+.gigs-time-price-details .gig-loc           { padding-right: 20px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.gigs-time-price-details .gig-loc,
+.gigs-time-price-details .gig-time,
+.gigs-time-price-details .gig-price         { font-size: 12px; line-height: 18px;}
+.gigs-time-price-details                    { border-top: 1px solid #F1F1F3;}
+.gigs-time-price-details > div              { padding: 8px 12px; border-right: 1px solid #F1F1F3; display: inline-block; width: calc(100% / 3);}
+.gigs-time-price-details > div:last-child   { border: none;}
+.gigs-time-price-details  a                 { display: block;}
+.schedule-gig                               { padding: 8px 12px !important;}
+.schedule-gig:hover                         { cursor: pointer; background: #E2FFE9;}
+.gigs-user-chat                             { width: 28%; padding: 15px; border-left: 1px solid #F1F1F3;}
+.gigs-chat-user-img                         { height: 60px; width: 60px; background-position: center center !important; background-size: cover !important; display: block; flex-shrink: 0; -webkit-flex-shrink: 0; -moz-flex-shrink: 0;}
+.gigs-chat-user-nm                          { padding-left: 18px; }
+.gigs-chat-user-nm h6                       { font-size: 14px; line-height: 18px; color: #152C53; text-transform: uppercase;}
+.chat-btn a                                 { margin-top: 15px; padding: 7px 15px; position: relative; background: #51BA6C; font-family: 'Cera Basic Bold'; color: #ffffff; display: inline-block; border-radius: 50px;}
+.chat-btn a:hover                           { background: #5BD17A; color: #ffffff !important;}
+.chat-btn.active a                          { background: #30975D;}
+.chat-btn.active a i                        { transform: rotate(180deg); -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg);}
+.chat-btn.active a .chat-no                 { display: none;}
+.chat-btn a i                               { margin-left: 5px;}
+.chat-no                                    { display: inline-block; background: #51BA6C; height: 24px; width: 24px; font-size: 12px; line-height: 16px; border-radius: 50px; position: absolute; top: -10px; right: -8px; border: 2px solid #fff; text-align: center;}
+.re-schedule-cancel-gigs                    { width: 12% ;border-left: 1px solid #F1F1F3; flex-shrink: 0; -webkit-flex-shrink: 0; min-height: 100%; align-items: center; -webkit-align-items: center; justify-content: center; -webkit-justify-content: center; display: flex; display: -webkit-flex; flex-direction: column; -webkit-flex-direction: column;}
+.re-scdule-gigs                             { border-bottom: 1px solid #F1F1F3; width: 100%; height: 100%;}
+.re-scdule-gigs a                           { padding: 13px 15px; display: block; width: 100%; height: 100%; display: flex; display: -webkit-flex; flex-direction: column; -webkit-flex-direction: column; align-items: center; -webkit-align-items: center; justify-content: center; -webkit-justify-content: center;}
+.re-scdule-gigs:last-child                  { border: none;}
+.re-schedule-cancel-gigs p                  { padding-top: 5px; font-size: 12px; line-height: 16px; color: #152C53;}
+.re-schedule-cancel-gigs i                  { color: #BA5151;}
+.re-scdule-gigs a:hover,
+.re-schedule-cancel-gigs .re-scdule-gigs.active   { background: rgba(21,44,83,0.10); width: 100%;}
+.gigs-details-blk,
+.re-schedule-cancel-gigs,
+.gigs-user-chat                             { border-bottom: 1px solid #F1F1F3;}
+    /********* Gigs Pending List ***********/
+    .pending-gigs .gig-address                      { width: 153px;}
+    .pending-gigs .gig-time                         { width: calc(100% - 153px); cursor: pointer; background: rgba(255,175,65,0.20);}
+    .pending-gigs .gig-time .schedule-hour,
+    .pending-gigs .gig-time .gigs-book-price        { padding: 8px 12px; width: 50%; flex-basis: 50%;}
+    .pending-gigs .schedule-hour svg path,
+    .pending-gigs .gigs-book-price svg path         { stroke: #FFAF41; fill: #FFAF41;}
+    .pending-gigs .gig-time .gigs-book-price        { border-left: 1px solid #F1F1F3;}
+    .pending-gigs .gigs-book-price                  { position: relative;}
+    .pending-gigs .gig-time span,                          
+    .pending-gigs .gig-price span.extra-price             { color: #FFAF41;}
+    .pending-gigs .gig-price > span                       { color: #152C53;}
+    .gigs-booking-chaned-info                             { position: absolute; top: 0; left: 0; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); border: 1px solid #FFAF41; border-radius: 50px;height: 25px; width: 25px;}
+    .gigs-booking-chaned-info a                           { background: #FFAF41; color: #ffffff; height: 19px; width: 19px; border-radius: 50px; display: inline-flex; display: -webkit-inline-flex; align-items: center; -webkit-align-items: center; justify-content: center; -webkit-justify-content: center;}    
+    .gigs-booking-chaned-info a:hover                     { color: #ffffff !important;}
+    /********* Gigs Cancel List ***********/
+    .cancelled-gigs .gigs-details-blk,
+    .cancelled-gigs .re-schedule-cancel-gigs,
+    .cancelled-gigs .gigs-user-chat                    { border-top: 2px solid rgba(186,81,81,0.50); border-bottom: 2px solid rgba(186,81,81,0.50);}
+    .cancelled-gigs .gigs-details-blk,
+    .cancelled-gigs .gigs-user-chat                    { pointer-events: none; }
+    .cancelled-gigs .re-schedule-cancel-gigs           { border-right: 2px solid rgba(186,81,81,0.50);}
+    .cancelled-gigs .gig-desc h6 span                  { font-family: 'Cera Basic Regular'; color: #BA5151;}
+    .cancelled-gigs svg path                           { stroke: rgba(81,186,108,0.50); fill: rgba(81,186,108,0.50);}
+    .cancelled-gigs .gig-excerpt p,
+    .cancelled-gigs .gigs-time-price-details .gig-loc, 
+    .cancelled-gigs .gigs-time-price-details .gig-time, 
+    .cancelled-gigs .gigs-time-price-details .gig-price,
+    .cancelled-gigs .gigs-chat-user-nm h6                     { color: rgba(21,41,83,0.50) !important;}
+    .cancelled-gigs .chat-no,
+    .non-active-chat .chat-no                           { display: none;}
+    .cancelled-gigs .chat-btn a,
+    .non-active-chat a                                  { background: rgba(230,232,236,0.50);}
+    .non-active-chat a                                  { pointer-events: none;}
+    .cancelled-gigs .gigs-chat-user-img                 { position: relative;}
+    .cancelled-gigs .gigs-chat-user-img::before         { content: ''; background: rgba(255,255,255,0.50); height: 100%; width: 100%; position: absolute; top: 0; left: 0; display: block;}
+    .cancel-gigs-desc                                   { position: relative;}
+    .cancel-gigs-desc #cancel-reason-error                { position: absolute; top: 0; right: 65px; z-index: 1;}
+    /********* Gigs Completed List ***********/
+    .completed-gigs .gigs-date                          { background: #152C53;}
+    .completed-gigs .gigs-details-blk,
+    .completed-gigs .gigs-user-chat                     { background: rgba(81,186,108,0.10);}
+    .completed-gigs .gigs-desc h6 span                  { display: inline-block;}
+        /********* Rating Css List ***********/
+        fieldset, label                                 { margin: 0; padding: 0; }
+        .rating                                         { border: none; float: left;}
+        .rating > input                                 { display: none;} 
+        .rating > label:before                          { margin: 2px; font-size: 13px; font-family: 'FontAwesome'; display: inline-block; content: "\f005";}
+        .rating > .half:before                          { content: "\f089"; position: absolute;}
+        .rating > label                                 { color: #D9D9D9; float: right;}
+        .rating > input:checked ~ label, 
+        .rating:not(:checked) > label:hover, 
+        .rating:not(:checked) > label:hover ~ label     { color: #FFE622;} 
+        .rating > input:checked + label:hover, 
+        .rating > input:checked ~ label:hover,
+        .rating > label:hover ~ input:checked ~ label, 
+        .rating > input:checked ~ label:hover ~ label   { color: #FFE622;} 
+/******* Gigs Listing CSS End ******/
+
+/******* Gigs Worker Listing CSS Start ******/                            
+.gig-worker-gigs-list .gigs-time-price-details > div    { width: calc(100% / 2); position: relative;} 
+.gig-worker-gigs-list .gigs-booking-chaned-info         { left: auto; right: 15px; top: 7px; transform: translate(0,0); -webkit-transform: translate(0,0); -moz-transform: translate(0,0);}
+.gig-worker-gigs-list .address-loc,
+.gig-worker-gigs-list .add-hour                         { position: absolute; right: 15px; top: 8px;}
+.gig-worker-gigs-list .add-hour a                       { font-size: 18px; color: #152C53;}
+.gig-worker-gigs-list .accept-hour                      { background: rgba(81,186,108,0.10);}
+.gig-worker-gigs-list .accept-hour .gigs-booking-chaned-info      { border-color: #51BA6C;}
+.gig-worker-gigs-list .accept-hour .gigs-booking-chaned-info a    { background: #51BA6C;}
+.gig-worker-gigs-list .disable-blk .address-loc a svg rect,
+.gig-worker-gigs-list .disable-blk .add-hour a svg line        { stroke: #F2F3F5; fill: #F2F3F5;}
+.gig-worker-gigs-list .disable-blk .address-loc a,
+.gig-worker-gigs-list .disable-blk .add-hour a          { pointer-events: none;}
+.gig-worker-gigs-list .cancelled-gigs .address-loc,
+.gig-worker-gigs-list .cancelled-gigs .add-hour         { display: none;}
+    /******* Gigs Pending Listing CSS Start ******/ 
+    .gig-worker-gigs-list .pending-gigs .gig-time svg path { stroke: #FFAF41; fill: #FFAF41;}
+    .gig-worker-gigs-list .gig-address,
+    .gig-worker-gigs-list .gig-time           { cursor: pointer;}
+    .gig-worker-gigs-list .gig-address:hover,
+    .gig-worker-gigs-list .gig-time:hover,
+    .gig-worker-gigs-list .gig-address.active    { background: rgba(21,44,83,0.10);}
+    /******* Gigs Pending Listing CSS End ******/ 
+    /******* Gigs Rerquest Listing CSS Start ******/ 
+    .gig-worker-gigs-list .request-gigs .chat-btn a     { pointer-events: none; background: rgba(230,232,236,0.50);}
+    .gig-worker-gigs-list .request-rescdule .gigs-date  { background: #FFAF41;}
+    /******* Gigs Rerquest Listing CSS End ******/
+    /******* Completed State Gigs Worker Listing CSS Start ******/
+    .completed-worker-gigs .gigs-date                   { background: #152C53;}
+    .completed-worker-gigs .rating > label::before      { font-size: 18px;}
+    .completed-worker-gigs .gig-desc > div              { padding: 0;}
+    .completed-worker-gigs .gigs-details-blk            { width: 65%; padding: 15px 12px;}
+    .completed-worker-gigs .gigs-worker-info-img        { margin-right: 15px; height: 40px; width: 40px; background-size: cover !important; background-position: center center !important; border-radius: 50px;}
+    .completed-worker-gigs .gigs-worker-info h4         { font-size: 14px; line-height: 22px; color: rgba(21,41,83,0.70);}
+    .completed-worker-gigs .gigs-worker-info p          { max-height: 70px; word-break: break-all;}
+    .completed-worker-gigs .completed-time-info         { width: 15%;}
+    .completed-worker-gigs .minimize-gigs               { width: 9%;}
+    .completed-worker-gigs .completed-time-info         { display: flex; display: -webkit-flex; flex-direction: column; -webkit-flex-direction: column; justify-content: space-around; -webkit-justify-content: space-around; border-left: 1px solid #F1F1F3; border-right: 1px solid #F1F1F3;}
+    .completed-worker-gigs .completed-time-info img     { margin-right: 10px;}
+    .completed-worker-gigs .completed-time-info .gig-time,
+    .completed-worker-gigs .completed-time-info .gig-price { padding: 15px; flex-basis: 50%; -webkit-flex-basis: 50%; }
+    .completed-worker-gigs .completed-time-info .gig-price { border-top: 1px solid #F1F1F3;}
+    .collapsed-out-completed-blk .gig-desc h6               { margin: 0;}
+    .collapsed-out-completed-blk .gigs-date                 { padding: 12px; background: #152C53;}
+    .collapsed-out-completed-blk .gigs-date .d-m-y          { font-family: 'GillSans'; font-size: 16px; line-height: 22px; color: #ffffff; text-align: center;}
+    .collapsed-out-completed-blk .gigs-details-blk          { width: 30%;}
+    .collapsed-out-completed-blk .completed-time-info       { width: 30%;}
+    .collapsed-out-completed-blk .rating-star               { width: 15%;}
+    .collapsed-out-completed-blk .completed-time-info .gig-price,
+    .collapsed-out-completed-blk .completed-time-info,
+    .collapsed-out-completed-blk .gigs-details-blk,
+    .collapsed-out-completed-blk .minimize-state           { border: none;}
+    .collapsed-out-completed-blk .completed-time-info      { flex-direction: row; align-items: center; justify-content: center;}
+    .completed-gig-desc { height: 95px !important;}
+    .completed-gig-desc p { word-break: break-all !important; max-height: 100% !important; padding-right: 10px;}
+    .completed-worker-gigs .rating > label                 { pointer-events: none;}
+         /******* Rating Gigs CSS Start ******/
+         .modal.fade .modal-dialog                          { max-width: 880px; box-shadow: 0px 2px 6px rgba(0,0,0,0.16); position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); width: 100%;}
+         .close                                             { position: absolute; top: 5px; right: 15px; color: #ffffff; opacity: 1; z-index: 1;}
+         .modal-body                                        { padding: 0;}
+         .modal-content                                     { border-radius: 10px;}
+         .rating-blue-blk                                   { padding: 15px; background: #14294B;}
+         .rating-blue-blk img                               { margin: 0px 25px;}
+         .rating-blue-blk h3                                { text-transform: none; color: #ffffff;}
+         .rating-info                                       { padding: 35px 35px 0px 35px; background: #ffffff;}
+         .rating-info h6                                    { font-family: 'Cera Basic Regular'; color: #152C53; }
+         .rating-info .rating-star,
+         .rating-gig-user-img                               { margin: 0px 100px;}
+         .rating-info .rating > label::before               { margin: 0px 10px; font-size: 45px;}
+         .rating-info .rating-star label                    { position: relative;}
+         .rating-info .rating-star label span               { font-size: 12px; line-height: 16px; position: absolute; bottom: -25px; left: 50%; color: rgba(21,41,83,0.60); transform: translateX(-50%); -moz-transform: translateX(-50%); -webkit-transform: translateX(-50%);}
+         .rating-gig-user-img                               { margin-bottom: 10px; height: 80px; width: 80px; display: block;}
+         .rating-info .estimated-field textarea             { padding: 12px 15px; width: 100%; border: 1px solid #D8D8D8; resize: none; border-radius: 4px;}
+         .normal-input-style textarea:focus                 { border-color: #51BA6C;}
+        /******* Rating Gigs CSS End ******/
+    /******* Completed State Gigs Worker Listing CSS End ******/
+    /******* Chat Listing CSS Start ******/
+    .collapsed-states-blks.collpased-chat-blk              { max-height: 300px;}
+    .chat-window                                           { padding: 15px 0; height: 200px;}
+    .chat-list                                             { align-items: flex-end;}
+    .chat-list .chat-user-img                              { margin: 0px 10px; background-position: center center !important; background-size: cover !important; height: 30px; width: 30px;}
+    .chat-list .msg-desc                                   { padding: 8px 15px; font-family: 'GillSansLight'; font-size: 14px; line-height: 18px; color: #545663; border-radius: 30px 30px 30px 0; max-width: 510px; width: 100%; flex-basis: 510px; -webkit-flex-basis: 510px;}
+    .chat-list .receiver-msg .msg-desc                     { background: #EDF0F5; word-break: break-all; }
+    .chat-list .sender-msg .msg-desc                       { background: #152C53; color: #ffffff; border-radius: 30px 30px 0 30px; word-break: break-all; }
+    .chat-list .sender-msg,
+    .chat-list .receiver-msg                               { margin: 10px 0px;}
+    .write-comment                                         { padding: 3px 5px; background: #F2F2F2;}
+    .write-comment .form-group                             { margin: 0; width: 100%;}
+    .write-comment .form-control                           { padding: 5px 35px 5px 15px; height: auto; background: transparent; border: none; font-family: 'GillSansLight'; font-size: 14px; line-height: 20px;}
+    .write-comment .form-control:focus                     { box-shadow: none;}
+    .write-comment a                                       { display: inline-block; padding: 5px; color: #CECFD0 !important;}                     
+    .box                                                   { position: relative;}
+    input[type="file"]                                     { display: none;}
+    .inputfile-1 + label                                   { margin-bottom: 0; cursor: pointer;}
+   .write-comment .form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        font-family: 'GillSansLight';
+        color: rgba(21,41,83,0.60);
+      }
+     .write-comment .form-control::-moz-placeholder { /* Firefox 19+ */
+        font-family: 'GillSansLight';
+        color: rgba(21,41,83,0.60);
+      }
+     .write-comment .form-control:-ms-input-placeholder { /* IE 10+ */
+        font-family: 'GillSansLight';
+        color: rgba(21,41,83,0.60);
+      }
+     .write-comment .form-control:-moz-placeholder { /* Firefox 18- */
+        font-family: 'GillSansLight';
+        color: rgba(21,41,83,0.60);
+      }
+.chat-sent-btn                                             { margin: 0 15px 0; border: none; background: transparent;}
+.chat-time                                                 { margin-top: 3px; font-family: 'GillSansLight'; font-size: 10px; line-height: 12px; color: rgba(67,66,93,0.50);}
+.receiver-msg .chat-time ,                                
+.receiver-img .chat-time                                   { margin-left: 50px;}
+.sender-msg .chat-time,                       
+.sender-img .chat-time                                     { margin-right: 50px;}
+.chat-list .chat-msg-img a                                   { background-position: center center !important; background-size: cover !important; height: 80px; width: 80px; display: inline-block;}
+.receiver-img .chat-msg-img a                                { border-radius: 10px 10px 10px 0;}
+.sender-img .chat-msg-img a                                  { border-radius: 10px 10px 0 10px;}
+    /******* Chat Listing CSS End ******/
+
+/******* Gigs Worker Listing Collapsed CSS Start ******/   
+    .collapsed-states-blks                                      { max-height: 250px;}
+    .collapsed-states-blks  h6                                  { margin-bottom: 10px; color: #152C53; text-transform: uppercase;}
+    .readmore-state .gigs-more-desc,
+    .estimated-hour-state .estimate-hour-info,
+    .reschdule-gigs-state .reschdule-gigs-state-blk,
+    .cancel-gigs-state .cancel-gigs-state-blk                   { padding: 15px; width: 88%;}
+    .readmore-state .gigs-more-desc img,
+    .estimated-hour-state .estimate-hour-info img,
+    .reschdule-gigs-state .reschdule-gigs-state-blk img,
+    .cancel-gigs-state .cancel-gigs-state-blk img,
+    .gig-map-loc .gig-map-address img                           { margin-right: 25px;}
+    .tooltip-box svg                                            { margin-right: 0; height: 14px !important; width: 14px !important;}
+    .tooltip-box:hover svg                                      { stroke: #5BD17A; fill: #5BD17A;}
+    .tooltip-box img                                            { object-fit: none; object-position: 0 0px; width: 14px; height: 14px;}
+    .tooltip-box:hover img                                      { object-position: 0 -14px;}
+    .tooltip-arrow,
+    .tooltip > .tooltip-inner                                   { background-color: rgba(230,232,236,0.50); max-width: 236px !important; font-size: 10px; line-height: 12px; color: #152C53;}
+    .bs-tooltip-auto[x-placement^=right] .arrow::before,
+    .bs-tooltip-right .arrow::before                            { border-right-color: rgba(230,232,236,0.50);}
+    .estimate-hours img                                         { object-fit: none; object-position: 0 0px; width: 14px; height: 14px;}
+    .user-accept-hour                                           { width: calc(100% - 153px) !important; background: rgba(81,186,108,0.10);}
+    .user-accept-hour img,
+    .accept-hour img                                            { object-position: 0 -14px;}
+    .user-accept-hour .schedule-hour,
+    .user-accept-hour .gigs-book-price                          { padding: 8px 12px;}
+    /******* Select Box Style Css ******/
+        .select-style .jcf-select                               { margin-bottom: 0; min-width: 170px; height: 38px; border-color: #DEDEDF; border-radius: 4px;}
+        .select-style .jcf-select .jcf-select-text              { padding: 5px 10px;  font-family: 'GillSans'; font-size: 15px; line-height: 25px; color: #152c53;}
+        .select-style .jcf-select-opener                        { background: transparent;}
+        .select-style .jcf-select-opener::before                { content: ''; background: url('../images/accordian-arrow.svg') no-repeat; height: 22px; width: 22px; position: absolute; top: 8px; right: 10px; display: block; transition-duration: 0.3s; -webkit-transition-duration: 0.3s; -moz-transition-duration: 0.3s;}   
+        .select-style .jcf-select .jcf-select-drop              { border: 1px solid #DEDEDF; z-index: 10;}     
+        .select-style .jcf-select .jcf-select-drop .jcf-selected,
+        .select-style .jcf-select .jcf-select-drop .jcf-hover   { cursor: pointer; background: transparent; color: #51BA6C !important;} 
+        .select-style .jcf-select .jcf-select-drop ul li        { padding: 8px 10px;}
+        .select-style .jcf-select .jcf-select-drop ul li .jcf-option        { padding: 0; font-size: 12px; line-height: 15px; color: #152C53;}   
+        .select-style .jcf-select.jcf-drop-active .jcf-select-opener::before    { transform: rotate(180deg); -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg);}
+        .select-style .jcf-select .jcf-list-content li          { display: block; width: 100%;}
+        .jcf-list .jcf-list-content               { max-height: 150px;}                      
+    /******* Readmore State Css ******/ 
+    .readmore-state .gigs-more-desc .full-desc          { max-height: 165px;}
+    .readmore-state .gigs-more-desc .full-desc p        { padding-right: 10px; word-break: break-all;}
+    .minimize-state                                     { padding: 15px; width: 12%; border-left: 1px solid #F1F1F3;}
+    /******* Estimated State Css ******/ 
+    .estimated-hour-state .estimate-hour-info .img-blk-ic svg path       { stroke: #FFAF41; fill: #FFAF41;}
+    .estimated-field .form-control                      { padding: 0; width: 550px; height: auto; border: none; border-bottom: 1px solid #DEDEDF; font-family: 'GillSans'; font-size: 13px; line-height: 19px; border-radius: 0;}
+    .estimated-field .form-control:focus                { box-shadow: none; border-color: #51BA6C;}
+    .estimated-field .form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        font-family: 'GillSansLight';
+        color: rgba(21,41,83,0.40);
+      }
+      .estimated-field .form-control::-moz-placeholder { /* Firefox 19+ */
+        font-family: 'GillSansLight';
+        color: rgba(21,41,83,0.40);
+      }
+      .estimated-field .form-control:-ms-input-placeholder { /* IE 10+ */
+        font-family: 'GillSansLight';
+        color: rgba(21,41,83,0.40);
+      }
+      .estimated-field .form-control:-moz-placeholder { /* Firefox 18- */
+        font-family: 'GillSansLight';
+        color: rgba(21,41,83,0.40);
+      }
+      .collapsed-states-blks .new-timesheet .estimate-hour-info svg path           { stroke: #56C482; fill: #56C482;} 
+      .collapsed-states-blks .new-timesheet .additional-hour p                     { margin-bottom: 0; min-width: 180px;}
+      .collapsed-states-blks .new-timesheet .additional-hour span                  { color: #51BA6C;}
+      .collapsed-states-blks .new-timesheet .add-hour-btn button                { margin: 15px 0; background: #E7E9ED; height: 22px; width: 22px; border: none; border-radius: 50px; color: #ffffff;}
+      .collapsed-states-blks .new-timesheet .add-hour-btn button:hover          { background: #51BA6C;}
+      .collapsed-states-blks .new-timesheet .additional-hour .add-hour-count       { margin: 0px 10px; font-family: 'GillSans'; color: #152C53;}
+      .collapsed-states-blks .new-estimate-hour p                               { margin-bottom: 5px;}
+      .collapsed-states-blks .new-estimate-hour button                          { margin: 25px 0 0;}
+      /******* Reschdule Gigs State Css ******/ 
+      .reschdule-gigs-state .select-date-time li            { padding-right: 15px; width: calc(100% / 3 - 15px); display: inline-block; vertical-align: middle;}
+      .cancel-policy-text                                   { margin-left: 50px; font-size: 11px; line-height: 15px; color: #152C53; text-decoration: underline !important;}
+      /******* Cancel Gigs State Css ******/
+      .cancel-gigs-state-blk h6                             { margin-bottom: 0;}
+      .cancel-gigs-state-blk .select-style .jcf-select      { width: 100%; margin-left: 35px;}
+      .italic-text p                                        { font-family: 'Cera Basic Reg-italic'; color: #78849E;}
+      .cancel-gigs-state-blk .cancel-gig-btn button         { margin: 10px 0 0;}
+      .cancel-gigs-state-blk .input                         { margin-top: 0; max-width: 350px;}
+      /******* Gig Map Location Css ******/
+      .gig-map-loc .gig-map-add-info                                { padding: 15px; width: 45%;}
+      .gig-map-loc .gig-map-add-info .map-link                      { margin-top: 100px; text-decoration: underline; color: #152C53;}
+      .gig-map-loc .map-style                                       { width: 55%; padding: 5px;}
+      #map                                                          { height: 190px;}
+      .gm-svpc,
+      .gm-fullscreen-control                                       { display: none;}
+      .gm-style-mtc div                                            { height: 30px !important; font-size: 13px !important;}
+      .gm-style-mtc div:last-child                                 { display: none;}
+/******* Gigs Worker Listing Collapsed CSS End ******/ 
+
+/******* Gigs Worker Listing Rightpanel CSS Start ******/ 
+.rightpanel-tab ul                                                  { padding-left: 200px;}
+.rightpanel-tab li                                                  { margin: 0px 30px;}
+.rightpanel-gigslist                                                { margin-left: 15px;}
+.rightpanel-gigslist .gigs-listing-height                           { padding-top: 0;}
+/******* Gigs Worker Listing Rightpanel CSS End ******/ 
+
+/******* Gigs Worker Listing CSS End ******/   
+
+/******* Gigs Worker Signup Wizard CSS Start ******/ 
+.step-progress                              { width: 8%; background: #152C53; border-radius: 25px 0 0 25px; position: absolute; height: 100%; z-index: 10;}
+.step-form-data                             { margin-left: 8%; height: 550px;}
+.step-progress li span                      { font-size: 13px; line-height: 20px; color: #ffffff;}
+.step-form-data .signup-form                { margin: 0px 50px;}
+.step-form-data .terms-signup               { position: absolute; top: 100%; left: 50%; transform: translateX(-50%); -moz-transform: translateX(-50%); -webkit-transform: translateX(-50%);}
+.sw-theme-default                                       { box-shadow: none;}
+.sw-theme-default .sw-toolbar                           { display: none;}
+.sw-theme-default > ul.step-anchor > li                 { display: block; margin-bottom: 35px;}
+.sw-theme-default > ul.step-anchor > li:last-child      { margin-bottom: 0;}
+.sw-theme-default > ul.step-anchor > li > a             { margin: 5px 0px; position: relative;}
+.sw-theme-default > ul.step-anchor > li > a span        { font-family: 'GillSans'; color: #152C53; font-size: 13px; line-height: 20px;}
+.sw-theme-default > ul.step-anchor > li > a::before     { content: ''; background: #E9E9F0; height: 32px; width: 1px; position: absolute; bottom: 112%; left: 50%; display: block;}
+.sw-theme-default > ul.step-anchor > li:first-child > a::before { display: none;}
+.sw-theme-default > ul.step-anchor > li > a,
+.sw-theme-default > ul.step-anchor > li > a:hover,
+.sw-theme-default > ul.step-anchor > li.active > a      { padding: 8px 16px; height: 38px; width: 38px; background: #ffffff !important; border-radius: 50%; border: none;}
+.sw-theme-default > ul.step-anchor > li.done > a        { background-color: #51BA6C !important;}
+.sw-theme-default > ul.step-anchor > li.done > a span   { display: none;}
+.sw-theme-default > ul.step-anchor > li.done > a:after  { content: ''; background: url('../images/check-wt.svg') no-repeat; height: 14px; width: 18px; position: absolute; top: 14px; left: 50%; transform: translateX(-50%); -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); display: block;}
+.sw-theme-default > ul.step-anchor > li > a::after      { content: none;}
+.sw-theme-default .step-content                         { padding: 0; border: none; background: none; }
+.step-progress li.nav-item.done                         { pointer-events: none;}
+    /******* Services Step CSS Start ******/ 
+    .service-select-blk                                 { padding: 35px 35px 25px 35px; position: relative;}
+    .service-select-blk h6                              { margin: 10px 0 25px; font-family: 'Cera Basic Regular'; color: #152C53;}
+    .service-accordian                                  { padding-right: 10px; width: 70%; height: 360px; border-right: 4px dotted rgba(21,41,83,0.50);}
+    .service-accordian .panel-default                   { margin: 10px 0px; padding: 2px 12px; background: #ffffff; }
+    .service-accordian .panel-default:last-child        { margin-bottom: 0;}
+    .service-accordian .panel-title a                   { position: relative; font-family: 'Cera Basic Regular'; font-size: 16px; line-height: 25px; color: #152C53; display: block;}
+    .service-accordian .panel-title a::before           { content: ''; background: url('../images/accordian-arrow.svg') no-repeat; height: 22px; width: 22px; position: absolute; top: 7px; right: 12px; display: block; transition-duration: 0.3s; -webkit-transition-duration: 0.3s; -moz-transition-duration: 0.3s;}
+    .service-accordian .panel-title a[aria-expanded="true"]::before            { transform: rotate(180deg); -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg);}
+    .service-accordian .panel-title a[aria-expanded="true"]                   { font-family: 'Cera Basic Bold';}
+    .service-accordian .panel-title a img               { margin: 0 50px 0 20px; height: 36px; width: 36px; object-fit: contain;}
+    .service-accordian .service-listing                 { padding-top: 10px;}
+    .service-accordian .service-listing li              { padding: 5px 12px 5px 120px; border-bottom: 1px solid #F8F8F8;}
+    .service-accordian .service-listing li:last-child   { border: none;}
+    .service-accordian .service-listing .sub-service           { text-transform: uppercase; width: 165px;}
+    .service-accordian .service-listing .sub-service-price     { margin: 0px 50px; width: 130px;}
+    .service-accordian .service-listing .sub-service-price input    { padding: 2px 10px; width: 95px; font-size: 15px; line-height: 22px; border: 1px solid #DEDEDF; border-radius: 4px;}
+    .service-accordian .service-listing .sub-service-price input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: rgba(129,129,129,0.60);
+        font-family: 'Cera Basic Reg-italic';
+      }
+      .service-accordian .service-listing .sub-service-price input::-moz-placeholder { /* Firefox 19+ */
+        color: rgba(129,129,129,0.60);
+         font-family: 'Cera Basic Reg-italic';
+      }
+      .service-accordian .service-listing .sub-service-price input:-ms-input-placeholder { /* IE 10+ */
+        color: rgba(129,129,129,0.60);
+         font-family: 'Cera Basic Reg-italic';
+      }
+      .service-accordian .service-listing .sub-service-price input:-moz-placeholder { /* Firefox 18- */
+        color: rgba(129,129,129,0.60);
+         font-family: 'Cera Basic Reg-italic';
+      } 
+    .service-accordian .service-listing .sub-service-add a       { background: #51BA6C; height: 27px; width: 27px; border-radius: 50px; display: flex; display: -webkit-flex; align-items: center; -webkit-align-items: center; justify-content: center; -webkit-justify-content: center;}
+    .service-accordian .service-listing .sub-service-add a:hover { background: #5BD17A;}
+    .sub-service-add a img { filter: brightness(100); width: 16px; }
+    .selected-service-list                              { padding-left: 10px; width: 30%; height: 360px;} 
+    .next-back-btn                                      { position: absolute; top: 105%; left: 50%; transform: translateX(-50%); -moz-transform: translateX(-50%); -webkit-transform: translateX(-50%);}
+    .next-back-btn button                               { margin: 0px 10px;}
+    .added-service-list                                 { margin: 0px 5px 10px 0px; padding: 8px; background: #FFFFFF; box-shadow: 0px 2px 6px rgba(0,0,0,0.04); position: relative;}
+    .added-service-list:last-child                      { margin-bottom: 0;}
+    .added-service-list .service-nm h6                  { margin: 0; font-family: 'Cera Basic Bold'; color: rgba(67,66,93,0.87); text-transform: uppercase;}
+    .added-service-list .service-nm h5                  { font-family: 'Cera Basic Regular'; font-size: 14px; line-height: 18px; color: rgba(67,66,93,0.50); text-transform: capitalize;}
+    .added-service-list .service-price-per-hr           { padding-right: 10px; font-size: 16px; line-height: 22px; color: rgba(21,41,83,0.77); }
+    .delete-added-list                                  { position: absolute; top: 0px; right: 10px; cursor: pointer;}
+    .delete-added-list img                              { width: 8px;}
+    .radio-style                                        { margin-right: 35px;}
+    .radio-style .jcf-radio                             { margin: -2px 5px 0 0; height: 18px; width: 18px; border-radius: 4px; border-color: #d4d4d5;}
+    .radio-style .jcf-radio input                       { cursor: pointer;}
+    .radio-style .jcf-radio span                        { background: url('../images/check.svg') no-repeat; left: 2px; right: -2px;}
+    .error-ser .error-text                              { padding: 10px; text-align: center; position: absolute; top: 25%; right: 30px; background: #ffffff; width: 275px; height: 45px;}
+    .added-service-list .service-img img                { margin-right: 10px; height: 30px; width: 30px; object-fit: contain;}
+    .modal.vat-modal .modal-dialog                      { margin: 5px auto; max-width: 730px;}
+    .modal.vat-modal .modal-content                     { padding: 20px 50px;}
+    .modal.vat-modal .modal-content h3                  { padding-top: 15px; font-size: 16px; line-height: 22px; color: #152c53; text-transform: none;}
+    .modal.vat-modal .modal-content p,
+    .modal.vat-modal .modal-content a                   { font-size: 16px; line-height: 22px; color: #152c53;}
+    .modal.vat-modal .modal-content a                   { text-decoration: underline;}
+    .vat-options                                        { margin: 25px 0px;}
+    .vat-options .radio-style                           { margin: 10px 0 5px; font-size: 16px; line-height: 22px;}
+    .vat-declaration-text                               { padding: 70px 0 330px;}
+    .vat-back-btn                                       { margin: 50px 0 15px;}
+    .modal.vat-modal .btn-small                         { margin: 0 0 25px;}
+    .vat-options p                                      { margin: 15px 0 0 !important; font-family: 'Cera Basic Bold';}
+    .vat-options .form-style                            { width: 50%;}
+    /******* Services Step CSS End ******/ 
+    /******* Map Notification Step CSS Start ******/ 
+    .map-notification-sec,
+    .map-images                                         { flex-basis: 50%; -webkit-flex-basis: 50%; position: relative;}
+    .map-border::before                                 { content: ''; background: url('../images/map-border.svg') no-repeat; height: 372px; width: 401px; position: absolute; top: -7px; left: 50%; transform: translateX(-50%); -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); display: block; z-index: -1;}
+    .map-area-blks                                      { margin: 0px 5px 10px 0px; padding: 10px 20px; background: #FFFFFF; box-shadow: 0px 2px 6px rgba(0,0,0,0.04);}
+    .map-area-blks h5,
+    .map-nm h5                                          { color: rgba(67,66,93,0.87); text-transform: uppercase;}    
+    .map-area-blks h5 span                              { width: 70px; display: inline-block;}
+    .map-area-blks h5 a                                 { padding-left: 20px;}         
+    .map-area-blks h5 a:hover svg path                  { stroke: #51BA6C; fill: #51BA6C;}
+    .map-area-blks:last-child p                         { font-size: 14px; line-height: 22px; color: rgba(67,66,93,0.87);}
+    .switch                                             { position: relative; display: inline-block; width: 50px; height: 30px;}
+    .switch input                                       { opacity: 0; width: 0; height: 0;}
+    .slider                                             { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #E5E5E5; -webkit-transition: .4s; transition: .4s;}
+    .slider:before                                      { position: absolute; content: ""; height: 24px; width: 24px; left: 3px; bottom: 3px; background-color: #ffffff; -webkit-transition: .4s; transition: .4s;}
+    input:checked + .slider                             { background-color: #21BA45;}
+    input:focus + .slider                               { box-shadow: 0 0 1px #21BA45;}
+    input:checked + .slider:before                      { -webkit-transform: translateX(20px); -ms-transform: translateX(20px); transform: translateX(20px); background-color: #ffffff;}
+    .slider.round                                       { border-radius: 34px;}
+    .slider.round:before                                { border-radius: 50%;}
+    .map-images                                         { position: relative;}
+    .map-images svg path.north-map,
+    .map-images svg path.central-map,
+    .map-images svg path.south-map,                      
+    /*.map-images svg path.hover-map:hover,
+    .map-images svg path.hover-map:hover,*/
+    .map-images svg path.hover-map:hover                { stroke: #51BA6C; fill: #51BA6C;} 
+    .map-city-blk                                       { margin-left: 15px; padding: 15px; background: #ffffff; box-shadow: 0px 3px 6px rgba(0,0,0,0.16); border-radius: 12px;}
+    .map-nm h5                                          { padding-bottom: 10px; position: relative; font-family: 'Cera Basic Bold';}
+    .map-nm h5 a                                        { position: absolute; right: 0px; top: -10px;}
+    .map-nm ul                                          { padding-top: 10px; border-top: 1px solid #F4F4F6; height: 300px;}
+    .map-nm ul li                                       { padding: 5px 0; font-size: 15px; line-height: 22px; color: rgba(67,66,93,0.87); width: calc(100% / 3 - 5px); display: inline-block;}
+    /* .img-map-north                                   { position: absolute; top: 0; left: 15%;}
+    .img-map-central                                    { position: absolute; top: 33%; left: 15%;}
+    .img-map-south                                      { position: absolute; top: 55%; left: 47%;}
+    .map-images .map-on                                 { display: none;} */
+    /******* Map Notification Step CSS End ******/ 
+    /******* Documents Uploads Step CSS Start ******/ 
+    .doc-full-width .dropzone-height                    { width: 100%; border: 1px dashed #ABABAB;}
+    .doc-full-width .add-doc-btn-blk                    { display: none;}
+    .doc-upload-blk                                     { margin: 35px auto; width: 550px;}
+    .dropzone-height                                    { width: 70%;} 
+    .add-doc-btn-blk                                    { margin-left: -3px; padding: 25px 10px; height: 100px; width: 30%;background: #ffffff; border: 1px dashed #ABABAB; border-left: transparent; border-radius: 4px; display: inline-block;}
+    .dropzone-height                                    { height: 100px; background: #ffffff; border: 1px dashed #ABABAB; border-right: transparent; border-radius: 4px;}
+    .dropzone                                           { padding: 5px 15px; display: flex; align-items: center; min-height: 98px; border: none;}
+    .dropzone .dz-message,                              
+    .dropzone button                                    { margin: 0;}
+    .dropzone .dz-message{ text-align: left;}
+    button.add-doc-btn                                  { margin: 0;width: 100%; cursor: pointer !important; padding: 12px 20px; background: #152C53; border: none; color: #ffffff !important; border-radius: 25px; display: inline-block;}
+    button.add-doc-btn:hover                            { background: #5BD17A;}
+    .upload-doc-list                                    { height: 180px;}
+    .upload-doc-list h6                                 { margin: 0 0 10px; font-family: 'Cera Basic Bold';}
+    #step-4 .terms-signup                               { position: relative;}
+    .dropzone .dz-preview .dz-image                     { height: 60px; width: 60px; position: relative;}
+    .uploaded-files .files                              { margin-right: 10px; display: flex; justify-content: space-between; align-items: center;}
+    .uploaded-files .files a                            { color: #DE5246; font-size: 18px;}
+    .dropzone .dz-preview .dz-progress                  { margin-left: -20px; height: 10px; width: 35px;}
+    .dropzone .dz-preview .dz-remove                    { font-size: 12px; color: #ffffff !important; position: absolute; top: 0; right: 0;}
+    /*.doc-upload-blk                                     { margin: 35px auto; width: 550px;}
+    .doc-upload-blk form                                { margin: 35px 0px;}
+    .dropzone                                           { padding: 35px 20px; min-height: 64px; border: 1px dashed #ABABAB; position: relative; border-radius: 4px;}
+    .dropzone .dz-message,                              
+    .dropzone button                                    { margin: 0;}
+    .dropzone .dz-message                               { text-align: left;}
+    button.add-doc-btn                                  { min-width: 138px; cursor: pointer !important; padding: 7px 20px; background: #152C53; border: none; color: #ffffff !important; border-radius: 25px; position: absolute; top: 50%; right: 15px; transform: translateY(-50%); -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); display: inline-block;}
+    button.add-doc-btn:hover                            { background: #5BD17A;}
+    .upload-doc-list                                    { height: 180px;}
+    .upload-doc-list h6                                 { margin: 0 0 10px; font-family: 'Cera Basic Bold';}
+    #step-4 .terms-signup                               { position: relative;}*/
+    .dropzone .dz-preview .dz-remove::before            { z-index: 100; content: '\f00d'; background: #DE5246; color: #ffffff; height: 20px; width: 20px; position: absolute; top: -8px; right: -6px; display: block; font-size: 12px; line-height: 18px; font-family: 'FontAwesome'; border-radius: 50px;}
+    .dropzone .dz-preview .dz-details .dz-size span                                       { display: none;}
+    .dropzone .dz-preview .dz-details .dz-filename span                                       { display: none;}
+    /******* Documents Uploads Step CSS End ******/  
+/******* Gigs Worker Signup Wizard CSS End ******/ 
+/******* Gigs Worker Dashboard CSS Start ******/ 
+      /******* My Gigs CSS Start ******/  
+      .without-title .leftsidebar                       { margin-top: 15px;}
+      .without-title .main-content                      { margin-left: 15px; padding-top: 35px;}
+      .account-setup,
+      .gigworker-info,
+      .gigs-blue-blk                                    { margin-bottom: 20px; padding: 10px 20px; background: #ffffff; box-shadow: 0px 2px 6px rgba(0,0,0,0.16);}
+      .progress-title p                                 { margin: 0; font-family: 'Cera Basic Bold';}
+      .progress-title span                              { font-size: 13px; line-height: 18px;}
+      .progress                                         { margin-left: 35px; height: 25px;}
+      .progress-bar                                     { padding: 0px 10px; background-color: #51BA6C; font-family: 'GillSans'; color: #152C53; font-size: 13px; line-height: 20px; text-align: right;}                                   
+      .gigworker-info h2                                { padding-bottom: 15px;}
+      .gigworker-info .gigworker-user                   { margin-left: 25px; width: 65%; flex-basis: 65%;}
+      .gigworker-info .gigworker-img                    { width: 35%; flex-basis: 35%;}
+      .gigworker-info p:last-child                      { margin-bottom: 15px !important;}
+      .gigs-blue-blk                                    { padding: 10px 35px; height: 76px; background: #152C53;}
+      .gigs-blue-blk .gig-bio-btn                       { margin: 0px 35px;}
+      .gigs-blue-blk .gig-bio-btn .btn-small            { width: 190px;}
+      .gigs-blue-blk  p                                 { color: #ffffff;}
+      /******* My Gigs CSS End ******/
+      /******* My Gigify CV CSS Start ******/
+      .gigfy-cv-profile                                 { padding: 20px 35px;}
+      .gigifycv-user-img                                { height: 110px; width: 110px; display: block; border-radius: 50%; position: absolute; top: 0; left: 11px;}
+      .gigifycv-user-img-blk                            { position: relative; }
+      .gigifycv-user-img .box label                     { position: absolute; top: 0;  right: 0px; display: inline-block; background: #51BA6C; height: 35px; width: 35px; border-radius: 50%; text-align: center; color: #FFF; padding: 5px; cursor: pointer;}
+      .gigifycv-logo img                                { width: 132px;}
+      .gigfycv-portfolio-info                           { padding: 10px 25px;}
+      .gigfycv-portfolio-info h3                        { margin-bottom: 10px; text-transform: uppercase;}
+      .gigfycv-portfolio-info h3 span                   { margin: 0px 10px; font-family: 'Cera Basic Regular'; font-size: 12px; line-height: 16px;}
+      .gigfycv-portfolio-info ul li span                { padding: 0 25px 0 5px; font-family: 'Cera Basic Regular'; font-size: 16px; line-height: 22px; color: #152C53;}
+      .add-portfolio-text                               { max-height: 260px; margin-top: -25px; padding: 35px 35px 20px; background: rgba(21,44,83,0.05); border-radius: 4px;}
+      .add-portfolio-text-blk                           { margin-right: 10px;}
+      .add-portfolio-text h6                            { margin-bottom: 5px; color: #152C53;}
+      .add-portfolio-text textarea                      { padding: 5px 15px; height: 60px; width: 100%; resize: none; border: 1px solid #30975D; border-radius: 4px;}
+      .add-portfolio-text textarea:focus                { outline: none; border-width: 2px;}
+      .add-portfolio-text p                             { font-size: 15px; line-height: 20px; color: rgba(21,41,83,0.80);}
+      .other-gigcv-info                                 { margin-top: 25px;}
+      .other-gigcv-blks                                 { height: 450px;}
+      .other-gigcv-blk                                  { margin-right: 8px; padding: 25px; border-top: 1px solid #F1F1F3;}
+      .other-gigcv-blk:first-child                      { border: none;}
+      .other-gigcv-user-img                             { margin-right: 15px; height: 50px; width: 50px; display: block;}
+      .other-gigcv-details h6                           { margin-right: 15px; color: #152C53;}
+      .other-gigcv-excerpt p                            { padding: 5px 0; font-size: 13px; line-height: 20px;}
+      .other-gigcv-nm                                   { font-family: 'GillSansLight'; font-size: 16px; line-height: 22px; color: rgba(21,41,83,0.60);}
+      .other-gigcv-details .rating-star .rating > label::before     { margin: 0px 2px; font-size: 18px;} 
+      .gigifycv-portfolio-blk                           { margin-top: 10px; padding: 10px 15px; background: #ffffff; box-shadow: 0px 2px 6px rgba(0,0,0,0.10);}  
+      .gigifycv-portfolio-blk h6                        { text-align: center; color: #51BA6C;}
+      .gigifycv-portfolio-service                       { margin: 10px 0px;}
+      .gigifycv-portfolio-service-number                { margin-right: 10px; font-family: 'Cera Basic Bold'; font-size: 25px; line-height: 30px;}
+      .gigifycv-portfolio-service-nm                    { font-size: 16px; line-height: 22px;}
+      .gigifycv-portfolio-blk-height                    { height: 184px;}
+      .gigifycv-portfolio-blk .gigifycv-portfolio-service-ic img    { height: 30px; width: 30px; object-fit: cover;}
+      /******* My Gigify CV CSS End ******/
+      /******* Gig Service CSS Start ******/
+      .adding-gig-service-lists                         { margin: 15px 0 25px; padding-bottom: 25px; position: relative; max-height: 550px;}
+      .adding-gig-service-lists::after                  { content: ''; background: rgba(21,44,83,0.20); height: 1px; width: 570px; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); -moz-transform: translateX(-50%); -webkit-transform: translateX(-50%);}
+      .gig-service-list-blks                            { margin: 15px 5px 15px 0;}
+      .gig-service-list-blks .gig-service-list img      { height: 30px; width: 30px; object-fit: cover;}
+      .gig-service-list,
+      .add-gig-service-blk                              { margin: 0px 20px; padding: 8px 10px; width: 85%; flex-basis: 85%; -webkit-flex-basis: 85%; background: #ffffff; box-shadow: 0px 2px 6px rgba(0,0,0,0.10); position: relative;}
+      .gig-service-list h3,
+      .gig-service-list h6                              { margin: 0px 20px; text-transform: uppercase;}
+      .gig-service-list h6,
+      .add-gig-service-blk h6                           { font-family: 'Cera Basic Regular'; color: #152C53;}
+      .gig-service-list-price                           { font-size: 25px; line-height: 35px; color: rgba(21,41,83,0.77);}
+      .gig-service-list-price span                      { padding-left: 8px; min-width: 33px; display: inline-block;}
+      .gig-service-list-delete                          { width: 15%; flex-basis: 15%; -webkit-flex-basis: 15%; margin: 0px 5px;}
+      .gig-service-list-delete button,
+      .gig-service-list-delete a                        { padding: 12px 10px; background: #ffffff; border: none; box-shadow: 0px 2px 6px rgba(0,0,0,0.10); text-align: center; width: 100%; display: block;}
+      .gig-service-list-delete button:hover,
+      .gig-service-list-delete a:hover                  { background: #5BD17A;}
+      .gig-service-list-delete button:hover svg line    { stroke: #ffffff; fill: #ffffff; }
+      .gig-service-list-nm                              { width: 45%;}
+      .add-gig-service h3                               { margin: 0 15px 15px 50px; display: inline-block; color: #51BA6C; text-transform: none;}           
+      .add-gig-service-blk .select-style .jcf-select    { margin: 8px 0px; height: 35px; min-width: 100%;} 
+      .add-gig-service-blk .select-style .jcf-select-opener::before { top: 6px;}
+      .add-gig-service-blk li                           { padding: 0px 10px; display: inline-block; width: calc(100% / 3 - 3px); vertical-align: top;} 
+      .add-gig-service-blk li .form-group               { margin: 8px 0;}
+      .add-gig-service-blk li .form-group .form-control { padding: 5px 10px; font-family: 'GillSansLight'; font-size: 14px; line-height: 22px; height: 35px; border-color: #dededf;}
+      .add-service-btn button                           { margin: 0; height: 86px;}    
+      .gig-service-list-delete:hover img                { filter: brightness(100); -webkit-filter: brightness(100);}
+      .add-gig-service-blk li .form-group .form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: #b5b5b5;
+      }
+      .add-gig-service-blk li .form-group .form-control::-moz-placeholder { /* Firefox 19+ */
+        color: #b5b5b5;;
+      }
+      .add-gig-service-blk li .form-group .form-control:-ms-input-placeholder { /* IE 10+ */
+        color: #b5b5b5;;
+      }
+      .add-gig-service-blk li .form-group .form-control:-moz-placeholder { /* Firefox 18- */
+        color: #b5b5b5;;
+      }
+      /******* Gig Service CSS End ******/
+      /******* Work Range CSS Start ******/
+      .work-range-blk .map-area-blks                    { box-shadow: 0px 2px 6px rgba(0,0,0,0.16);}
+      .work-range-blk                                   { margin: 25px 15px;}
+      .work-range-blk .map-images .map-off              { display: none;}
+      .work-range-blk .map-images .map-on               { display: block;}
+      .work-range-blk .btn-small                        { margin: 100px 0 25px;}
+      /******* Work Range CSS End ******/
+      /******* Earnings CSS Start ******/
+      .earnigs-blk                                      { padding: 25px;}
+      .earning-selection li                             { margin-right: 20px; display: inline-block;}
+      .earnings-info                                    { margin: 15px 0px;}
+      .earnings-info h5                                 { font-size: 13px; line-height: 18px; text-transform: uppercase;}
+      .earnings-info div                                { margin-right: 10px; padding: 10px 15px; height: 78px; width: calc(100% / 3); background-color: #ffffff; box-shadow: 0px 2px 6px rgba(0,0,0,0.16); display: flex; display: -webkit-flex; flex-direction: column; -webkit-flex-direction: column; justify-content: center; -webkit-justify-content: center; align-items: center; -webkit-align-items: center;}
+      .earnings-info div:last-child                     { margin: 0;}
+      .total-earn .total-price                          { font-family: 'GillSans'; font-size: 30px; line-height: 40px; color: #51BA6C;}
+      .total-gigs span,
+      .total-hours span                                 { font-family: 'GillSans'; font-size: 24px; line-height: 30px;}
+      .chart-blk                                        { margin-top: 25px; padding: 15px; background: #ffffff; box-shadow: 0px 2px 6px rgba(0,0,0,0.10);}
+      .chart-blk .chart-title                           { font-size: 12px; line-height: 18px; color: rgba(21,41,83,0.70); text-align: center;}
+      .chart-blk canvas                                 { margin: 10px 0px; height: 310px !important;}
+      /******* Earnings CSS End ******/
+/******* Gigs Worker Dashboard CSS End ******/ 
+
+/******* Service Page CSS Start ******/
+.services-sec                                           { padding: 25px 0px;}
+.service-search-sec                                     { margin-bottom: 15px;}
+.service-search-sec h2                                  { font-family: 'Cera Basic Black'; font-size: 24px; line-height: 30px; text-transform: none;}
+.service-search-sec h6                                  { margin: 5px 0 10px; font-family: 'Cera Basic Regular'; color: #152C53;}
+.service-search-sec .service-search-blk                                { position: relative;}
+.service-search-sec input                               { padding: 7px 7px 7px 40px; width: 380px; border: 1px solid #E6E8EC; border-radius: 4px 4px 0 0;}
+.service-search-sec button                              { margin: 0 0 0 15px;}
+.service-search-sec .service-search-blk img                            { position: absolute; top: 12px; left: 10px;}
+.service-blks                                           { margin: 15px 0px; background: #ffffff; box-shadow: 6px 6px 12px rgba(0,0,0,0.04); height: 290px;}
+.service-blks .service-img                              { height: 65px; background-position: center center; background-size: cover;}
+.service-blks .service-nm                               { padding: 12px 10px 12px 60px; background: #14294B; font-family: 'Cera Basic Bold'; font-size: 21px; line-height: 25px; color: #fff; text-transform: uppercase;}
+.sub-service-list ul                                    { padding: 5px 22px 10px 60px;}
+.sub-service-list li a                                  { padding: 3px 0px; color: #152C53; display: inline-block;}
+.overlay-open .service-search-sec input                 { border-bottom: transparent;}
+.search-list .search-ser-price                          { margin-right: 10px;} 
+.search-list .search-ser-nm                             { color: #152C53;}
+.search-list:hover .search-ser-nm                       { color: #51BA6C;}
+.search-scroll                                          { max-height: 200px;}
+/******* Service Page CSS End ******/
+
+/******* Home Page CSS Start ******/
+.refer-earn-blk                                         { padding: 10px 15px; background: #FFFAD5;}
+.refer-earn-blk a                                       { color: #152C53;}
+.refer-earn-blk img                                     { margin: 0px 15px;}
+.refer-earn-blk h6 span                                 { font-family: 'Cera Basic Regular'; color: #152C53;}
+.home-main-blk                                          { padding: 20px 0 50px;}
+.banner-info                                            { max-width: 570px;}
+.banner-info h2 span                                    { color: #51BA6C;}
+.banner-info h3                                         { margin: 20px 0px 35px; font-family: 'Cera Basic Regular'; text-transform: none;}
+.autosearch-container                                   { padding: 10px 15px 15px 15px; background: #ffffff; position: absolute; top: 38px; width: 380px; opacity: 0; visibility: hidden; transition: all 0.3s ease-in-out; border: 1px solid #E6E8EC; border-radius: 0 0 4px 4px; border-top: transparent; z-index: 1;}
+.autosearch-container.show                              { opacity: 1; visibility: visible;}
+.autosearch-container h6                                { font-family: 'Cera Basic Reg-italic'; font-size: 14px; line-height: 22px; color: rgba(21,41,83,0.50);}
+.autosearch-container .search-img                       { height: 36px; width: 36px; border-radius: 0%; background-position: center center !important; background-size: contain !important;}
+.serach-service-list                                    { margin: 10px 0px;}
+.search-ser-nm                                          { padding: 0px 25px;}
+.search-ser-price                                       { color: #51BA6C;}
+.popular-gig-slider h1                                  { margin: 25px 15px; font-family: 'Cera Basic Bold'; font-size: 24px; line-height: 30px;}
+.popular-gig-slider h1 img                              { margin: 0px 12px;}
+.popular-gigs-blk                                       { margin: 10px 15px 20px 15px; background: #ffffff; box-shadow: 0px 2px 6px rgba(0,0,0,0.16); text-align: center;}
+.popular-gig-slider .popular-gigs-blk .popular-gig-img  { height: 110px; width: 100%; background-size: cover !important; background-position: center center !important;}                         
+.popular-gig-info                                       { padding: 15px;}
+.popular-gig-info h5                                    { font-family: 'Cera Basic Bold'; color: #152C53;}
+.popular-gig-price                                      { font-family: 'Cera Basic Reg-italic'; font-size: 17px; line-height: 22px; color: #51BA6C;}
+.popular-gig-slider .slick-prev::before, 
+.popular-gig-slider .slick-next::before                 { font-family: unset; opacity: 1; font-size: 35px; line-height: 28px; color: rgba(230,232,236,0.70); font-family: 'FontAwesome';}
+.popular-gig-slider .slick-prev::before                 { content: '\f0d9';}
+.popular-gig-slider .slick-next::before                 { content: '\f0da';}
+.popular-gig-slider .slick-prev, 
+.popular-gig-slider .slick-next                         { height: 30px; width: 30px;}
+.popular-gig-slider .slick-prev                         { left: -30px;}
+.popular-gig-slider .slick-next                         { right: -30px;}
+.how-works-sec h1                                       { margin:10px 0 35px; font-family: 'Cera Basic Bold'; font-size: 30px; line-height: 35px;}
+.how-work-blks h3                                       { margin: 35px 0 10px; text-transform: none;}
+.how-work-blks p                                        { font-size: 18px; line-height: 22px;}
+.love-gigs-sec                                          { padding: 50px 0px; background: rgba(230,232,236,0.50);}
+.love-gigs-sec h1                                       { margin:10px 0 35px; font-family: 'Cera Basic Bold'; font-size: 30px; line-height: 35px;}
+.love-gigfy-list                                        { padding: 15px 70px;}
+.love-gigfy-list img                                    { margin-right: 25px;}
+.love-gigfy-list h3                                     { margin-bottom: 5px; color: #51BA6C;}
+.love-gigfy-list p                                      { font-size: 16px; line-height: 22px;}
+.love-gigify-logo                                       { background: #ffffff; height: 250px; width: 250px; border-radius: 50%; display: inline-flex; display: -webkit-inline-flex; align-items: center; -webkit-align-items: center; justify-content: center; -webkit-justify-content: center;}
+.getapp-links .forgotpwd-bg                             { height: auto; background-size: 50% auto;}
+.getapp-links .forgot-blk .form-style                   { margin: 40px 0 35px;}
+.getapp-links .forgot-blk                               { max-width: 600px; padding: 150px 35px 70px 70px;}
+.getapp-links .forgot-blk .input                        { min-width: 300px;}            
+.getapp-links .forgot-blk button                        { margin: 35px 25px 25px;}      
+.app-btns a                                             { margin: 10px 20px 10px 0; display: inline-block;}
+.gig-video-sec                                          { background: -moz-linear-gradient(top, #f2f3f5 0%, #ffffff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #f2f3f5 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #f2f3f5 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */}
+.gig-video-sec h1,
+.testimonial-blk h1,
+.become-gigworker-blk h1                                     { margin: 5px 0px; font-family: 'Cera Basic Bold'; font-size: 30px; line-height: 35px;}
+.gig-video-sec h3,
+.testimonial-blk h3,
+.become-gigworker-blk h3                                     { font-family: 'Cera Basic Regular'; text-transform: none;}
+.video-sec                                              { margin-top: 40px;}
+.video-sec h2                                           { margin-left: 25px; font-size: 22px; line-height: 30px;}
+.video-sec h2 span                                      { color: #51BA6C;}
+.gigdone-list                                           { margin: 15px 30px;}
+.gigdone-list img                                       { margin-right: 15px;}
+.gigdone-list h2                                        { margin-left: 0; font-family: 'Cera Basic Regular'; font-size: 20px; line-height: 25px;}
+.video-img                                              { margin-bottom: 20px; position: relative;}
+.play-video img                                         { width: 60px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%);}
+.testimonial-blk                                        { padding: 70px 0 100px;}
+.testimonial-slider-info                                { margin: 50px 0px; max-width: 600px; width: 100%;}
+.testimonial-blk .testimonial-slides .testimonial-user-img               { margin-right: 35px; height: 110px; width: 110px; background-position: center center; background-size: cover; border-radius: 50%;}
+.testimonial-text                                       { padding: 15px 0; font-family: 'Cera Basic Reg-italic'; font-size: 15px; line-height: 22px; position: relative;}
+.testimonial-text::before                               { content: ''; background: url('../images/quote.png') no-repeat; height: 16px; width: 18px; position: absolute; top: 0; left: 0;}
+.testimonial-user-nm                                    { font-family: 'Cera Basic Bold'; font-size: 17px; line-height: 22px; min-width: 150px; text-transform: capitalize;}
+.testimonial-user-title                                 { font-size: 15px; line-height: 22px; color: #51BA6C; text-transform: uppercase;}
+.testimonial-blk .testimonial-slides .slick-dots li button::before { font-size: 30px; line-height: 25px; color: rgba(81,186,108,0.50); opacity: 1;}
+.testimonial-blk .testimonial-slides .slick-dots li.slick-active button::before     { color: #51BA6C;}
+.become-gigworker-blk                                   { padding: 35px 0px; background: -moz-linear-gradient(top, #152c53 0%, #14284a 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #152c53 0%,#14284a 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient( bottom, #152c53 0%,#14284a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ position: relative; z-index: 10; }
+.become-gigworker-blk::before                           {  content: ''; background: url('../images/become-gigworker-man.svg') no-repeat right bottom / cover; height: 764px; width: 690px; position: absolute; bottom: 0; right: 0; z-index: -1;}
+.become-gigworker-blk h1,
+.become-gigworker-blk h3                                { color: #ffffff;}
+.become-gigworker-blk h3                                { margin-bottom: 35px;}
+.become-gigworker-blk .love-gigfy-list                  { padding: 25px 0px; max-width: 750px;}
+.become-gigworker-blk .love-gigfy-list h3               { margin-bottom: 5px; color: #51BA6C;}
+.become-gigworker-blk p                                 { color: #ffffff;}
+.become-gigworker-blk h6                                { margin: 15px 15px 25px 70px; font-family: 'Cera Basic Regular'}
+/******* Home Page CSS End ******/
+
+/******* Manage Account CSS Start ******/
+.user-profile-img                                       { height: 130px; width: 130px; border-radius: 50%; position: relative;}
+.upload-user-img                                        { display: none; background: rgba(255,255,255,0.70); width: 130px; height: 55px; border-radius: 0 0 130px 130px; position: absolute; bottom: 0; transition-duration: 0.3s; -webkit-transition-duration: 0.3s; -moz-transition-duration: 0.3s;}
+.upload-user-img p                                      { margin-bottom: 0px;}
+.upload-user-img a:hover                                { color: #152C53 !important;}
+.user-profile-img:hover .upload-user-img                { display: block;}
+.notification-blk form div                              { padding: 5px 0px;}
+.notification-blk span                                  { margin-left: 15px; font-size: 15px; line-height: 22px;}
+.my-profile-pg .input                                   { margin: 8px 0;}
+.my-profile-pg .select-style                              { margin-top: 10px; }
+.my-profile-pg .select-style .jcf-select                  { height: 42px; min-width: 100%; }
+.my-profile-pg .select-style .jcf-select .jcf-select-text { padding: 8px 10px; }
+/******* Manage Account CSS End ******/
+
+/******* Booking Service Pages CSS Start ******/
+.booking-service-nm                                     { width: 40%;}
+.booking-service-nm h3                                  { text-transform: uppercase; display: inline-block;}
+.booking-step-bg                                        { padding: 40px 0px; background: #fff; box-shadow: 6px 6px 12px rgba(0,0,0,0.04);}
+.booking-service-steps .step-progress                   { background: transparent; border-radius: 0; width: 60%; position: absolute; height: auto; top: -90px; right: 0;}
+.booking-service-steps .nav-tabs                        { border: none;}
+.booking-service-steps .sw-theme-default > ul.step-anchor > li                  { margin: 0 !important; padding: 0px 10px; width: calc(100% / 3 - 10px); display: inline-flex; display: -webkit-inline-flex; align-items: center; -webkit-align-items: center; justify-content: center; -webkit-justify-content: center; flex-direction: column; -webkit-flex-direction: column;}
+.booking-service-steps .sw-theme-default > ul.step-anchor > li > a              { padding: 9px 17px; height: 42px; width: 42px; background: rgba(21,44,83,0.20) !important;}
+.booking-service-steps .sw-theme-default > ul.step-anchor > li > a span         { font-family: 'Cera Basic Bold'; font-size: 17px; line-height: 20px; color: rgba(255,255,255,0.20);}
+.booking-service-steps .sw-theme-default > ul.step-anchor > li.active > a,
+.booking-service-steps .sw-theme-default > ul.step-anchor > li.done > a         { background: #152C53 !important;}
+.booking-service-steps .sw-theme-default > ul.step-anchor > li.active > a span  { color: #ffffff;} 
+.booking-service-steps .step-progress li span                                   { color: rgba(21,41,83,0.20);}
+.booking-service-steps .step-progress li.active span,
+.booking-service-steps .step-progress li.done span                               { color: #152C53;}
+.booking-service-steps .sw-theme-default > ul.step-anchor > li.active > a        { cursor: default;}
+.booking-service-steps .sw-theme-default > ul.step-anchor > li > a::before       { height: 4px; width: 155px; top: 50%; left: 120%; transform: translateY(-50%); -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); background: rgba(21,44,83,0.20);}  
+.booking-service-steps .sw-theme-default > ul.step-anchor > li.done > a::before   { background: #152C53;} 
+.booking-service-steps .sw-theme-default > ul.step-anchor > li:first-child > a::before   { display: block;}      
+.booking-service-steps .sw-theme-default > ul.step-anchor > li:last-child > a::before    { display: none;}
+.booking-service-steps .sw-theme-default > ul.step-anchor > li.done > a::after   { background: url('../images/check.png') no-repeat;}
+    /******* Gig Details CSS Start ******/ 
+    .gig-service-details-blk                                                     { margin: 35px 0px;}
+    .gig-service-details-blk h6                                                  { color: #51BA6C;}
+    .gig-service-details-blk p                                                   { margin-bottom: 0;}
+    .gig-service-details-blk .input                                              { max-width: 350px;}
+    .hoshi-textarea .input                                                       { max-width: 550px;}
+    .hoshi-textarea .input .input__field                                         { height: 90px;}
+    .radio-style-2                                                               { margin: 15px 0;}
+    .radio-style-2 li                                                            { display: inline-block; width: calc(100% / 3 - 3px); vertical-align: middle;}
+    .radio-style-2 li .jcf-radio                                                 { margin-right: 15px; height: 20px; width: 20px; border-color: #D8D8D8;}
+    .radio-style-2 li .jcf-radio input                                           { cursor: pointer; }
+    .radio-style-2 li .jcf-radio span                                            { background: #51BA6C;}
+    .gig-service-data-btns button                                                { margin: 25px 15px 50px; min-width: 160px;}
+    .gig-service-details-sec h5                                                  { margin: 35px 0 15px;}
+    /* .gig-service-details-sec .map-style                                          { box-shadow: 6px 6px 12px rgba(0,0,0,0.16);} */
+    .gig-service-details-sec #map                                                { height: 400px;}
+    /******* Gig Details CSS End ******/ 
+    /******* Select Gigworker CSS Start ******/ 
+    .select-gigworker                                                            { padding: 15px 0;}
+    .select-gigworker .left-panel                                                { padding: 0px 15px 0 0; width: 25%; flex-basis: 25%; -webkit-flex-basis: 25%; border-right: 1px solid #F0F0F0;}
+    .select-gigworker .right-panel                                               { padding: 0px 15px; width: 75%; flex-basis: 75%; -webkit-flex-basis: 75%;}
+    .select-gigworker-blks                                                       { margin: 15px 0 35px; position: relative;}
+    .select-gigworker-blks h6                                                    { font-family: 'Cera Basic Bold'; color: #152C53;}   
+    .availbility-time-blk .jcf-radio                                             { display: none;}
+    .availbility-time-blk li                                                     { padding: 10px 10px 5px 0; display: inline-block;}
+    .availbility-type                                                            { cursor: pointer; padding: 6px; min-width: 108px; font-size: 13px; background: #fff; border: 1px solid #152C53; border-radius: 4px; text-align: center; transition-duration: 0.3s; -webkit-transition-duration: 0.3s;}
+    .select-gigworker-blks .jcf-label-active .availbility-type                   { background: #152C53; color: #ffffff;}
+    .select-time-slot.disabled-options                                           { color: #CCD0D8;}
+    .select-time-slot .radio-style                                               { margin: 10px 10px 5px;}
+    .select-time-slot .radio-style .jcf-radio                                    { margin-right: 10px;}
+    .select-specific-time                                                        { margin-top: 10px; margin-right: 10px;}
+    .select-specific-time .jcf-select                                            { min-width: 100%;}
+    .sort-rating .jcf-select                                                     { margin-left: 15px; min-width: 200px;}
+    .gig-worker-user-details-blks                                                { margin-top: 20px; height: 770px;}
+    .gig-worker-user-blue-blk                                                    { width: 40%; flex-basis: 40%; -webkit-flex-basis: 40%;}
+    .gig-worker-user-wt-blk                                                      { width: 60%; flex-basis: 60%; -webkit-flex-basis: 60%;}
+    .gig-worker-user-details,
+    .no-gigeorkers-blk                                                           { margin: 5px 5px 20px; box-shadow: 0px 2px 6px rgba(0,0,0,0.16); border-radius: 18px;}
+    .no-gigeorkers-blk                                                           { padding: 15px;}
+    .no-gigeorkers-blk img                                                       { margin-right: 10px;}
+    .no-gigeorkers-blk h1                                                        { margin-bottom: 10px; font-family: 'Cera Basic Black'; font-size: 28px; line-height: 35px;}
+    .no-gigeorkers-blk p                                                         { font-size: 15px; line-height: 22px;}
+    .gig-worker-user-blue-blk                                                    { padding: 20px 15px; background: #152C53; border-radius: 18px 0 0 18px;}
+    .gig-worker-user-blue-blk .gigifycv-user-img                                 { width: 90px; height: 90px; left: 0; position: relative;}
+    .gig-worker-user-blue-blk .gigifycv-logo img                                 { display: none;}
+    .gig-worker-user-blue-blk .gigfycv-portfolio-info                            { padding: 0 0 0 15px;}
+    .gig-worker-user-blue-blk .gigfycv-portfolio-info h6                         { color: #ffffff; text-transform: uppercase;}
+    .gig-worker-user-blue-blk .gigfycv-portfolio-info ul                         { margin: 5px 0;}
+    .gig-worker-user-blue-blk .gigfycv-portfolio-info ul li img                  { width: 10px;}
+    .gig-worker-user-blue-blk .gigfycv-portfolio-info ul li span,
+    .gig-worker-user-blue-blk .gigfycv-portfolio-info a                          { font-size: 12px; line-height: 16px; color: #ffffff;}
+    .gig-worker-user-blue-blk .gigfycv-portfolio-info a                          { text-decoration: underline;}
+    .select-continue                                                             { margin-top: 20px;}
+    .select-continue button,                                                      
+    .select-continue a                                                           { padding: 10px 15px;}
+    .gigworker-hr-price                                                          { font: 18px; line-height: 22px; color: #51BA6C;}
+    .gigworker-hr-price span                                                     { font-family: 'Cera Basic Bold'; font-size: 27px; line-height: 35px;}
+    .gig-worker-user-wt-blk                                                      { padding: 15px;}
+    .gig-worker-user-wt-blk .add-portfolio-text                                  { padding: 0; margin: 0 0 15px; background: transparent;}
+    .gig-worker-user-wt-blk .add-portfolio-text:last-child                       { margin: 0;}
+    .gig-worker-user-wt-blk .add-portfolio-text p                                { font-size: 13px; line-height: 19px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;   overflow: hidden;}
+    #gigworker-profile-modal .jcf-radio,
+    #login-modal .jcf-radio                                                      { display: none;}
+    #login-modal .login-bg                                                       { padding: 60px 25px; min-height: 630px;}
+    #login-modal .login-form h2                                                  { font-size: 28px; line-height: 35px;}
+    #login-modal .close svg                                                      { display: none;}
+    .gigworker-profile-modal .add-portfolio-text                                 { margin-top: 15px;}
+    .gigworker-profile-modal .gigfy-cv-profile                                   { padding: 20px 0;}
+    .gigworker-profile-modal .gigifycv-user-blks,
+    .gigworker-profile-modal .other-gigcv-info                                   { padding: 0px 35px;}
+    .gigworker-profile-modal .other-gigcv-info .other-gigcv-user-img             { margin-right: 35px; height: 70px; width: 70px;}
+    .gigworker-profile-modal .other-gigcv-info .other-gigcv-blks                 { height: 300px;}
+    .gigworker-profile-modal .reviews-title img                                  { margin-right: 20px; width: 18px;}
+    .gigworker-profile-modal .reviews-title .select-style .jcf-select            { min-width: 220px;}
+    .social-login                                                                { text-align: center;}
+
+    .select-gigworker .calender-blk                                              { margin-top: 15px; display: none; padding: 15px; min-height: auto; position: absolute; z-index: 10;}         
+    .select-gigworker .calender-blk .ui-datepicker-title                         { margin-bottom: 10px;}           
+    .select-gigworker .calender-blk .ui-datepicker-prev, 
+    .select-gigworker .calender-blk .ui-datepicker-next                          { height: 30px; width: 30px;}  
+    .select-gigworker .calender-blk .ui-state-default                            { height: 40px; width: 40px; line-height: 42px;}     
+    .select-gigworker .left-panel                                                { position: relative; z-index: 10;}
+    .select-gigworker .right-panel                                               { position: relative; z-index: 1;}
+    .select-gigworker .left-panel .mCustomScrollBox,
+    .select-gigworker .left-panel .mCSB_container                                { overflow: visible;}
+
+    .checkbox-style                                           { margin: 8px 35px 8px 0;}
+    .checkbox-style .jcf-checkbox                             { height: 18px; width: 18px; border-radius: 4px; border-color: #d4d4d5;}
+    .checkbox-style .jcf-checkbox input                       { cursor: pointer;}
+    .checkbox-style .jcf-checkbox span                        { border: none;}
+    .checkbox-style .jcf-checkbox.jcf-checked                 { background: url('../images/check.svg') no-repeat center center; }
+    
+    /******* Select Gigworker CSS End ******/   
+    /******* Review and Confirm CSS Start ******/ 
+    .back-btn                                                                    { margin-right: 35px; background: transparent; border: none;}
+    .review-confirm-blk                                                          { padding-bottom: 35px;}
+    .booking-overview-blk,
+    .cost-breakdown-blk                                                          { margin: 20px 0; padding: 15px 70px 30px; background: rgba(81,186,108,0.10); border-radius: 4px;}
+    .booking-overview-blk h3,
+    .cost-breakdown-blk h3                                                       { text-align: center; text-transform: uppercase; font-size: 18px; line-height: 25px;}
+    .booking-overview-blk h4                                                     { padding: 10px 0; font-family: 'Cera Basic Bold'; font-size: 16px; line-height: 22px; color: #51BA6C; text-transform: capitalize;}
+    .booking-overview-details,
+    .cost-breakdown-details                                                      { margin: 15px 0;}
+    .booking-details-title                                                       { width: 130px; flex-basis: 130px; -webkit-flex-basis: 130px; font-family: 'Cera Basic Bold';}
+    .booking-details-desc a                                                      { color: #152C53 !important;}
+    .booking-details-desc a:hover                                                { text-decoration: underline;}
+    .booking-details-desc,
+    .booking-details-title,
+    .cost-breakdown-detail-titles,
+    .cost-breakdown-desc                                                         { font-size: 16px; line-height: 22px}
+    .booking-overview-blk .map-style                                             { display: none; padding: 5px; position: absolute; width: 500px; top: 39%; background: #fff; left: 50%; transform: translateX(-50%); -webkit-transform: translateX(-50%);}
+    .booking-overview-blk .map-style #map                                        { height: 310px;}
+    .booking-overview-blk .map-style::before                                     { bottom: 100%; left: 50%; transform: translateX(-50%); -webkit-transform: translateX(-50%); border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-bottom-color: #fff; border-width: 17px;}
+    .booking-overview-blk.show-map .map-style                                    { display: block;}
+    .cost-breakdown-blk                                                          { background: rgba(120,132,158,0.10);}
+    .cost-breakdown-detail-titles                                                { width: 330px; flex-basis: 330px; -webkit-flex-basis: 330px;}
+    .cost-breakdown-desc                                                         { color: #A7A7A7; font-family: 'Cera Basic Bold';}
+    .total-amt                                                                   { padding-top: 10px; border-top: 1px solid rgba(120,132,158,0.20);}
+    .total-amt .cost-breakdown-detail-titles                                     { font-family: 'Cera Basic Bold';}
+    .total-amt .total-price                                                      { font-family: 'Cera Basic Bold'; font-size: 20px; line-height: 28px; color: #51BA6C;}                                                          
+    .cmp-address p                                                               { font-size: 13px; line-height: 20px; color: #78849E; text-align: center;}
+    .promocode-blk .input--hoshi                                                 { width: 350px;}
+    .paymnet-select-dropdown h5                                                  { margin-bottom: 10px;}
+    .disable-btn .btn-small                                                      { background: #D8D8D8;}
+    .payment-details-blk h3                                                      { text-transform: uppercase; font-size: 18px; line-height: 25px; text-align: center;}
+    .payment-details-faq .panel-default                                          { margin: 15px 0;}
+    .payment-details-faq .panel-title a                                          { padding: 10px 35px; position: relative; font-size: 16px; line-height: 25px; color: #152C53 !important; background: #ffffff; box-shadow: 0px 2px 6px rgba(0,0,0,0.10); display: block;}
+    .payment-details-faq .panel-title a::after                                   { content: ''; background: url('../images/accordian-arrow.svg') no-repeat; height: 22px; width: 22px; position: absolute; top: 12px; right: 10px; display: block; transition-duration: 0.3s; -webkit-transition-duration: 0.3s; -moz-transition-duration: 0.3s; transform: rotate(-90deg); -webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg);}
+    .payment-details-faq .panel-title a[aria-expanded="true"]::after             { transform: rotate(0deg); -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg);}
+    .payment-details-faq .billing-details-sec                                    { padding: 25px 0;}
+    .payment-details-faq .gig-service-list                                       { background: transparent; box-shadow: none;}
+    .payment-details-faq .panel-body .form-style                                 { margin: 20px auto; max-width: 400px;}
+    .booking-completed                                                           { background: url('../images/booking-completed-img.svg') no-repeat left bottom / auto 100%; display: block; width: 100%; height: 250px; border-radius: 10px;}
+    .booking-completed-text                                                      { margin-left: 220px; padding: 35px 15px; max-width: 570px;}
+    .booking-completed-text p                                                    { margin-top: 10px; font-size: 16px; line-height: 25px;}
+    .modal.fade .modal-dialog                                                    { border-radius: 10px;}
+    .payment-details-faq .panel-body .form-style .select-style                  { margin: 15px 0 4px;}
+    .payment-details-faq .panel-body .form-style .select-style .jcf-select      { margin-bottom: 0; min-width: 100%; height: 43px; border-color: #DEDEDF; border-radius: 4px;}
+    .payment-details-faq .panel-body .form-style .select-style .jcf-select .jcf-select-text { padding: 8px 10px;}
+    .payment-details-faq .panel-body .form-style .col-md-6:first-child          { padding-right: 0;}
+    .payment-details-faq .panel-body .form-style .select-style .jcf-select-opener::before   { top: 10px;}
+    /******* Review and Confirm CSS End ******/ 
+/******* Booking Service Pages CSS End ******/   
+
+/******* Switch Account CSS Start ******/
+.confirm-btn                                                                     { margin: 50px 0 0;}
+.confirm-btn a                                                                   { margin-right: 10px;}
+.swich-account .signup-img                                                       { height: 540px;}
+.login-link a                                                                    { font-size: 18px; line-height: 25px;}
+/******* Switch Account CSS End ******/
+
+/******* Refer and Earn CSS Start ******/
+.refer-earn-sec h2                                                               { color: #51BA6C;}
+.refer-earn-sec h6                                                               { font-family: 'Cera Basic Regular'; color: #152C53;}
+.refer-earn-content                                                              { padding: 70px 0;}
+.refer-earn-img                                                                  { margin-right: 70px;}
+.refer-earn-social li                                                            { padding-right: 15px; display: inline-block;}
+.refer-earn-social li a                                                          { height: 50px; width: 50px; font-size: 22px; line-height: 20px; color: #78849E; border: 2px solid #78849E; border-radius: 50px; display: inline-flex; display: -webkit-inline-flex; align-items: center; -webkit-align-items: center; justify-content: center; -webkit-justify-content: center;}
+.refer-earn-social li a:hover                                                    { background: #78849E; color: #ffffff !important;}
+.refer-earn-social h5                                                            { padding-top: 50px; margin-bottom: 5px; font-family: 'Cera Basic Bold';}
+.refer-terms-link a                                                              { text-decoration: underline;}
+/******* Refer and Earn CSS End ******/
+
+/******* Terms and Condition CSS Start ******/                                                                    
+.terms-condition-content h5                                                      { margin-bottom: 10px;}
+.terms-condition-content h6                                                      { margin: 50px 0 10px; color: #152C53; text-transform: uppercase;}
+.terms-condition-content a                                                       { color: #152C53;}
+.terms-condition-content h4                                                      { font-family: 'Cera Basic Bold'; font-size: 14px; line-height: 22px; color: #152C53; text-transform: uppercase;}
+.terms-condition-content ul                                                      { padding-left: 25px;}
+.terms-condition-content ul li                                                   { padding: 10px 10px 10px 25px; position: relative;}
+.terms-condition-content ul li::before                                           { content: ''; background: #152C53; height: 5px; width: 5px; border-radius: 50px; position: absolute; top: 20px; left: 0; display: block;}
+/******* Terms and Condition CSS End ******/
+
+/******* Contact Us CSS Start ******/
+.contact-blks h5                                                                 { margin-top: 10px;}
+.contact-form .hoshi-textarea .input .input__field                               { height: 150px;}
+.contact-form,  
+.contact-details ul                                                              { margin: 35px auto; max-width: 350px;}
+.contact-details                                                                 { padding-top: 17%;}
+.contact-form .radio-style-2 li                                                  { padding: 0px 15px; width: calc(100% / 2 - 3px);}
+.contact-details h5                                                              { margin-top: 50px;}
+.contact-details li                                                              { padding-bottom: 35px;}
+.contact-details li span                                                         { margin-right: 15px; height: 35px; width: 35px; font-size: 18px; line-height: 20px; color: #78849E; border: 2px solid #78849E; border-radius: 50px; display: inline-flex; display: -webkit-inline-flex; align-items: center; -webkit-align-items: center; justify-content: center; -webkit-justify-content: center;}
+.contact-details li a                                                            { font-size: 16px; line-height: 25px; color: #152C53;}
+.address-info p                                                                  { padding-top: 10px; font-size: 15px; line-height: 22px;}
+/******* Contact Us CSS End ******/
+
+/****** FAQs CSS Start *******/   
+.faqs-page                                                                       { padding: 70px 0 35px;}                                                                  
+.faqs-page h5                                                                    { margin-top: 10px;}
+.faqs-select .jcf-select                                                         { min-width: 230px;}
+.faq-accordian                                                                   { margin-top: 35px;}
+.faq-accordian .nav-tabs                                                         { display: block;}
+.faq-accordian .faqs-menu                                                        { width: 18%; float: left; vertical-align: top; position: relative; height: calc(100vh - 300px);}
+/*.faq-accordian .faqs-content                                                     { width: 82%; float: left; vertical-align: top; height: calc(100vh - 300px);} */
+.faq-accordian .faqs-content                                                     { width: 82%; float: left; vertical-align: top; height: 100%;}
+.faq-accordian .question-height                                                  { max-height: 680px;}
+.faq-accordian .faqs-menu::before                                                { content: ''; background: #F2F3F5; height: calc(100% - 15px); width: 1px; position: absolute; top: 12px; right: 40px; display: block;}
+.faq-accordian .faqs-menu                                                        { border: none;}
+.faq-accordian .faqs-menu li                                                     { padding: 10px 0;}
+.faq-accordian .faqs-menu li a                                                   { font-family: 'Cera Basic Bold'; font-size: 15px; line-height: 22px; color: #152C53; text-transform: uppercase;}
+.faq-accordian .faqs-menu li.active a,
+.faq-accordian .faqs-menu li a:hover,
+.faq-accordian .panel-default .panel-title a:hover,
+.faq-accordian .panel-title a[aria-expanded="true"]                              { color: #51BA6C !important;}
+.faq-accordian .panel-default                                                    { margin: 5px 0 10px;}       
+.faq-accordian .panel-default .panel-title                                       { position: relative;}                               
+.faq-accordian .panel-default .panel-title a                                     { padding: 8px 15px; background: #F2F3F5; font-family: 'Cera Basic Bold'; font-size: 16px; line-height: 22px; color: #152C53; display: block;}
+.faq-accordian .panel-title a::after                                             { content: ''; background: url('../images/accordian-arrow.svg') no-repeat; height: 22px; width: 22px; position: absolute; top: 8px; right: 10px; display: block; transition-duration: 0.3s; -webkit-transition-duration: 0.3s; -moz-transition-duration: 0.3s;}
+.faq-accordian .panel-title a[aria-expanded="true"]::after                       { transform: rotate(180deg); -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg);}
+.faq-accordian .panel-body                                                       { margin-right: 10px; padding: 10px 15px; max-height: 535px;}
+.faq-accordian .panel-body p,
+.faq-accordian .panel-body p:last-child                                          { margin: 12px 0 !important;}
+.faq-accordian .panel-body h6                                                    { padding: 12px 0 8px 20px; font-family: 'Cera Basic Bold'; font-size: 15px; line-height: 22px; color: #152C53;}
+.faq-accordian .panel-body h6 span                                               { margin-right: 5px;}
+.faq-accordian .panel-body ul                                                    { padding-left: 45px;}
+.faq-accordian .panel-body .notes                                                { margin-right: 25px;}
+.faq-accordian .faqs-content.tab-content .accordion-link                         { display: none;}
+.faq-accordian .panel-body ul,
+.faq-accordian .panel-body p                                                     { padding-right: 10px;}
+.faq-accordian .panel-heading                                                    { margin-right: 10px;}
+/****** FAQs CSS End *******/
+
+/****** Biiling Info CSS Start *******/
+.billing-info-blks .col-lg-6                                                     { padding-right: 50px;}
+.billing-info-blks .btn-small,
+.billing-info-blks .grey-btn                                                     { margin-right: 15px; min-width: 180px;}
+/****** Biiling Info CSS End *******/
+
+
+/****** My Availbility CSS Start *******/
+.calender-blk,
+.time-slot-select,
+.select-date-confirmation                                                        { background: #fff; box-shadow: 0px 2px 6px rgba(0,0,0,0.16); min-height: 500px;}
+.my-availibity-blks                                                              { margin-left: 25px; padding: 25px 0;}
+.calender-blk                                                                    { padding: 25px 35px;}
+.ui-widget-header                                                                { position: relative; background: transparent; background-color: transparent;}
+.calender-blk .ui-datepicker-prev, 
+.calender-blk .ui-datepicker-next                                                { width: 35px; height: 35px; text-indent: 9999px;  border-radius: 100%; cursor: pointer; overflow: hidden; } 
+.calender-blk .ui-datepicker-prev                                                { float: left; margin-left: 12px;}
+.calender-blk .ui-datepicker-prev:after                                          { transform: rotate(45deg); margin: -10px 0px 0px 8px; }
+.calender-blk .ui-datepicker-next                                                { float: right; margin-right: 12px; }
+.calender-blk .ui-datepicker-next:after                                          { transform: rotate(-135deg); margin: -10px 0px 0px 6px; }
+.calender-blk .ui-datepicker-prev:after,
+.calender-blk .ui-datepicker-next:after                                          { content: ''; position: absolute; display: block; width: 15px; height: 15px; border-left: 2px solid #152C53; border-bottom: 2px solid #152C53; }
+.calender-blk .ui-datepicker-prev:hover,
+.calender-blk .ui-datepicker-next:hover,
+.calender-blk .ui-datepicker-prev:hover:after,
+.calender-blk .ui-datepicker-next:hover:after                                    { border-color: #152C53; background-color: transparent; }
+.calender-blk .ui-datepicker-title                                               { text-align: center; } 
+.calender-blk .ui-datepicker-calendar                                            { width: 100%;text-align: center;}
+.calender-blk .ui-datepicker-calendar thead tr th span                           { margin-bottom: 10px; display: block; width: 50px; color: #222; }
+.calender-blk .ui-state-default                                                  { display: block; text-decoration: none; font-family: 'GillSans'; color: #152c53; border: 2px solid transparent; line-height: 50px; height: 50px; width: 50px; border-radius: 100%; }
+.calender-blk .ui-datepicker-month                                               { background-color: transparent; font-size: 18px; line-height: 25px; color: #152C53; border: none; outline: none; text-transform: uppercase;}
+.calender-blk .ui-datepicker-year                                                { display: none; background-color: transparent; font-size: 18px; line-height: 25px; color: #152C53; border: none; outline: none;}
+.calender-blk select::-ms-expand                                                 { display: none; outline: none; }
+.calender-blk select                                                             { -webkit-appearance: none; appearance: none; outline: none; } 
+.calender-blk.single-select .ui-state-active,
+.calender-blk .ui-state-default:hover,
+.gig-available .ui-state-default,
+.gig-available .ui-state-default:hover,
+.ui-datepicker .ui-datepicker-calendar .ui-state-highlight a                    { background: rgba(81,186,108,0.30) !important; color: #152c53 !important; position: relative;}
+.gig-available .ui-state-default::before                                         { content: ''; background: #152C53; height: 5px; width: 5px; position: absolute; border-radius: 30px; bottom: 5px; left: 50%; transform: translateX(-50%);}
+.ui-datepicker-current-day.ui-datepicker-today .ui-state-default                 { background: rgba(21,41,83,0.30) !important; color: #152c53 !important;}
+.ui-datepicker-unselectable .ui-state-default,
+.ui-datepicker-unselectable .ui-state-default:hover                              { color: rgba(21,41,83,0.30) !important; border: 2px solid transparent; background: transparent !important;}
+.ui-widget-header                                                                { position: relative;}
+.calender-blk .ui-datepicker-prev                                                { position: absolute; top: 50%; transform: translateY(-50%); left: 20%; z-index: 10; }
+.calender-blk .ui-datepicker-next                                                { position: absolute; top: 50%; transform: translateY(-50%); right: 20%; z-index: 10;}
+.calender-blk .ui-datepicker-title                                               { margin-bottom: 20px; color: #152C53; font-size: 20px; line-height: 50px; position: relative; overflow: hidden; }
+.ui-datepicker-week-end .ui-state-default,
+.ui-datepicker-week-end.ui-datepicker-unselectable.ui-state-disabled .ui-state-default   { font-weight: 700; color: #152C53;}
+.my-availibity-blks .select-time                                                         { padding: 15px 20px; background: #152C53; text-align: center;}
+.my-availibity-blks .select-time .jcf-select .jcf-select-text                    { margin-right: 25px;}
+.my-availibity-blks .select-time h6                                              { margin-bottom: 25px; font-family: 'Cera Basic Regular';}
+.my-availibity-blks .select-time p                                               { padding: 0px 15px; color: #ffffff;}
+.my-availibity-blks .select-time .btn-small                                      { margin: 0 15px; min-width: 100px;}
+.select-time-lists                                                               { padding: 25px 35px;}
+.select-time-lists h5                                                            { margin-bottom: 10px;}
+.select-time-lists-height                                                        { height: 220px;}
+.select-time-lists-blks                                                          { margin: 15px 0;}
+.select-time-lists-blks:last-child                                               { margin: 0;}
+.select-time-lists-blks .start-time,
+.select-time-lists-blks .end-time                                               { margin: 0px 10px; padding: 10px 15px; font-size: 16px; line-height: 25px; border: 1px solid #DEDEDF; border-radius: 8px; width: 110px; text-align: center;}                                                 
+.select-time-lists-blks .edit-time a,
+.select-time-lists-blks .dlt-time a                                             { margin: 0px 5px; background: #152C53; height: 30px; width: 30px; border-radius: 50%; display: inline-flex; display: -webkit-flex; align-items: center; -webkit-align-items: center; justify-content: center; -webkit-justify-content: center; text-align: center;} 
+.select-time-lists-blks .edit-time a img,
+.select-time-lists-blks .dlt-time a img                                         { width: 12px;}
+.select-time-lists-blks .edit-time a:hover,
+.select-time-lists-blks .dlt-time a:hover                                       { background: #51BA6C;} 
+.select-time-lists .btn-small                                                   { margin: 30px 0 0;}
+.time-select-graph                                                              { padding: 35px 15px; height: 500px; width: 70%; flex-basis: 70%; -webkit-flex-basis: 65%;}
+.time-select-graph ul li .time-point,                                            
+.time-select-graph ul li .time-point-graph                                      { padding: 0px 10px;}
+.time-select-graph ul li .time-point                                            { height: 38px; width: 60px; float: left; font-size: 12px; line-height: 8px; border-right: 1px solid #C6C6C6; position: relative;}
+.time-select-graph ul li .time-point::after                                     { content: ''; background: #C6C6C6; height: 1px; width: 15px; position: absolute; top: 0px; right: -8px; display: block; }
+.time-select-graph ul li .time-point-graph                                      { padding-left: 0; width: calc(100% - 60px); float: left; position: relative;}
+.time-select-graph ul li .time-point-graph::before                              { content: ''; background: rgba(81,186,108,0.30); height: 38px; width: 80%; position: absolute; top: 0; left: 0px; display: block; z-index: 1;}
+.date-time-slot-info                                                            { padding: 25px 10px; width: 35%; flex-basis: 30%; -webkit-flex-basis: 30%; border-left: 1px solid #F1F1F3; display: flex; display: -webkit-flex; flex-direction: column; -webkit-flex-direction: column; justify-content: space-around; -webkit-justify-content: space-around;}
+.date-time-slot-availibility li                                                 { padding: 5px 0;}
+.date-time-slot-info .grey-btn                                                  { min-width: 100px;}
+.gig-booked-slot                                                                { padding: 10px 5px; height: 38px; background: #152C53; z-index: 1; position: relative;}
+.date-time-slot-info h3                                                         { color: #51BA6C; font-size: 28px; line-height: 36px;}
+.gig-booked-slot h6                                                             { font-size: 13px; line-height: 18px; text-transform: uppercase;}
+.gig-booked-slot a                                                              { font-size: 12px; line-height: 18px; color: #51BA6C;}
+.multiple-dates .date-time-slot-info                                            { padding: 25px 20px; width: 100%; flex-basis: 100%; -webkit-flex-basis: 100%; justify-content: center; -webkit-justify-content: center; height: 500px;}
+.multiple-dates .date-time-slot-info h5                                         { margin-right: 10px; font-size: 14px; line-height: 22px;}
+
+/* Work When you Want */
+.want-work-blk                                                                 { padding: 35px; background: #152C53; border-radius: 4px; min-height: 350px;}
+.want-work-blk h2                                                              { color: #fff; text-align: center;}
+.want-work-blk h2 span                                                         { color: #51BA6C;}
+.want-work-blk p                                                               { padding-top: 15px; color: #fff; font-size: 18px; line-height: 25px; text-align: center;}
+.want-work-desc                                                                { max-width: 450px;}
+.gig-list-comming.want-work-blk                                                { margin: 15px 0px 15px 30px; max-height: 350px; width: calc(100% - 40px); }
+
+/****** My Availbility CSS End *******/
+
+/****** Gig Worker Availbilty Date CSS Start *******/
+.gigworker-date-availbility.modal.fade .modal-dialog                            { max-width: 950px;}
+.gig-worker-availbility-date                                                    { padding: 35px 15px 20px; text-align: center;}
+.gig-worker-availbility-date h3                                                 { font-family: 'Cera Basic Regular';}
+.gig-worker-availbility-date .calender-blk                                      { width: 45%; flex-basis: 45%; -webkit-flex-basis: 45%; margin: 50px 25px 25px; min-height: 100%; box-shadow: 0px 2px 6px rgba(0,0,0,0.10); border-radius: 8px;}
+/* .gig-worker-availbility-date .ui-datepicker-current-day.ui-datepicker-today .ui-state-default,
+.gig-worker-availbility-date .calender-blk .ui-state-default:hover                 
+.gig-worker-availbility-date .calender-blk .ui-state-active                     { background: rgba(81,186,108,0.30) !important;  color: #152c53 !important;} */
+.gig-worker-availbility-selected-date h2                                        { font-family: 'Cera Basic Regular'; text-transform: uppercase;}
+.gig-worker-availbility-selected-date h2 span                                   { display: block; font-size: 22px; line-height: 30px;}
+.gig-worker-availbility-selected-date-availbility h5                            { color: #51BA6C;}
+.gig-worker-availbility-selected-date-availbility ul li                         { padding-top: 10px;}
+.gig-worker-availbility-selected-date-availbility ul li span                    { margin-left: 8px;}
+.gig-worker-availbility-selected-date                                           { width: 25%; flex-basis: 25%; -webkit-flex-basis: 25%;}
+.gig-worker-availbility-selected-date-availbility                               { width: 30%; flex-basis: 30%; -webkit-flex-basis: 30%;}
+.set-start-time h3                                                              { padding-bottom: 15px; font-family: 'Cera Basic Regular'; text-transform: none;}
+.set-start-time .select-style .jcf-select                                       { min-width: 230px; text-align: left;}  
+.gig-worker-availbility-date button                                             { margin: 35px 15px 0; min-width: 160px;}                     
+/****** Gig Worker Availbilty Date CSS End *******/
+
+/****** Billing Details Css Start *******/
+.billing-details-sec                                                            { padding: 35px 50px;}
+.billing-details-sec h5                                                         { padding-left: 40px;}
+.billing-details-sec .radio-style                                               { margin-right: 0px;}
+.billing-details-sec .radio-style .jcf-radio.jcf-checked                        { background: #51BA6C; border-color: #51BA6C;}
+.billing-details-sec .radio-style .jcf-radio.jcf-checked span                   { filter: brightness(100);}
+.billing-details-sec .gig-service-list                                          { margin-left: 10px; padding: 8px 20px;}
+.billing-details-sec .gig-service-list .cards-img                               { margin-right: 15px; padding: 3px; border: 2px solid #152c53; border-radius: 4px; width: auto;}
+.billing-details-sec .gig-service-list img                                      { width: 70px; height: 22px; object-fit: none; }
+.billing-details-sec .card-no                                                   { font-family: 'Cera Basic Regular'; font-size: 16px; line-height: 22px;}
+.billing-details-sec .card-no span                                              { margin: 0px 2px; height: 7px; width: 7px; background: #152c53; border-radius: 50px; display: inline-block;}
+.billing-details-sec .exp-date                                                  { padding-left: 50px; font-family: 'Cera Basic Regular'; font-size: 16px; line-height: 22px; color: rgba(67,66,93,0.50);}
+.default-card-txt p                                                             { font-size: 12px; line-height: 20px; color: rgba(81,186,108,0.50); text-transform: uppercase;}
+.add-card                                                                       { margin-top: 35px;}
+.add-card a img                                                                 { margin-right: 20px;}
+.add-card a                                                                     { font-size: 18px; line-height: 28px; color: #152C53;}
+.add-card a span img                                                            { margin-left: 25px; margin-right: 0; transition-duration: .3s; -webkit-transition-duration: .3s;}
+.add-card-details                                                               { display: none; margin-top: 25px;}
+.add-card.show a span img                                                       { transform: rotate(180deg);}
+.add-card .select-style                                                         { margin: 15px 0 4px;}
+/****** Billing Details Css End *******/
+                                                               
+/***** Bottom section CSS Start *******/
+footer                                      { padding: 25px 0px; background: #142A4E;}
+.footer-content h6                          { font-size: 16px; line-height: 25px; margin-bottom: 10px;}
+.footer-content li a                        { color: #ffffff; font-size: 16px; line-height: 22px;}
+.social-link li                             { padding: 0px 10px; display: inline-block;}
+.social-link li a                           { font-size: 25px !important;}
+/****** Bottom section CSS End *******/
+
+/****** Error Pages CSS Start *******/
+.error-text h2,
+.error-text h6                               { color: #152c53;}
+.error-text h6                               { padding-top: 5px; font-family: 'Cera Basic Regular'; font-size: 16px; line-height: 22px;}
+.error-blk .btn-small                        { margin-top: 70px;}
+.front-flash.alert                           { z-index: 10;}
+.front-flash.alert .close                    { top: 0; right: 5px;}
+/****** Error Pages CSS End *******/
+
+/******* Gig Worker Welocm CSS Start *********/
+.welcome-gigworker                           { padding: 70px 0px 200px;}
+.welcome-gigworker .gigworker-info           { padding: 35px;}
+.welcome-gigworker h2                        { padding-bottom: 25px;}
+.welcome-gigworker h6                        { padding-bottom: 5px; color: #152C53;}
+.welcom-screen-btns                          { margin-top: 70px; text-align: center;}
+.welcom-screen-btns a                        { margin: 0px 25px;}
+.welcome-gigworker .back-btn                 { margin: 100px 0;}
+.welcome-gigworker .grey-btn                 { background: #CCD0D8;}
+/******* Gig Worker Welocm CSS End *********/
+
+/* Gig Worker Dashboard New Design css start */
+#invoice-modal .modal-dialog,
+#material-modal .modal-dialog                { max-width: 730px;}
+.rating-info.invoice-info                   { padding: 35px; border-radius: 8px; -webkit-border-radius: 8px;}
+.invoice-header                             { position: relative;}
+.invoice-header h3                          { margin-bottom: 50px;}
+.invoice-header .back-invoice               { position: absolute; top: 0px; left: 0px;}
+.invoice-header > h3 img                    { margin-right: 14px; width: 17px;}
+.add-material                               { padding: 14px 45px 14px 18px; border: 2px solid #E6E8EC; border-radius: 24px; -webkit-border-radius: 24px; font-size: 15px; line-height: 18px; color: #78849E; font-family: 'Cera Basic Bold'; font-weight: 700; display: inline-block; position: relative;}
+.add-material::after                        { content: ""; background: url(../images/right-arrow.png) no-repeat right center / 100% auto; width: 10px; height: 17px; position: absolute; top: calc(50% - 8.5px); right: 17px; display: block;}
+.time-quote                                 { margin: 0 auto; max-width: 40%;}
+.invoice-info .time-quote                   { margin: 60px auto 70px;}
+.time-quote li                              { font-size: 16px; line-height: 20px; color: #152C53;}
+.time-quote li.vat                          { text-transform: uppercase; color: #78849E;}
+.time-quote li:first-child                  { margin-bottom: 33px;}
+.time-quote li:last-child                   { margin-top: 34px; font-size: 20px; line-height: 20px; font-family: 'Cera Basic Bold'; font-weight: 700; }
+.time-quote li:not(:first-child)            { margin-bottom: 13px;}
+.time-quote li:nth-child(4)                 { padding-bottom: 13px; border-bottom: 1px solid #F4F4F6;}
+.time-quote li span                         { display: inline-block;}
+.time-quote li span strong                  { font-weight: 700; font-family: 'Cera Basic Bold';}
+.time-quote li span:first-child             { margin-right: 35px; min-width: 128px; text-align: right;}
+.invoice-sent p                             { font-size: 10px; line-height: 12px; color: #152C53;}
+.invoice-sent .btn-small                    { margin-bottom: 32px; }
+.rating-info .add-title,
+.add-title                                  { padding-left: 26px; font-size: 15px; line-height: 18px; font-family: 'Cera Basic Bold'; font-weight: 700; color: #152C53; position: relative; display: inline-block;}
+.additional-time p                          { margin-top: 23px;}
+.add-title::before                          { content: "+"; font-size: 22px; position: absolute; left: 0; top: -1px; display: block; color: #51BA6C;}
+.invoice-info .add-hour-btn                 { margin: 36px auto 55px;}
+.invoice-info .add-hour-btn button          { margin: 10px 15px 0px; background: #E7E9ED; height: 22px; width: 22px; border: none; border-radius: 50px; color: #ffffff; }
+.invoice-info .add-hour-btn button:hover { background: #51BA6C; }
+.material-form-group                        { width: 50%; margin: 0 auto;}
+.material-form-group form                   { margin-top: 20px;}
+.material-form-group form .form-group { margin-bottom: 10px;}
+.material-form-group .form-group textarea  { height: 150px;}
+.material-form-group form button { margin-top: 10px;}
+.pay-gig img                                { width: 10px; height: 14px; object-fit: cover; object-position: top;}
+.re-schedule-cancel-gigs .re-scdule-gigs.pay-gig.active,
+.re-schedule-cancel-gigs .re-scdule-gigs.pay-gig:hover { background-color: #51BA6C;}
+.re-schedule-cancel-gigs .re-scdule-gigs.pay-gig.active img,
+.re-schedule-cancel-gigs .re-scdule-gigs.pay-gig:hover { object-position: bottom;}
+.re-schedule-cancel-gigs .re-scdule-gigs.pay-gig.active p,
+.re-schedule-cancel-gigs .re-scdule-gigs.pay-gig:hover p { color: #fff;}
+.pay-gig-list h6 img { margin-left: 8px;}
+.pay-gig-list .completed-gigs .gigs-details-blk, 
+.pay-gig-list .completed-gigs .gigs-user-chat { background: #fff;}
+#gig-pay-modal .modal-dialog                { max-width: 1030px;}
+#gig-pay-modal h2                           { margin-top: 19px; font-size: 28px; line-height: 34px; font-family: 'Cera Basic Black'; font-weight: 900; color: #152C53;}
+#gig-pay-modal strong,
+.gigify-estimate-work p strong,
+.approve-gig-quote strong,
+.awiting-gig-quote strong                       { font-family: 'Cera Basic Bold'; font-weight: 700;}
+#gig-pay-modal .gray-btn                    { margin-left: 15px;}
+#gig-pay-modal p,
+.completed-gig-list li,
+.final-cost table td                        { font-size: 16px; line-height: 19px; color: #152C53;}
+.completed-gig-info                         { margin: 33px 0px 96px;}
+.completed-gig-list                         { margin: 40px 0px 72px; padding: 0px; display: inline-block;}
+.completed-gig-list li                      { display: flex; display: -webkit-flex;}
+.completed-gig-list li:not(:last-child)     { margin-bottom: 13px;}
+.completed-gig-list li span:first-child     { margin-right: 30px; display: inline-block; min-width: 126px; text-align: right;}
+.grey-btn.dis-btn                           { background-color: #D8D8D8; color: #fff !important;}
+.completed-gig-info .grey-btn.dis-btn       { margin: 10px 0px 0px 20px;}
+.table-title:first-child                    { text-transform: uppercase;}
+.table-title                                { padding: 20px; border-top-left-radius: 4px; border-top-right-radius: 4px; font-size: 18px; line-height: 22px;  color: rgba(21,44,83,0.50);     font-family: 'Cera Basic Bold'; font-weight: 700; text-align: center;}
+.table-title,
+.table td                                   { background-color: #f1f2f5; }
+.final-cost th                              { font-size: 14px; line-height: 17px; color: #78849E;}
+.final-cost .table th, 
+.final-cost .table td                       { border: transparent;}                           
+.final-cost .table tr:nth-last-child(2) td  { padding-bottom: 18px;}
+.final-cost .table tr:last-child td { padding-bottom: 33px; font-size: 18px; line-height: 22px; border-top: 1px solid rgba(120,132,158,0.20);}
+.final-cost .table tr:last-child td span { color: #51BA6C; font-family: 'Cera Basic Bold'; font-weight: 700;}
+.my-pending-gig .pending-gigs .gig-time,
+.awiting-gig-quote .pending-gigs .gig-time      { background-color: transparent; }
+.my-pending-gig .estimate-hour-info p strong       { font-family: 'Cera Basic Bold'; font-weight: 700; }
+.my-pending-gig .invoice-info .add-hour-btn  { margin: 0px;}
+.my-pending-gig .invoice-info .add-hour-btn button:first-child { margin-left: 0px;}
+.my-pending-gig span.small-text              { margin-top: 7px; font-size: 10px; line-height: 12px; display: block; text-align: center;}
+.gigify-estimate-work                        { padding: 8px; width: 24%; background-color: #F2F3F5;}
+.gigify-estimate-work img                    { width: 14px; height: 14px; object-fit: cover; object-position: top;}
+.gigify-estimate-work p                      { margin: 0px; font-size: 10px; line-height: 16px;}
+.gigify-estimate-work p:nth-child(2)          { margin: 10px 0px;}
+.approve-gig-quote .schedule-hour           { position: relative;}
+.approve-gig-quote .schedule-hour .gigs-booking-chaned-info { left: auto; right: -25px; z-index: 5;}
+.awiting-gig-quote .pending-gigs .gig-time span { color: #152C53;}
+.awiting-gig-quote .re-schedule-cancel-gigs > .re-scdule-gigs:first-child a { background-color: #FFAF41;}
+.awiting-gig-quote .re-schedule-cancel-gigs > .re-scdule-gigs:first-child a p { color: #fff;}
+/* Gig Worker Dashboard New Design css end */
+
+/****** Responsive Css *******/
+@media (min-width: 1200px) and (max-width: 1599px){
+
+    /******* Login Css Start *******/
+    /* .login-blk                              { height: 100vh;} */
+    /******* Login Css Start *******/
+
+   /******* Gigs Worker Signup Wizard CSS Start ******/ 
+   .next-back-btn                           { top: 102%;}
+   /******* Gigs Worker Signup Wizard CSS End ******/ 
+
+    /******* Gig Service CSS Start ******/
+    /* .adding-gig-service-lists                                      { height: 400px;} */
+    /******* Gig Service CSS End ******/ 
+
+    /******* Service Page CSS Start ******/
+    .service-blks .service-nm                                         { font-size: 18px; line-height: 22px;}
+    .service-blks .service-nm,
+    .sub-service-list ul                                              { padding-left: 35px;}
+    /******* Service Page CSS End ******/
+
+    /******* Home Page CSS Start ******/ 
+    .getapp-links .forgotpwd-bg                                       { background-size: 65% auto;}
+    /******* Home Page CSS End ******/ 
+}
+@media (min-width: 1200px) and (max-width: 1400px){
+    /****** FAQs CSS Start *******/   
+    .faq-accordian .question-height                                   { max-height: 468px;}
+    /****** FAQs CSS End *******/
+    .vat-declaration-text                                         { padding-bottom: 200px;}
+    .adding-gig-service-lists                                     { height: 400px;}
+
+    /******* Gig Worker Welocm CSS Start *********/
+    .welcome-gigworker                           { padding: 50px 0px;}
+    .welcom-screen-btns                          { margin-top: 50px;}
+    .welcom-screen-btns a                        { margin: 0px 15px;}
+    .welcome-gigworker .back-btn                 { margin: 50px 0;}
+    /******* Gig Worker Welocm CSS End *********/
+}
+@media (min-width: 1200px) and (max-width: 1365px){
+    /******* Home Page CSS Start ******/ 
+    .getapp-links .forgotpwd-bg                                       { background-size: 70% auto;}
+    /******* Home Page CSS End ******/ 
+
+    /****** FAQs CSS Start *******/   
+    .faq-accordian .question-height                                   { max-height: 468px;}
+    /****** FAQs CSS End *******/
+}
+@media (min-width: 992px) and (max-width: 1199px){
+
+    /******* Header Section CSS Start *******/
+    .header-menu-content li                             { padding: 0px 15px;}
+    .notification-gigs .gigs-notificatiob-blk::after    { right: 15px;}  
+    /******* Header Section CSS Start *******/
+
+    /******* Sidebar Panel Start *******/
+    .left-panel                                         { height: auto;}
+    .leftsidebar,
+    .main-content                                       { width: 100%;}
+    .leftsidebar                                        { margin-top: 15px; padding: 0; box-shadow: 0px 0 10px rgba(0,0,0,0.10);}
+    main.width-100 > .container > .d-flex               { display: block !important;}   
+    .left-panel li                                      { width: calc(100% / 4 - 15px); display: inline-block;} 
+    .left-panel li.active a::before                     { display: none;}
+    .left-panel li.active a                             { color: #51BA6C;}
+    .without-title .main-content,
+    .gigworker-info .gigworker-user,
+    .title-panel,
+    .main-content                                       { margin-left: 0;}
+    /******* Sidebar Panel End *******/
+   
+    /******* Login Css Start *******/
+    .login-blk                                          { height: 100%;}
+    .signup-img                                         { background-position: right bottom; background-size: 90% auto;}
+    /******* Login Tab CSS *********/
+    .login-tab-section .nav-pills .nav-link             { min-width: 320px;}
+    /******* Lofin Css End *******/
+
+    /*****Steps Info Css Start*******/
+        .step-info-group .outer-box               { padding:30px; margin:15px auto; width:67%; border:5px solid #51BA6C; }
+        .step-info-group .steps-details           { margin:0 auto; max-width: 70%; }
+        .step-info-group .steps-details h3        { margin-bottom:12px; }
+        .step-info-group .steps-details p         { max-width: 60%; margin:0 auto 12px; font-size: 16px; line-height: 22px; }
+        .step-info-group .steps-details span      { font-size: 15px; line-height: 22px;  }
+        .step-info-group .steps-details button    { margin-bottom: 10px; }
+        .step-info-group .steps-details .btn-box  { margin-top:20px; }
+        .btn-small.gray-btn                       { font-size: 18px; line-height: 24px; }
+        .step-info-group .congrats-box .desc       { margin:25px 0; }
+        .step-info-group .congrats-box h5         { margin-bottom:12px; font-size: 16px; line-height: 22px;  }
+        .step-info-group .congrats-box p         {  margin:0 auto 10px !important; max-width: 92%; font-size: 15px; line-height: 22px; }
+        .step-info-group .congrats-box .close-btn { margin-top:15px; padding:5px 28px 7px; font-size: 16px; line-height: 20px; }
+    /*****Steps Info Css End*******/
+
+    /******* Forgot Screen Css Start *********/
+    .forgotpwd-bg                                     { background-size: 73% auto;}
+    .forgot-blk                                       { padding: 35px; max-width: 452px;}
+    /******* Forgot Screen Css End *********/
+
+    /******* Gigs Listing CSS Start ******/
+    .gig-list-comming.want-work-blk                   { margin: 30px 0px; }
+    .gigs-date                                        { width: 17%;}
+    .gigs-date .date                                  { padding: 0 8px 8px; font-size: 30px; line-height: 35px;}
+    .gigs-date .month                                 { font-size: 18px; line-height: 25px;}
+    .gigs-date .time                                  { font-size: 13px; line-height: 20px;}
+    .gigs-details-blk h6,
+    .collapsed-states-blks h6                         { font-size: 14px; line-height: 18px;}
+    .gigs-details-blk                                 { width: 50%;}
+    .gig-desc > div                                   { padding: 10px 8px;}
+    .gigs-user-chat                                   { width: 21%;}
+    .gigs-user-chat .align-center                     { flex-direction: column;}
+    .gigs-user-chat                                   { padding: 10px;}
+    .gigs-chat-user-img                               { height: 50px; width: 50px;}
+    .gigs-chat-user-nm h6                             { font-size: 12px; line-height: 16px;}
+    .gigs-chat-user-nm                                { padding-left: 0;}
+    .re-scdule-gigs a                                 { padding: 10px 8px;}
+    .re-schedule-cancel-gigs p                        { font-size: 12px; line-height: 18px;}
+    .minimize-state                                   { padding: 8px;}
+    .chat-btn a                                       { padding: 5px 15px;}
+    .gigs-time-price-details .gig-loc, 
+    .gigs-time-price-details .gig-time, 
+    .gigs-time-price-details .gig-price               { font-size: 10px; line-height: 15px;}
+    .readmore-state .gigs-more-desc, 
+    .estimated-hour-state .estimate-hour-info, 
+    .reschdule-gigs-state .reschdule-gigs-state-blk,  
+    .cancel-gigs-state .cancel-gigs-state-blk         { padding: 10px;}
+    .readmore-state .gigs-more-desc svg, 
+    .estimated-hour-state .estimate-hour-info svg, 
+    .reschdule-gigs-state .reschdule-gigs-state-blk svg, 
+    .cancel-gigs-state .cancel-gigs-state-blk svg, 
+    .gig-map-loc .gig-map-address svg                 { margin-right: 15px; height: 18px; width: 18px;}
+        /******* Select Style Css ******/
+        .select-style .jcf-select                     { min-width: 100%;}
+        /********* Gigs Pending List SS ***********/
+        .pending-gigs .gig-address                    { width: 118px;}
+        .gigs-time-price-details > div,
+        .pending-gigs .gig-time .schedule-hour, 
+        .pending-gigs .gig-time .gigs-book-price      { padding: 8px;}
+        .pending-gigs .gig-time                       { width: calc(100% - 118px);}
+        /******* Reschdule Gigs State Css ******/ 
+        .reschdule-gigs-state .select-date-time li    { padding-right: 10px; width: calc(100% / 3 - 10px);}
+        /******* Cancel Gigs State Css ******/
+        .cancel-gigs-state-blk .select-style .jcf-select    { margin-left: 5px;}
+        .cancel-gigs-desc #cancel-reason-error                { right: 40px;}
+        /******* Estimated State Css ******/ 
+        .estimated-field .form-control,
+        .gig-worker-cancel-gigs .estimated-field .form-control                { width: 100%;}  
+        .tooltip-arrow,
+        .tooltip > .tooltip-inner                     { max-width: 190px !important;}
+        /******* Chat Listing CSS Start ******/
+        .chat-list .msg-desc                          { max-width: 420px;}
+        /******* Completed State Gigs Worker Listing CSS Start ******/
+        .completed-worker-gigs .gigs-details-blk,
+        .completed-worker-gigs .completed-time-info .gig-time, 
+        .completed-worker-gigs .completed-time-info .gig-price        { padding: 10px 8px; font-size: 12px; line-height: 20px;}
+        .collapsed-out-completed-blk .gigs-details-blk                { width: 25%;}
+        .collapsed-out-completed-blk .completed-time-info             { width: 35%;}
+        .completed-worker-gigs .rating > label::before                { font-size: 12px;}
+        .gigs-worker-info p                                           { font-size: 13px; line-height: 22px;}
+        /******* Completed State Gigs Worker Listing CSS End ******/
+    /******* Gigs Listing CSS End ******/
+
+    /******* Gigs Worker Listing Rightpanel CSS Start ******/ 
+    .rightpanel-tab ul                                                  { padding-left: 0px;}
+    /******* Gigs Worker Listing Rightpanel CSS End ******/ 
+
+    /******* Gigs Worker Signup Wizard CSS Start ******/ 
+    .step-progress                                                    { width: 100%; position: relative; flex-direction: row !important; border-radius: 25px 25px 0 0;} 
+    .sw-theme-default > ul.step-anchor > li                           { margin: 15px 35px !important;}         
+    .sw-theme-default > ul.step-anchor > li > a::before               { height: 1px; width: 70px; bottom: 50%; left: 100%; }
+    .sw-theme-default > ul.step-anchor > li:first-child > a::before   { display: block;}   
+    .sw-theme-default > ul.step-anchor > li:last-child > a::before    { display: none;}    
+    .step-form-data                                                   { margin-left: 0; height: auto;}  
+    .step-form-data .terms-signup,
+    .next-back-btn                                                    { margin: 0px; padding: 15px 0; position: relative;}       
+        /******* Services Step CSS Start ******/
+        .service-select-blk                                           { padding: 25px;}
+        .service-select-blk h6                                        { font-size: 14px; line-height: 22px;}
+        .service-select-blk h6 br                                     { display: none;}
+        .service-accordian                                            { width: 60%;}
+        .selected-service-list                                        { width: 40%;}
+        .service-accordian .panel-title a,
+        .added-service-list .service-price-per-hr                     { font-size: 14px; line-height: 22px;}
+        .service-accordian .panel-title a img                         { margin-right: 25px;}
+        .service-accordian .service-listing li                        { padding: 5px 12px;}
+        .error-ser .error-text                                        { top: 22%; width: 340px;}
+        .vat-declaration-text                                         { padding-bottom: 200px;}
+        /******* Services Step CSS End ******/
+        /******* Map Notification Step CSS Start ******/
+        /* .img-map-north                                             { left: 10%;}
+        .img-map-central                                              { top: 37%; left: 12%;}
+        .img-map-south                                                { top: 45%; left: 35%;}
+        .map-images img                                               { width: 220px;} */
+        /******* Map Notification Step CSS End ******/
+    /******* Gigs Worker Signup Wizard CSS End ******/ 
+
+    /******* Gigs Worker Dashboard CSS Start ******/ 
+        /******* My Gigify CV CSS Start ******/
+        .gigfy-cv-profile                                             { padding: 0;}
+        .gigifycv-logo img                                            { width: 120px;}
+        .gigifycv-user-img                                            { height: 100px; width: 100px;}
+        .other-gigcv-blk                                              { padding: 18px;}
+        .gigifycv-portfolio-service-nm                                { font-size: 14px; line-height: 20px;}
+        .other-gigcv-info                                             { margin: 25px 0px;}
+        /******* My Gigify CV CSS End ******/
+        /******* Gig Service CSS Start ******/
+        .adding-gig-service-lists                                     { height: 300px;}
+        .gig-service-list-blks                                        { margin: 15px 5px;}
+        .gig-service-list, .add-gig-service-blk                       { margin: 0 20px 0 0px;}
+        .gig-service-list h3                                          { font-size: 16px; line-height: 22px;}
+        .gig-service-list h6                                          { font-size: 14px; line-height: 20px;}
+        .gig-service-list-price                                       { font-size: 18px; line-height: 25px;}
+        .add-gig-service                                              { margin-bottom: 15px;}
+        /******* Gig Service CSS End ******/   
+        /******* Work Range CSS Start ******/
+        .work-range-blk .btn-small                                    { margin: 70px 0 25px;}
+        /******* Work Range CSS End ******/
+    /******* Gigs Worker Dashboard CSS End ******/ 
+
+    /******* Service Page CSS Start ******/
+    .service-blks .service-nm                                         { font-size: 18px; line-height: 22px;}
+    .service-blks .service-nm,
+    .sub-service-list ul                                              { padding-left: 35px;}
+    /******* Service Page CSS End ******/
+
+    /******* Home Page CSS Start ******/ 
+    .getapp-links .forgotpwd-bg                                       { background-size: 60% auto;}
+    .getapp-links .forgot-blk                                         { padding: 50px 35px 35px;}
+    .gigdone-list,
+    .video-sec h2                                                     { margin-left: 0;}
+    .become-gigworker-blk .love-gigfy-list                            { max-width: 550px;}
+    /******* Home Page CSS End ******/ 
+
+    /******* Booking Services CSS Start ******/
+    .booking-service-steps .sw-theme-default > ul.step-anchor > li > a::before      { width: 120px;}
+        /******* Select Gigworker CSS Start ******/
+        .select-gigworker                                             { display: block !important;}
+        .select-gigworker .left-panel,
+        .select-gigworker .right-panel                                { padding: 0; width: 100%;}
+        .select-gigworker .left-panel li                              { width: calc(100% / 4 - 15px);}
+        .select-gigworker .left-panel                                 { border-right: 0; overflow: visible; margin-bottom: 35px;}
+        .select-gigworker-blks:first-child                            { width: 100%;}
+        .select-gigworker-blks                                        { margin-bottom: 20px; width: calc(100% / 2 - 15px); display: inline-block; vertical-align: top;}
+        .select-gigworker .right-panel .select-style .jcf-select      { min-width: 200px;}
+        .select-gigworker .calender-blk                               { right: 10%;}
+        /******* Select Gigworker CSS End ******/
+        /******* Review and Confirm CSS Start ******/
+        .payment-method-details                                       { padding: 25px 50px 0;}        
+        .booking-overview-blk, .cost-breakdown-blk                    { padding: 15px 35px 30px;}     
+        .cost-breakdown-detail-titles                                 { width: 290px; flex-basis: 290px; -webkit-flex-basis: 290px;}       
+        .promocode-blk .input--hoshi                                  { width: 260px;}        
+        .booking-overview-blk .map-style                              { width: 400px; top: 42%;}          
+        /******* Review and Confirm CSS End ******/
+    /******* Booking Services CSS End ******/
+
+    /****** FAQs CSS Start *******/   
+    .faqs-page                                                        { padding: 35px 0;}
+    .faq-accordian .question-height                                   { max-height: 468px;}
+    /****** FAQs CSS End *******/
+
+    /****** Billing Details Css Start *******/
+    .billing-details-sec                                             { padding: 35px 0 150px;}
+    /****** Billing Details Css End *******/
+
+    .contact-details                                                  { padding-top: 20%;}  
+
+    /******* Gig Worker Welocm CSS Start *********/
+    .welcome-gigworker                           { padding: 50px 0px;}
+    .welcom-screen-btns                          { margin-top: 50px;}
+    .welcom-screen-btns a                        { margin: 0px 15px;}
+    .welcome-gigworker .back-btn                 { margin: 50px 0;}
+    /******* Gig Worker Welocm CSS End *********/
+}
+@media (min-width: 768px) and (max-width: 991px){
+    /******* Common Element CSS Start ******/
+    .btn-small                                          { padding: 10px 25px; min-width: 125px;}
+    .grey-btn                                           { margin: 8px 0px !important;}
+    .section-padding                                    { padding: 40px 0;}
+    /******* Common Element CSS End ******/
+    /******* Header Section CSS Start *******/
+    .main-header .justify-space-between                 { display: block;}
+    .main-header .logo                                  { margin-bottom: 25px; text-align: center;}
+    .header-menu-content ul                             { text-align: center;}
+    .header-menu-content li                             { padding: 0px 15px;}
+    .all-services-list, .gigs-notificatiob-blk          { right: -55px;}
+    .user-settings                                      { right: -25px;}
+    .all-services-list::after                           { right: 50%;}
+    .gigs-notificatiob-blk::after                       { right: 22%;}
+    .my-gigs .justify-space-between                     { display: flex;}
+    .notification-gigs .gigs-notificatiob-blk::after    { right: 70px;}  
+    .gigs-notification-list .justify-space-between      { display: flex;}
+    /******* Header Section CSS End *******/
+
+    /******* Sidebar Panel Start *******/
+    .left-panel                                         { height: auto;}
+    .leftsidebar,
+    .main-content                                       { width: 100%;}
+    .leftsidebar                                        { margin-top: 15px; padding: 0; box-shadow: 0px 0 10px rgba(0,0,0,0.10);}
+    main.width-100 > .container > .d-flex               { display: block !important;}   
+    .left-panel li                                      { width: calc(100% / 3 - 15px); display: inline-block;} 
+    .left-panel li.active a::before                     { display: none;}
+    .left-panel li.active a                             { color: #51BA6C;}
+    .without-title .main-content,
+    .gigworker-info .gigworker-user,
+    .title-panel,
+    .main-content                                       { margin-left: 0;}
+    /******* Sidebar Panel End *******/
+
+    /******* Login Css Start *******/
+    .login-form                                       { margin-bottom: 25px; max-width: 450px;}
+    .login-blk                                        { height: 100%; padding: 35px 0px;}
+    .signup-form                                      { margin: 0px 35px;}
+    .signup-img                                       { background-position: right bottom; background-size: 70% auto;}
+    /******* Login Tab CSS *********/
+    .login-tab-section .nav-pills .nav-link           { min-width: 280px;}
+    /******* Lofin Css End *******/
+
+       /*****Steps Info Css Start*******/
+        .step-info-group .outer-box               { padding:20px; margin:12px auto; width:67%; border:4px solid #51BA6C; }
+        .step-info-group .steps-details           { max-width: 70%; }
+        .step-info-group .steps-details h3        { margin-bottom:10px; }
+        .step-info-group .steps-details p         { max-width: 60%; margin:0 auto 10px; font-size: 14px; line-height: 20px; }
+        .step-info-group .steps-details span      { font-size: 13px; line-height: 20px;  }
+        .step-info-group .steps-details button    { margin-bottom: 10px; }
+        .step-info-group .steps-details .btn-box  { margin-top:15px; }
+        .btn-small.gray-btn                       { font-size: 16px; line-height: 22px; }
+        .step-info-group .congrats-box .desc       { margin:20px 0; }
+        .step-info-group .congrats-box h5         { margin-bottom:10px; font-size: 16px; line-height: 20px;  }
+        .step-info-group .congrats-box p         {  margin:0 auto 10px !important; max-width: 92%; font-size: 14px; line-height: 20px; }
+        .step-info-group .congrats-box .close-btn { margin-top:12px; padding:5px 28px 7px; font-size: 14px; line-height: 20px; }
+    /*****Steps Info Css End*******/
+
+    /******* Forgot Screen Css Start *********/
+    .forgotpwd-bg                                     { background-size: 100% auto;}
+    .forgot-blk                                       { padding: 35px; max-width: 452px;}
+    /******* Forgot Screen Css End *********/
+
+    /******* Gigs Listing CSS Start ******/
+    .gig-list-comming.want-work-blk                   { margin: 30px 0px; }
+    .gigs-date                                        { width: 17%;}
+    .gigs-date .date                                  { padding: 0 8px 8px; font-size: 30px; line-height: 35px;}
+    .gigs-date .month                                 { font-size: 18px; line-height: 25px;}
+    .gigs-date .time                                  { font-size: 13px; line-height: 20px;}
+    .gigs-details-blk h6,
+    .collapsed-states-blks h6                         { font-size: 14px; line-height: 18px;}
+    .gigs-details-blk                                 { width: 50%;}
+    .gig-desc > div                                   { padding: 10px 8px;}
+    .gigs-user-chat                                   { width: 21%;}
+    .gigs-user-chat .align-center                     { flex-direction: column;}
+    .gigs-user-chat                                   { padding: 10px;}
+    .gigs-chat-user-img                               { height: 50px; width: 50px;}
+    .gigs-chat-user-nm h6                             { font-size: 12px; line-height: 16px;}
+    .gigs-chat-user-nm                                { padding-left: 0;}
+    .re-scdule-gigs a                                 { padding: 10px 8px;}
+    .re-schedule-cancel-gigs p                        { font-size: 12px; line-height: 18px;}
+    .minimize-state                                   { padding: 8px;}
+    .chat-btn a                                       { padding: 5px 15px;}
+    .gigs-time-price-details .gig-loc, 
+    .gigs-time-price-details .gig-time, 
+    .gigs-time-price-details .gig-price               { font-size: 10px; line-height: 15px;}
+    .readmore-state .gigs-more-desc, 
+    .estimated-hour-state .estimate-hour-info, 
+    .reschdule-gigs-state .reschdule-gigs-state-blk, 
+    .cancel-gigs-state .cancel-gigs-state-blk         { padding: 10px;}
+    .readmore-state .gigs-more-desc svg, 
+    .estimated-hour-state .estimate-hour-info svg, 
+    .reschdule-gigs-state .reschdule-gigs-state-blk svg, 
+    .cancel-gigs-state .cancel-gigs-state-blk svg, 
+    .gig-map-loc .gig-map-address svg                 { margin-right: 15px; height: 18px; width: 18px;}
+        /******* Select Style Css ******/
+        .select-style .jcf-select                     { min-width: 100%;}
+        /********* Gigs Pending List SS ***********/
+        .pending-gigs .gig-address                    { width: 118px;}
+        .gigs-time-price-details > div,
+        .pending-gigs .gig-time .schedule-hour, 
+        .pending-gigs .gig-time .gigs-book-price      { padding: 8px;}
+        .pending-gigs .gig-time                       { width: calc(100% - 118px);}
+        /******* Reschdule Gigs State Css ******/ 
+        .reschdule-gigs-state .select-date-time li    { padding-right: 10px; width: calc(100% / 3 - 10px);}
+        /******* Cancel Gigs State Css ******/
+        .cancel-gigs-state-blk .select-style .jcf-select    { margin-left: 5px;}
+        .cancel-gigs-desc #cancel-reason-error                { right: 40px;}
+        /******* Estimated State Css ******/ 
+        .estimated-field .form-control,
+        .gig-worker-cancel-gigs .estimated-field .form-control                { width: 100%;}  
+        .tooltip-arrow,
+        .tooltip > .tooltip-inner                     { max-width: 190px !important;}
+        /******* Chat Listing CSS Start ******/
+        .chat-list .msg-desc                          { max-width: 420px;}
+        /******* Completed State Gigs Worker Listing CSS Start ******/
+        .completed-worker-gigs .gigs-details-blk,
+        .completed-worker-gigs .completed-time-info .gig-time, 
+        .completed-worker-gigs .completed-time-info .gig-price        { padding: 10px 8px; font-size: 12px; line-height: 20px;}
+        .collapsed-out-completed-blk .gigs-details-blk                { width: 25%;}
+        .collapsed-out-completed-blk .completed-time-info             { width: 35%;}
+        .completed-worker-gigs .rating > label::before                { font-size: 12px;}
+        .gigs-worker-info p                                           { font-size: 13px; line-height: 22px;}
+              /******* Rating Gigs CSS Start ******/
+              .rating-info .rating-star, .rating-gig-user-img         { margin: 0px 50px;}
+              /******* Rating Gigs CSS End ******/
+        /******* Completed State Gigs Worker Listing CSS End ******/
+    /******* Gigs Listing CSS End ******/
+
+    /******* Gigs Worker Listing Rightpanel CSS Start ******/ 
+    .rightpanel-tab ul                                                  { padding-left: 0px;}
+    /******* Gigs Worker Listing Rightpanel CSS End ******/ 
+
+    /******* Gigs Worker Signup Wizard CSS Start ******/ 
+    .step-progress                                                    { width: 100%; position: relative; flex-direction: row !important; border-radius: 25px 25px 0 0;} 
+    .sw-theme-default > ul.step-anchor > li                           { margin: 15px 35px !important;}         
+    .sw-theme-default > ul.step-anchor > li > a::before               { height: 1px; width: 70px; bottom: 50%; left: 100%; }
+    .sw-theme-default > ul.step-anchor > li:first-child > a::before   { display: block;}   
+    .sw-theme-default > ul.step-anchor > li:last-child > a::before    { display: none;}    
+    .step-form-data                                                   { margin-left: 0; height: auto;}  
+    .step-form-data .terms-signup,
+    .next-back-btn                                                    { margin: 0px; padding: 15px 0; position: relative;}       
+        /******* Services Step CSS Start ******/
+        .service-select-blk                                           { padding: 25px;}
+        .service-select-blk h6                                        { font-size: 14px; line-height: 22px;}
+        .service-select-blk h6 br                                     { display: none;}
+        .service-accordian                                            { width: 60%;}
+        .selected-service-list                                        { width: 40%;}
+        .service-accordian .panel-title a,
+        .added-service-list .service-price-per-hr                     { font-size: 14px; line-height: 22px;}
+        .service-accordian .panel-title a img                         { margin-right: 25px;}
+        .service-accordian .service-listing li                        { padding: 5px 12px;}
+        .service-accordian .service-listing .sub-service-price        { margin: 0px 15px; width: 100px;}
+        .error-ser .error-text                                        { top: 23%; width: 240px;}
+        .vat-declaration-text                                         { padding-bottom: 200px;}
+        /******* Services Step CSS End ******/
+        /******* Map Notification Step CSS Start ******/
+        .map-step > .d-flex,
+        .work-range-blk form > .d-flex                                { display: block !important;}
+        .map-images                                                   { margin-top: 25px;}  
+        /* .img-map-north                                                { left: 10%;}
+        .img-map-central                                              { top: 30%; left: 12%;}
+        .img-map-south                                                { top: 44%; left: 45%;}
+        .map-images img                                               { width: 220px;} */
+        /******* Map Notification Step CSS End ******/
+    /******* Gigs Worker Signup Wizard CSS End ******/ 
+    
+    /******* Gigs Worker Dashboard CSS Start ******/ 
+        /******* My Gigify CV CSS Start ******/
+        .gigfy-cv-profile                                             { padding: 0;}
+        .gigifycv-logo img                                            { width: 120px;}
+        .gigifycv-user-img                                            { height: 100px; width: 100px;}
+        .gigfycv-portfolio-info                                       { padding: 10px 15px;}  
+        .gigfycv-portfolio-info ul li span                            { padding: 0 15px 0 5px; font-size: 13px; line-height: 18px;}
+        .other-gigcv-blk                                              { padding: 15px;}
+        .gigifycv-portfolio-service-nm                                { font-size: 12px; line-height: 14px;}
+        .other-gigcv-info                                             { margin: 25px 0px;}
+        /******* My Gigify CV CSS End ******/
+        /******* Gig Service CSS Start ******/
+        .adding-gig-service-lists                                     { height: 250px;}
+        .gig-service-list-blks                                        { margin: 15px 10px 15px 5px;}
+        .gig-service-list, .add-gig-service-blk                       { margin: 0 20px 0 0px;}
+        .gig-service-list h3                                          { font-size: 16px; line-height: 22px;}
+        .gig-service-list h6                                          { font-size: 14px; line-height: 20px;}
+        .gig-service-list-price                                       { font-size: 18px; line-height: 25px;}
+        /******* Gig Service CSS End ******/    
+        /******* Work Range CSS Start ******/
+        .work-range-blk .btn-small                                    { margin: 50px 0 25px;}
+        /******* Work Range CSS End ******/
+    /******* Gigs Worker Dashboard CSS End ******/ 
+
+    /******* Home Page CSS Start ******/ 
+    .getapp-links .forgotpwd-bg                                       { background-size: 60% auto;}
+    .getapp-links .forgot-blk                                         { padding: 50px 35px 35px;}
+    .gigdone-list,
+    .video-sec h2                                                     { margin-left: 0;}
+    .testimonial-blk                                                  { padding: 50px 0;}
+    .become-gigworker-blk .love-gigfy-list                            { max-width: 500px;}
+    .become-gigworker-blk::before                                     { background-size: 70% auto;}
+    /******* Home Page CSS End ******/ 
+
+    /******* Booking Services CSS Start ******/
+    .booking-service-steps .sw-theme-default > ul.step-anchor > li > a::before      { width: 70px;}
+        /******* Select Gigworker CSS Start ******/
+        .select-gigworker                                             { display: block !important;}
+        .select-gigworker .left-panel,
+        .select-gigworker .right-panel                                { padding: 0; width: 100%;}
+        .select-gigworker .left-panel li                              { width: calc(100% / 4 - 15px);}
+        .select-gigworker .left-panel                                 { margin-bottom: 35px; border-right: 0; overflow: visible;}
+        .select-gigworker-blks:first-child                            { width: 100%;}
+        .select-gigworker-blks                                        { margin-bottom: 20px; width: calc(100% / 2 - 15px); display: inline-block; vertical-align: top;}
+        .select-gigworker .right-panel .select-style .jcf-select      { min-width: 200px;}
+        .gig-worker-user-blue-blk,                                     
+        .gig-worker-user-wt-blk                                       { width: 50%; flex-basis: 50%; -webkit-flex-basis: 50%;}
+        #login-modal .login-bg                                        { padding: 15px;}
+        #login-modal .login-bg .login-img img                         { width: 300px;}
+        .select-gigworker .calender-blk                               { right: 0;}
+        /******* Select Gigworker CSS End ******/
+        /******* Review and Confirm CSS Start ******/
+        .booking-overview .back-btn                                   { margin: 25px 0; text-align: left !important;}    
+        .promocode-blk .input--hoshi                                  { width: 96%;}                                  
+        /******* Review and Confirm CSS End ******/
+    /******* Booking Services CSS End ******/
+
+    /******* Contact Us CSS Start ******/
+    .contact-blks h5                                                  { font-size: 15px; line-height: 22px;}
+    .contact-form .hoshi-textarea .input .input__field                { height: 150px;}
+    .contact-form,  
+    .contact-details ul                                               { margin: 35px auto; max-width: 350px;}
+    .contact-form .radio-style-2 li                                   { padding: 0px; width: calc(100% / 2 - 3px);}
+    .contact-details                                                  { padding-top: 28%;}
+    /******* Contact Us CSS End ******/
+
+    /****** FAQs CSS Start *******/   
+    .faqs-page                                                        { padding: 35px 0;}
+    .faq-accordian .faqs-menu                                         { width: 25%; height: calc(100vh - 400px);}
+    .faq-accordian .faqs-content                                      { width: 75%; height: calc(100vh - 400px);}
+    .faq-accordian .question-height                                   { max-height: 624px;}
+    .faq-accordian .faqs-menu::before                                 { right: 35px;} 
+    .faq-accordian .faqs-menu li                                      { padding: 8px 0;}
+    .faq-accordian .faqs-menu li a,
+    .faq-accordian .panel-default .panel-title a                      { font-size: 13px; line-height: 22px;}
+    .faq-accordian .panel-body h6                                     { padding: 8px 0 0 15px;}
+    /****** FAQs CSS End *******/
+
+    /****** My Availability Css Start *******/
+    .calender-blk,
+    .time-slot-select,
+    .multiple-dates                                                 { margin: 15px 100px;}
+    /****** My Availability Css End *******/
+
+    /****** Gig Worker Availbilty Date CSS Start *******/                                 
+    .gig-worker-availbility-date .calender-blk                                      { width: 20%; flex-basis: 20%; -webkit-flex-basis: 20%; margin: 50px 15px 25px;}
+    .gig-worker-availbility-selected-date                                           { width: 30%; flex-basis: 30%; -webkit-flex-basis: 30%;}
+    .gig-worker-availbility-selected-date-availbility                               { width: 50%; flex-basis: 50%; -webkit-flex-basis: 50%;}                    
+    /****** Gig Worker Availbilty Date CSS End *******/
+
+    /******* Bottom Css Start *******/
+    .social-link,
+    .footer-logo                                                     { margin-top: 25px; text-align: left !important;}
+    .footer-content .justify-end                                     { display: block;}
+    /******* Bottom Css End *******/
+
+    /****** Billing Details Css Start *******/
+    .billing-details-sec                                             { padding: 35px 0 150px;}
+    /****** Billing Details Css End *******/
+
+    /******* Gig Worker Welocm CSS Start *********/
+    .welcome-gigworker                           { padding: 50px 0px 70px;}
+    .welcom-screen-btns                          { margin-top: 50px;}
+    .welcom-screen-btns a                        { margin: 0px 15px;}
+    .welcome-gigworker .back-btn                 { margin: 50px 0;}
+    /******* Gig Worker Welocm CSS End *********/
+}
+@media (max-height: 767px){
+    .login-blk                                                        { height: 100%; padding: 35px 0;}
+    .next-back-btn                                                    { margin: 0; padding: 15px 0; position: relative;}
+    .error-ser                                                        { bottom: 21%;}
+    .close                                                            { top: 30px;}
+    .vat-declaration-text                                             { padding-bottom: 200px;}
+    /****** FAQs CSS Start *******/   
+    .faq-accordian .question-height                                   { max-height: 300px;}
+    .step-form-data .terms-signup                                     { margin-top: 0; position: absolute; padding: 6px 0;}
+    /****** FAQs CSS End *******/
+
+    /*****Steps Info Css Start*******/
+        /*.step-info-group                          { min-height:calc(100vh - 350px);}*/
+        .step-info-group .outer-box               { padding: 35px; border:3px solid #51BA6C; border-radius: 30px;}
+        .step-info-group .steps-details           { max-width: 100%; }
+        .step-info-group .steps-details h3        { margin-bottom:10px; }
+        .step-info-group .steps-details p         { max-width: 60%; margin:0 auto 8px; font-size: 14px; line-height: 20px; }
+        .step-info-group .steps-details span      { font-size: 13px; line-height: 20px;  }
+        .step-info-group .steps-details button    { margin-bottom: 10px; }
+        .step-info-group .steps-details .btn-box  { margin-top:15px; }
+        .btn-small.gray-btn                       {font-size: 14px; line-height: 20px; }
+        .step-info-group .congrats-box .desc       { margin:10px 0; }
+        .step-info-group .congrats-box h5         { margin-bottom:8px; font-size: 15px; line-height: 18px;  }
+        .step-info-group .congrats-box p         {  margin:0 auto 8px !important; max-width: 100%; font-size: 14px; line-height: 20px; }
+        .step-info-group .congrats-box .close-btn { margin-top:10px; padding:5px 28px 7px; font-size: 13px; line-height: 20px; }
+    /*****Steps Info Css End*******/
+}

@@ -1,0 +1,788 @@
+@charset "utf-8";
+/* CSS Document */
+
+/******* Fonts Face CSS Start **********/
+@font-face {
+    font-family: 'Cera Basic Bold';
+    src: url('../fonts/CeraBasic-Bold.eot');
+    src: url('../fonts/CeraBasic-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CeraBasic-Bold.woff2') format('woff2'),
+        url('../fonts/CeraBasic-Bold.woff') format('woff'),
+        url('../fonts/CeraBasic-Bold.ttf') format('truetype'),
+        url('../fonts/CeraBasic-Bold.svg#CeraBasic-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Basic Regular';
+    src: url('../fonts/CeraBasic-Regular.eot');
+    src: url('../fonts/CeraBasic-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CeraBasic-Regular.woff2') format('woff2'),
+        url('../fonts/CeraBasic-Regular.woff') format('woff'),
+        url('../fonts/CeraBasic-Regular.ttf') format('truetype'),
+        url('../fonts/CeraBasic-Regular.svg#CeraBasic-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Basic Black';
+    src: url('../fonts/CeraBasic-Black.eot');
+    src: url('../fonts/CeraBasic-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CeraBasic-Black.woff2') format('woff2'),
+        url('../fonts/CeraBasic-Black.woff') format('woff'),
+        url('../fonts/CeraBasic-Black.ttf') format('truetype'),
+        url('../fonts/CeraBasic-Black.svg#CeraBasic-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Basic Reg-italic';
+    src: url('../fonts/CeraBasic-RegularItalic.eot');
+    src: url('../fonts/CeraBasic-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CeraBasic-RegularItalic.woff2') format('woff2'),
+        url('../fonts/CeraBasic-RegularItalic.woff') format('woff'),
+        url('../fonts/CeraBasic-RegularItalic.ttf') format('truetype'),
+        url('../fonts/CeraBasic-RegularItalic.svg#CeraBasic-RegularItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'GillSans';
+    src: url('../fonts/GillSans.eot');
+    src: url('../fonts/GillSans.eot') format('embedded-opentype'),
+         url('../fonts/GillSans.woff2') format('woff2'),
+         url('../fonts/GillSans.woff') format('woff'),
+         url('../fonts/GillSans.ttf') format('truetype'),
+         url('../fonts/GillSans.svg#GillSans') format('svg');
+}
+@font-face {
+    font-family: 'GillSansLight';
+    src: url('../fonts/GillSansLight.eot');
+    src: url('../fonts/GillSansLight.eot') format('embedded-opentype'),
+         url('../fonts/GillSansLight.woff2') format('woff2'),
+         url('../fonts/GillSansLight.woff') format('woff'),
+         url('../fonts/GillSansLight.ttf') format('truetype'),
+         url('../fonts/GillSansLight.svg#GillSansLight') format('svg');
+}
+/********* Fonts Face CSS End **********/
+
+/******* Common Element CSS Start ******/
+.loading		{ overflow: hidden; }
+*							{ margin: 0px; padding: 0px;}
+body						{ font-family: 'Cera Basic Regular'; font-size:14px; line-height: 22px; color: #152C53;}
+h1,h2,h3,h4,h5,h6           { margin: 0;}
+.clear						{ clear:both;}
+img							{ border: 0px; max-width: 100%;}
+ul,ol						{ margin: 0; list-style: none; }
+a							{ text-decoration: none; outline: none; transition: 0.3s all; -webkit-transition: 0.3s all; -moz-transition: 0.3s all; cursor: pointer;}
+a:hover,
+a:focus         	        { outline: none; text-decoration: none; color: #5BD17A !important;}
+a:active                    { color: #30975D !important;}
+input[type="submit"]:focus,
+button:focus                { outline: none;}
+h1                          { font-family: 'Cera Basic Black'; font-size: 34px; line-height: 41px;}
+h2                          { font-family: 'Cera Basic Bold'; font-size: 20px !important; line-height: 24px !important; text-transform: capitalize;}
+h3                          { font-family: 'Cera Basic Bold'; font-size: 22px; line-height: 26px; text-transform: capitalize;}
+.landing-page p				{ font-family: 'Cera Basic Regular'; font-size:20px !important; line-height: 28px !important;}
+p:last-child                { margin: 0 !important;}
+.small-font                 { font-size: 12px; }
+.justify-space-between      { display: flex; display: -webkit-flex; align-items: center; -webkit-align-items: center; justify-content: space-between; -webkit-justify-content: space-between;}
+.align-center               { display: flex; display: -webkit-flex; align-items: center; -webkit-align-items: center;}
+.align-end                  { display: flex; display: -webkit-flex; align-items: flex-end; -webkit-align-items: flex-end;}
+.justify-end                { display: flex; display: -webkit-flex; justify-content: flex-end; -webkit-justify-content: flex-end;}
+.justify-center             { display: flex; display: -webkit-flex; align-items: center; -webkit-align-items: center; justify-content: center; -webkit-justify-content: center;}
+.btn-small                  { padding: 7px 35px 10px; background: #51BA6C; font-family: 'Cera Basic Bold'; font-size: 15px; line-height: 25px; color: #ffffff !important; min-width: 160px; border-radius: 50px; border: none; display: inline-block; text-align: center;}
+.btn-small:hover            { background: #5BD17A; color: #ffffff !important;}
+.no-padding                 { padding: 0 !important;}
+.margin-0                   { margin: 0 !important;}
+textarea                    { resize: none;}
+button                      { cursor: pointer;}
+.multi-btns button          { margin: 0px 15px 0 0;}
+.m-20                       { margin: 20px 0;}
+.m-30                       { margin: 30px 0;}
+.section-padding-top        { padding-top: 150px;}
+    /******* Input Style Css *********/
+    .error-style .input__field:focus {
+        border-color: #BA5151;
+    }
+    .input {
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        margin: 8px 0;
+        width: 100%;
+        vertical-align: top;
+    }
+    .input__field {
+        position: relative;
+        display: block;
+        float: right;
+        padding: 0;
+        width: 60%;
+        border: none;
+        border-radius: 0;
+        background: #ffffff;
+        color: #152C53;
+        font-family: 'Cera Basic Regular';
+        -webkit-appearance: none; /* for box shadows to show on iOS */
+    }
+    .input__field:focus,
+    .input--filled .input__field--hoshi {
+        outline: none;
+        border: 1px solid #51BA6C;
+    }
+    .input__label {
+        display: inline-block;
+        padding: 0 1em;
+        width: 100%;
+        color: #152C53;
+        font-size: 15px;
+        line-height: 22px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .input__label-content {
+        position: relative;
+        display: block;
+        padding: 15px 0;
+        width: auto;
+        font-size: 15px;
+        color: #78849E;
+        background: #ffffff;
+        line-height: 12px;
+    }
+    /* Individual styles */
+
+    /* Hoshi */
+    .input--filled .input__label-content    { padding: 0px 8px 5px; font-size: 12px; line-height: 9px;} 
+    .input--filled .input__label--hoshi     { padding: 0px 7px;}
+    .input--hoshi {
+        overflow: hidden;
+    }
+    .input__field--hoshi {
+        margin-top: 18px;
+        padding: 10px 15px;
+        width: 100%;
+        background: #fff;
+        color: #152C53;
+        border: 1px solid #D8D8D8;
+        border-radius: 5px;
+    }
+    .input__label--hoshi {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 0 15px;
+        width: 100%;
+        height: calc(100% - 19px);
+        text-align: left;
+        pointer-events: none;
+    }
+    .input__label-content--hoshi {
+        position: absolute;
+    }
+    .input__label--hoshi::before,
+    .input__label--hoshi::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .input__label--hoshi::after {
+        margin-top: 2px;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+        -webkit-transition: -webkit-transform 3s;
+        transition: transform 3s;
+    }
+    .input__field--hoshi:focus + .input__label--hoshi::after,
+    .input--filled .input__label--hoshi::after {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    .input__field--hoshi:focus + .input__label--hoshi .input__label-content--hoshi,
+    .input--filled .input__label-content--hoshi {
+        -webkit-animation: anim-1 0.3s forwards;
+        animation: anim-1 0.3s forwards;
+    }
+    @-webkit-keyframes anim-1 {
+        50% {
+            opacity: 0;
+            -webkit-transform: translate3d(1em, 0, 0);
+            transform: translate3d(1em, 0, 0);
+        }
+        51% {
+            opacity: 0;
+            -webkit-transform: translate3d(-1em, -40%, 0);
+            transform: translate3d(-1em, -40%, 0);
+        }
+        100% {
+            opacity: 1;
+            -webkit-transform: translate3d(0, -40%, 0);
+            transform: translate3d(0, -40%, 0);
+        }
+    }
+    @keyframes anim-1 {
+        50% {
+            opacity: 0;
+            -webkit-transform: translate3d(1em, 0, 0);
+            transform: translate3d(1em, 0, 0);
+        }
+        51% {
+            opacity: 0;
+            -webkit-transform: translate3d(-1em, -40%, 0);
+            transform: translate3d(-1em, -40%, 0);
+        }
+        100% {
+            opacity: 1;
+            -webkit-transform: translate3d(0, -40%, 0);
+            transform: translate3d(0, -40%, 0);
+        }
+    }
+
+    .select-style.select-code .jcf-select       { margin-top: 10px; min-width: 100%; height: 44px;}
+    .select-style.select-code .jcf-select .jcf-select-text { padding: 10px;}
+    .select-style.select-code .jcf-select-opener::before { top: 10px;}
+
+    /******* Loader CSS *********/
+    .loader         { position: absolute; top: 0; left: 0; background: rgba(255,255,255,0.8); height: 100%; width: 100%; z-index: 100;}
+    .lds-ripple {
+        display: inline-block;
+        position: relative;
+        width: 80px;
+        height: 80px;
+        top: 50%; left: 50%; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%);
+        }
+        .lds-ripple div {
+        position: absolute;
+        border: 4px solid #51BA6C;
+        opacity: 1;
+        border-radius: 50%;
+        animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+        }
+        .lds-ripple div:nth-child(2) {
+        animation-delay: -0.5s;
+        }
+        @keyframes lds-ripple {
+        0% {
+            top: 36px;
+            left: 36px;
+            width: 0;
+            height: 0;
+            opacity: 1;
+        }
+        100% {
+            top: 0px;
+            left: 0px;
+            width: 72px;
+            height: 72px;
+            opacity: 0;
+        }
+        }
+.green-text                                 { padding: 10px 0; color: #51BA6C;}
+.section-title                              { text-align: center;}
+.landing-registration                       { margin-top: 90px; }
+.welcome-gigworker.landing-registration     { padding-top: 0px; }
+.welcome-gigworker.landing-registration .gigworker-info     { margin-top: 150px; }
+.welcome-gigworker.landing-registration .my-profile-pg     { padding: 100px 0px; }
+.landing-registration .gigfy-cv-profile      { padding: 150px 35px; }
+/******* Common Element CSS End *********/
+
+/******* Header Section CSS Start *******/
+header                                      { padding: 25px 0px !important; position: fixed; top: 0; width: 100%; z-index: 1040; background: #152C53; transition: 0.3s ease-in; -webkit-transition: 0.3s ease-in;}
+header.sticky-header                        { padding: 15px 0 !important;}
+header.sticky-header .logo img              { width: 100px;}
+.header-menu-content li                     { padding: 0px 25px; display: inline-block; position: relative;}
+.header-menu-content li a                   { font-family: 'Cera Basic Bold'; font-size: 16px; line-height: 19px; color: #ffffff;   }
+header.sticky-header .header-menu-content li a { font-size: 14px; line-height: 22px;}
+.header-menu-content li a:hover             { color: #51BA6C;}
+header.sticky-header .header-menu-content .btn-small    { padding: 6px 35px;}
+.header-download-btn                         { display: none; padding: 5px 15px 8px;}
+/******* Header Section CSS End *********/
+
+/******* Banner Section CSS Start *********/
+.overlay::before                            { content: ''; background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0.2) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0.2) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ position: absolute; bottom: 0; left: 0; height: 187px; width: 100%;}
+.banner-slider                              { margin-top: 90px !important;}
+    .banner-slider-img                          { padding-top: 29%; position: relative; z-index: 10; background-repeat: no-repeat !important; background-size: cover !important; background-position: center center !important;}
+.banner-content                             { position: absolute; top:0; left:0; width: 100%;}
+.banner-text                                { padding-top: 50px; max-width: 500px;}
+.banner-content h1,
+.banner-content h2                          { color: #ffffff;}
+.banner-content h1                          { padding: 35px 0 45px; text-shadow: 2px 2px 4px rgba(0,0,0,0.16);}
+.slider-app-banner                          { padding-top: 29%; background: -moz-linear-gradient(left, rgba(21,44,83,1) 0%, rgba(16,32,59,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(21,44,83,1) 0%,rgba(16,32,59,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(21,44,83,1) 0%,rgba(16,32,59,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ position: relative;}
+.slider-app-banner::before                  { content: ''; background: #ffffff; height: 100%; width: 60%; position: absolute; top: 0; left: 0; display: block; z-index: 0; transform-origin: top left; -webkit-transform-origin: top left;
+    -ms-transform: skew(-30deg, 0deg);
+    -webkit-transform: skew(-30deg, 0deg);
+    transform: skew(-30deg, 0deg);} 
+.slider-app-banner h1                       { color: #152C53; text-shadow: none;}
+.download-btn                               { margin-top: 35px;}
+.download-btn a                             { padding-right: 15px; display: inline-block; vertical-align: middle;}
+.slider-app-banner::after                   { content: ''; background: url('../images/slider-pattern.png') no-repeat left center; background-size: 90% auto; height: 497px; width: 497px; position: absolute; top: 50%; left: 58%; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); display: block;}
+.slider-app-banner img { width: 100%; }
+
+
+/* slider download app banner */
+.slider-download-app { background: #152b52;
+    background: -moz-linear-gradient(top,  #152b52 0%, #0d1c31 100%);
+    background: -webkit-linear-gradient(top,  #152b52 0%,#0d1c31 100%);
+    background: linear-gradient(to bottom,  #152b52 0%,#0d1c31 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#152b52', endColorstr='#0d1c31',GradientType=0 );
+    }
+.slider-download-app::before,
+.slider-download-app::after,
+.slider-download-app .overlay::before   { display: none; }
+.slider-download-app .banner-text h1 { color: #fff;}
+/*.slider-download-app .banner-content { position: relative;}*/
+.slider-download-app .banner-content h1 { padding-bottom: 0px;}
+.slider-download-app img.slider-mobile-img { position: absolute; top: 10%; right: 14%; width: 50%;}
+
+/******* Banner Section CSS End *********/
+
+/******* Category Section CSS Start *********/
+.category-sec h1                           { padding-bottom: 20px;}
+.pattern                                   { position: relative;}
+.pattern::before                           { content: ''; background: url('../images/pattern.png') no-repeat left center; height: 100%; width: 100%; position: absolute; top: 100px; left: -25%; display: block; z-index: -1;}                                    
+.pattern-2::before                         { top: 250px; left: -35%; background-size: 71% auto;} 
+.custom-gallery                            { margin-top: 70px; }
+.cat_img                                   { margin-bottom: 30px; background-position: center center; background-size: cover; background-repeat: no-repeat; height: 190px; position: relative;}
+.cat_img h3                                { padding: 10px 15px; background: rgba(21,44,83,0.50); color: #fff; text-align: center; position: absolute; bottom: 0; left: 0; width: 100%; font-size: 18px; line-height: 25px;}
+.radius-top                                { border-radius: 35px 0 0 0;}
+.radius-right                              { border-radius: 0 35px 0 0;}
+.radius-bottom                             { border-radius: 0 0 35px 0;}
+.radius-left                               { border-radius: 0 0 0 35px;}        
+.height-410                                { height: 410px;}
+/******* Category Section CSS End *********/
+
+/******* Discover Work Section CSS Start *********/
+.discover-work-sec                         { padding-top: 100px;}
+.discover-work-sec .section-title                     { padding-bottom: 25px;}
+.work-text                                 { margin: 0 auto; max-width: 790px; text-align: center;}
+.work-text p                               { margin: 25px 0;}
+.works-blk                                 { padding: 0px 35px; text-align: center;}
+.works-blk img                             { width: 70px;}
+.works-blk h3                              { padding: 35px 0 10px;}
+.video-frame                               { padding: 100px 0; text-align: center;}
+.video-img                                 { position: relative;}
+.play-video img                            { width: 80px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%);}
+#video-block                               { width: 100%; max-width: 1000px;}
+.fancybox-content                          { padding: 12px; border-radius: 10px;}
+.fancybox-slide--html .fancybox-close-small { padding: 4px; height: 30px; width: 30px; color: #fff; border: 4px solid #fff; background: #51BA6C; opacity: 1; color: #FFFFFF; border-radius: 50px;}
+/******* Discover Work Section CSS End *********/
+
+/******* Comming Soon Section CSS Start *********/
+.comming-soon-sec                          { margin-top: 200px; background: -moz-linear-gradient(left, rgba(216,216,216,0.8) 0%, rgba(255,255,255,0.8) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(216,216,216,0.8) 0%,rgba(255,255,255,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(216,216,216,0.8) 0%,rgba(255,255,255,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */}
+.comming-soon-man-img                      { margin-top: -78px;}
+.comming-soon-text                         { padding: 50px 0 30px;}
+.comming-soon-text h1                      { padding-bottom: 15px;}
+/******* Comming Soon Section CSS End *********/
+
+/******* How Work Section CSS Start *********/
+.how-it-work-sec                          { padding: 150px 0;}
+.how-it-work-sec h1                       { padding-bottom: 100px;}
+.how-work-blks                            { padding: 0px 35px;}
+.how-work-blks img                        { margin: 45px 0;}
+.how-work-blks h2                         { font-family: 'Cera Basic Bold'; font-size: 20px; line-height: 24px; text-transform: capitalize; text-transform: none; position: relative; display: inline-block;}
+.how-works-title span                     { position: absolute; top: -40px; left: -30px; font-family: 'Cera Basic Black'; font-size: 94px; line-height: 55px; color: rgba(81,186,108,0.40); display: inline-block;}   
+/******* How Work Section CSS End *********/
+
+/******* All You Need Section CSS Start *********/
+.all-you-need-sec                         { padding: 120px 0 80px; position: relative;}
+.all-you-need-sec::before                 { content: ''; background: #152C53; position: absolute; height: 100%; width: 75%; top: 0; right: 0; display: block;}
+.all-you-need-text h1,
+.all-you-need-text p                      { color: #ffffff;}
+.all-you-need-text p                      { margin-bottom: 0; padding: 15px 0 35px;}
+.all-you-need-text ul li                  { padding: 12px 0 12px 35px; position: relative;}
+.all-you-need-text ul li::before          { content: ''; background: url('../images/check.png') no-repeat; position: absolute; top: 18px; left: 0; height: 14px; width: 18px; display: block;}
+.all-you-need-text ul li a                { font-family: 'Cera Basic Bold'; cursor: pointer; font-size: 18px; line-height: 25px; color: #ffffff !important;}
+.all-you-need-text ul li a span           { font-family: 'Cera Basic Regular';}
+.all-you-need-text ul li a.active         { color: #51BA6C !important;}
+/* .all-you-need-text ul li a:hover          { color: #51BA6C !important;} */
+.nav-tabs                                 { border: none;}
+.panel-default img                        { width: 100%;}
+/******* All You Need Section CSS End *********/
+
+/******* Earn More Section CSS Start *********/
+.earning-more-sec                         { padding: 100px 0;}
+.earning-more-slider .slick-slide                      { padding: 35px; background: url('../images/earning-more-slider-bg.jpg') no-repeat center center / cover; height: 300px; width: 100%; display: block; border-radius: 12px; position: relative;}
+.earning-more-slider .slick-slide::before              { content: ''; background: -moz-linear-gradient(left, rgba(21,44,83,1) 0%, rgba(21,44,83,0.62) 65%, rgba(21,44,83,0.8) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(21,44,83,1) 0%,rgba(21,44,83,0.62) 65%,rgba(21,44,83,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(21,44,83,1) 0%,rgba(21,44,83,0.62) 65%,rgba(21,44,83,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    height: 100%; width: 100%; position: absolute; top: 0; left: 0; display: block; border-radius: 12px;
+}
+.earning-more-slides h3                   { padding-top: 70px; font-size: 30px; line-height: 36px; color: #ffffff; text-transform: none;}
+.earning-more-img                         { margin-top: -74px; text-align: right;}
+.earning-more-slider .slick-track         { padding-top: 42px;}
+.slick-dots                               { bottom: -35px;}
+.slick-dots li button::before { font-size: 30px; line-height: 25px; color: rgba(120,132,158,0.50); opacity: 1;}
+.slick-dots li.slick-active button::before     { color: #78849E;}
+/******* Earn More Section CSS End *********/
+
+/******* Join News Letter Section CSS Start *********/
+.join-news-letter-sec                       { padding: 180px 0 100px; position: relative;}
+.join-news-letter-sec::before               { content: ''; background: #51BA6C; width: 25%; height: 5px; position: absolute; top: 240px; left: 0; border-radius: 33px; display: block;}
+.join-news-letter-sec h1                    { text-align: left;}
+.join-news-letter-sec h6                    { padding-top: 10px; font-size: 10px; line-height: 15px; color: #152C53 !important; }
+.join-news-letter-sec p                     { margin: 0; padding: 50px 0 35px; text-align: left;}
+.join-news-letter-sec .input                { min-width: 300px;} 
+.subscribe-btn                              { margin-left: 25px;}
+.subscribe-btn .btn-small                   { margin-bottom: 0px }
+/******* Join News Letter Section CSS End *********/
+
+/******* Footer Section CSS Start *********/
+.footer-sec                                 { padding: 50px 0; background: #142A4E;}
+.footer-sec h1,
+.footer-sec p                               { color: #ffffff;}
+.privacy-text                               { text-align: right;}
+.footer-sec ul li                           { padding: 0px 25px; display: inline-block;}
+.footer-sec ul li a                         { padding: 4px; height: 35px; width: 35px; text-align: center; font-size: 18px; color: #ffffff !important; border: 2px solid #ffffff; border-radius: 50px; display: inline-block;}
+/* .footer-sec ul li a:hover                   { background: #fff;} */
+.copyright-text                             { padding-bottom: 20px; background:#142A4E;}
+.copyright-text p,
+.privacy-text a                             { font-size: 13px; line-height: 20px; color: #ffffff;}        
+.privacy-text a                             { padding-left: 25px; display: inline-block;}
+.footer-sec .download-btn                   { margin-top: 0;}
+.footer-sec .download-btn a                 { padding-right: 5px; width: 125px;}
+/*.footer-sec .download-btn a:last-child      { padding: 0;}*/
+/*.hover-tooltip .call-tooltip { display: none; padding: 6px; font-size: 14px; line-height: 22px; background: #ffffff; color: #152C53; border-radius: 8px; position: absolute; top: -40px; right: 50px;}
+.hover-tooltip .call-tooltip::before { bottom:-14px; left: 5px; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; border-bottom-color: #fff; border-width: 8px; transform: rotate(-180deg); -webkit-transform: rotate(-180deg);}
+.hover-tooltip a:hover .call-tooltip { display: block;}*/
+/******* Footer Section CSS End *********/
+
+/******* Terms and Condition CSS Start ******/   
+.terms-sec                                  { margin-top: 90px; padding: 70px 0;}
+.terms-condition-content p                  { font-size: 14px !important; line-height: 22px !important;}                                                                 
+.terms-condition-content h5                 { padding-top: 10px; font-size: 18px; line-height: 25px;}
+.terms-condition-content h2                 { margin: 50px 0 10px; color: #152C53; text-transform: uppercase;}
+.terms-condition-content a                  { color: #152C53;}
+.terms-condition-content h4                 { font-family: 'Cera Basic Bold'; font-size: 14px; line-height: 22px; color: #152C53; text-transform: uppercase;}
+.terms-condition-content ul                 { padding-left: 25px;}
+.terms-condition-content ul li              { padding: 10px 10px 10px 25px; position: relative;}
+.terms-condition-content ul li::before      { content: ''; background: #152C53; height: 5px; width: 5px; border-radius: 50px; position: absolute; top: 20px; left: 0; display: block;}
+/******* Terms and Condition CSS End ******/
+
+/******* Cookie CSS Start ******/ 
+.cookieConsentContainer {
+	z-index: 999;
+	width: 350px;
+	min-height: 20px;
+	box-sizing: border-box;
+	padding: 25px;
+	background: #232323;
+	overflow: hidden;
+	position: fixed;
+    bottom: 30px;
+	right: 30px;
+	display: none;
+}
+.cookieConsentContainer .cookieTitle a {
+	color: #FFFFFF;
+	font-size: 22px;
+	line-height: 20px;
+    display: block;
+    pointer-events: none;
+}
+.cookieConsentContainer .cookieButton a {
+	display: inline-block;
+	color: #FFFFFF !important;
+	font-size: 14px;
+	font-weight: bold;
+	margin-top: 14px;
+	background: #000000;
+	box-sizing: border-box; 
+	padding: 10px 15px;
+	text-align: center;
+	transition: background 0.3s;
+}
+.cookieConsentContainer .cookieButton a:hover { 
+	cursor: pointer;
+	background: #51BA6C;
+}
+.cookieConsentContainer .cookieDesc a {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+.cookieConsentContainer .cookieDesc p {
+	color: #FFFFFF;
+	font-size: 13px !important;
+	line-height: 20px !important;
+	display: block;
+	margin-top: 10px !important;
+} 
+/******* Cookie CSS End ******/ 
+
+/****** Responsive Css *******/
+@media (min-width: 1200px) and (max-width: 1500px){
+    .join-news-letter-sec::before            { width: 15%;}
+    .welcome-gigworker.landing-registration .my-profile-pg,
+    .landing-registration .gigfy-cv-profile                       { padding: 50px 35px; }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    .welcome-gigworker.landing-registration .my-profile-pg,
+    .landing-registration .gigfy-cv-profile                       { padding: 50px 35px; }
+    .section-padding-top                    { padding-top: 45px;}  
+    .landing-page p                         { font-size: 18px !important; line-height: 28px !important;}
+    /******* Banner CSS Start ******/  
+    .banner-slider-img,
+    .slider-app-banner                       { padding-top: 45%;}
+    .banner-content h1                       { padding: 30px 0; font-size: 25px; line-height: 35px;}
+    .banner-text                             { width: 350px;}
+    .slider-download-app img.slider-mobile-img { width: 80%; right: -5%;}
+    /******* Banner CSS End ******/
+    /******* Category Section CSS Start *********/
+   .category-slider                         { margin-top: 35px;}
+   .category-slider .slick-prev             { left: 0;}
+   .category-slider .slick-next             { right: 0;}
+   .pattern::before                         { background-position: center center; background-size: 100% auto;}
+   /******* Category Section CSS End *********/
+    /******* Comming Soon Section CSS Start *********/
+    .comming-soon-sec                        { margin-top: 180px;}
+    .comming-soon-text                       { padding-bottom: 0;}
+    .comming-soon-text p                     { font-size: 16px; line-height: 25px;}
+    /******* Comming Soon Section CSS End *********/
+    /******* How Work Section CSS Start *********/
+    .how-it-work-sec                         { padding: 45px 0 70px;}    
+    .how-work-blks                           { padding: 0px 15px;}  
+    /******* How Work Section CSS End *********/
+    /******* All You Need Section CSS Start *********/   
+    .all-you-need-sec                        { padding: 50px 0 35px;} 
+    .all-you-need-text ul li a               { font-size: 18px; line-height: 25px;}
+    /******* All You Need Section CSS End *********/
+    /******* Earn More Section CSS Start *********/
+   .earning-more-sec                        { padding: 70px 0 50px;}
+   /******* Earn More Section CSS End *********/
+    /******* Join News Letter Section CSS Start *********/
+    .join-news-letter-sec                    { padding: 50px 0;}
+    .join-news-letter-sec::before            { width: 15%; top: 115px;}    
+    /******* Join News Letter Section CSS End *********/
+
+    /****** Footer Section CSS Start ********/
+    .footer-sec .download-btn a { padding: 0px 0px 10px 0px;}
+    /****** Footer Section CSS End ********/
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .landing-registration                       { margin-top: 70px; }
+    .section-padding-top                     { padding-top: 45px;}   
+    h1                                      { font-size: 28px; line-height: 35px;}
+    h2                                      { font-size: 20px !important; line-height: 28px !important;} 
+    h3                                      { font-size: 18px; line-height: 25px;} 
+    .landing-page p                         { font-size: 18px !important; line-height: 28px !important;}
+    /******* Header CSS Start ******/   
+    .main-header .logo                       { margin-bottom: 0!important;}
+    .main-header .justify-space-between { display: flex !important;}
+    header                                   { padding: 15px 0;}
+    .header-menu-content li                  { padding: 0px 10px;}
+    /******* Header CSS End ******/
+    /******* Banner CSS Start ******/  
+    .banner-slider                           { margin-top: 90px !important;}
+    .banner-content h1                       { padding: 20px 0; font-size: 18px; line-height: 28px;}
+    .banner-text                             { width: 350px;}
+    .banner-slider-img,
+    .slider-app-banner                       { padding-top: 40%;}
+    .slider-download-app img.slider-mobile-img { right: 0; width: 68%;}
+    .slider-app-banner::before               { -ms-transform: skew(-22deg, 0deg); -webkit-transform: skew(-22deg, 0deg); transform: skew(-22deg, 0deg);}
+    .discover-work-sec                       { padding-top: 70px;}
+    .video-frame                             { padding: 70px 0;}
+    .works-blk                               { padding: 0;}
+    .slider-mobile-img                       { width: 90% !important;}
+
+    /* slider app download banner */
+        .slider-download-app img.slider-mobile-img { width: 65% !important;}
+        .slider-download-app .download-btn a { width: 150px; }
+
+    /******* Banner CSS End ******/
+    /******* Category Section CSS Start *********/
+   .pattern::before                         { background-position: center center; background-size: 100% auto;}
+   .height-410                              { height: 190px;}
+   .radius-top,                               
+   .radius-right,                                                         
+   .radius-left                             { border-radius: 0;} 
+   .tab-radius-top                          { border-radius: 35px 0 0 0;}  
+   .tab-radius-right                        { border-radius: 0 35px 0 0;} 
+   .tab-radius-left                         { border-radius: 0 0 0 35px;}                                
+   /******* Category Section CSS End *********/
+    /******* Comming Soon Section CSS Start *********/
+    .comming-soon-sec                        { margin-top: 150px; text-align: center;}
+    .comming-soon-text                       { padding: 20px 0; text-align: center;}
+    /******* Comming Soon Section CSS End *********/
+    /******* How Work Section CSS Start *********/
+   .how-it-work-sec                         { padding: 45px 0 25px;}
+   .how-it-work-sec h1                      { padding-bottom: 40px;}
+   .how-work-blks h2                        { font-size: 15px !important; line-height: 25px !important;}
+   .how-works-title span                    { font-size: 65px; top: -33px;}   
+   .how-work-blks                           { margin-bottom: 40px; padding: 0;}
+   .how-work-blks img                       { margin: 25px 0; width: 150px;} 
+   .how-works-title span                    { top: -29px; left: -22px;}  
+   .how-work-blks p                         { font-size: 15px !important; line-height: 25px !important;}        
+   /******* How Work Section CSS End *********/
+    /******* All You Need Section CSS Start *********/
+    .all-you-need-sec::before                { width: 100%;}     
+    .all-you-need-sec                        { padding: 50px 0 35px;} 
+    .panel-default img                       { margin-bottom: 20px;}
+    .all-you-need-text p                     { padding: 15px 0 25px;}
+    .all-you-need-text ul li a               { font-size: 14px; line-height: 22px;}
+    /******* All You Need Section CSS End *********/
+   /******* Earn More Section CSS Start *********/
+   .earning-more-sec                        { padding: 45px 0;}
+   .earning-more-slider .slick-slide        { padding: 25px; height: 270px;}
+   .earning-more-slider .slick-track        { padding-top: 55px;}
+   .earning-more-slides h3                  { font-size: 22px; line-height: 32px;} 
+   /******* Earn More Section CSS End *********/
+    /******* Join News Letter Section CSS Start *********/
+    .join-news-letter-sec                    { padding: 45px 0;}
+    .join-news-letter-sec::before            { width: 20%; top: 94px;}    
+    .join-news-letter-sec p                  { padding: 35px 0 20px;} 
+    .join-news-letter-sec form               { padding-bottom: 35px;}
+    .join-news-letter-sec h6                 { padding: 0px 0 25px;}
+    /******* Join News Letter Section CSS End *********/
+    /******* Footer Section CSS Start *********/
+    .footer-sec                             { padding: 25px 0;}
+    .footer-sec p                           { font-size: 16px; line-height: 25px;}
+    .footer-sec ul li                       { padding: 0px 8px;}
+    .terms-sec                               { margin-top: 83px; padding: 35px 0;}
+    .terms-condition-content h2              { margin: 35px 0 10px;}
+   .footer-sec .download-btn a              { padding: 0px 0px 10px 0px;}
+   /******* Footer Section CSS End *********/
+   /*.hover-tooltip a:hover .call-tooltip     { display: none;}*/
+
+}
+@media (max-width: 767px){
+    .mobile-hide                            { display: none !important;}
+    .section-padding-top                    { padding-top: 35px;}
+    .btn-small                              { min-width:  100px;}
+    h1                                      { font-size: 20px; line-height: 25px;}
+    h2                                      { font-size: 16px !important; line-height: 25px !important;}
+    .green-text                             { padding: 5px 0;}
+    .landing-page p                         { font-size: 15px !important; line-height: 22px !important;}
+    /******* Header CSS Start ******/
+    header,
+    header.sticky-header                    { padding: 12px 0;}
+    /* header .justify-space-between      { display: block !important;} */
+    .header-menu-content li a                   { font-size: 14px;}
+   .logo,
+   .header-menu-content                     { text-align: center;}
+   .logo img                                { width: 100px;}
+   .header-menu-content li                  { padding: 0px 5px;}
+   .header-download-btn                             { display: block;}
+   /******* Header CSS End ******/
+   /******* Banner CSS Start ******/  
+   .banner-slider                           { margin-top: 83px !important;} 
+   .banner-content h1                       { padding: 12px 0; font-size: 22px; line-height: 30px;}
+   .banner-slider-img,
+   .slider-app-banner                       { padding-top: 65%;}
+   .banner-text                             { max-width: 100%;}
+   .banner-text.last-slider                 { padding-top: 20px; }
+   .slider-app-banner .banner-text          { padding-top: 15px;}
+   .slider-app-banner h1                    { color: #ffffff;}
+   .slider-app-banner::before               { display: none;}
+   .download-btn                            { margin-top: 15px;}
+   .download-btn a                          { padding-right: 12px;}
+   .discover-work-sec                       { padding-top: 50px;}
+   .discover-work-sec .section-title        { padding: 0;}
+    .discover-work-sec br                   { display: none; }
+   /* slider download app banner */
+      .slider-download-app .download-btn a     { width: 120px; display: block; margin-bottom: 10px;}
+      .slider-download-app img.slider-mobile-img { top: 10%; left: auto; transform: translateX(0%); right: -40%; width: 100%;}
+
+   /******* Banner CSS End ******/
+   /******* Category Section CSS Start *********/
+   .pattern::before                         { background-position: center center; background-size: 100% auto;}
+   .video-frame                             { padding: 35px 0;}
+   .play-video img                          { width: 50px;}
+   .work-text p                             { margin: 15px 0;}
+   .works-blk                               { margin-bottom: 25px;}
+   .works-blk h3                            { padding: 20px 0 10px;}
+   .height-410                              { height: 190px;}
+   .radius-top,                               
+   .radius-right,                                                         
+   .radius-left                             { border-radius: 0;} 
+   .mobile-rad-tr                           { border-radius: 35px 35px 0 0;}
+   .mobile-rad-bl                           { border-radius: 0 0 35px 35px;}
+   .custom-gallery                          { margin-top: 35px;}
+   /******* Category Section CSS End *********/
+   /******* Comming Soon Section CSS Start *********/
+   .comming-soon-sec                        { margin-top: 120px;}
+   .comming-soon-text                       { padding: 20px 0; text-align: center;}
+   /******* Comming Soon Section CSS End *********/
+   /******* How Work Section CSS Start *********/
+   .how-it-work-sec                         { padding: 35px 0 0;}
+   .how-it-work-sec h1                      { padding-bottom: 40px;}
+   .how-works-title span                    { font-size: 65px; top: -33px;}   
+   .how-work-blks                           { margin-bottom: 40px;}
+   .how-work-blks img                       { margin: 25px 0;} 
+   .how-works-title span                    { left: -22px;}          
+   /******* How Work Section CSS End *********/
+   /******* All You Need Section CSS Start *********/
+   .all-you-need-sec::before                { width: 100% ;}     
+   .all-you-need-sec                        { padding: 50px 0 35px;} 
+   .panel-default img                       { margin-bottom: 20px;}
+   .all-you-need-text p                     { padding: 15px 0 25px;}
+   .all-you-need-text ul li a               { font-size: 14px; line-height: 22px;}
+   /******* All You Need Section CSS End *********/
+   /******* Earn More Section CSS Start *********/
+   .earning-more-sec                        { padding: 35px 0;}
+   .earning-more-slider .slick-slide        { padding: 20px;}
+   .earning-more-slider .slick-track        { padding-top: 0;}
+   .earning-more-slides h3                  { padding-top: 0px; font-size: 16px; line-height: 22px; text-align: center;}
+   .earning-more-img                        { margin-top: 22px;}
+   .earning-more-img img                    { width: 160px;}
+   /******* Earn More Section CSS End *********/
+   /******* Join News Letter Section CSS Start *********/
+   .join-news-letter-sec                    { padding: 50px 0;}
+   .join-news-letter-sec::before            { width: 30%; top: 90px;}    
+   .join-news-letter-sec p                  { padding: 35px 0 20px;} 
+   .join-news-letter-sec form .d-flex       { display: block !important;} 
+   .join-news-letter-sec .input             { min-width: 100%;}
+   .subscribe-btn                           { margin: 15px 0 25px; text-align: center;}
+   .join-news-letter-sec h6                 { padding: 0px 0 25px; text-align: center;}
+   .join-news-letter-sec h6 br              { display: none;}
+   /*#error-subscribe-news                    { bottom: 170px; }*/
+   /*#error-subscribe-news   { position: absolute; bottom: 170px; }*/
+   /******* Join News Letter Section CSS End *********/
+   /******* Footer Section CSS Start *********/
+   .copyright-text,                          
+   .footer-logo, .privacy-text,
+   .footer-sec h1,
+   .footer-sec p                            { text-align: center;}   
+   .footer-sec                              { padding: 20px 0;}    
+   .footer-sec ul                           { margin: 15px 0; text-align: center;}
+   .footer-sec ul li                        { padding: 0 8px;}     
+   .terms-sec                               { margin-top: 83px; padding: 35px 0;}
+   .terms-condition-content h2              { margin: 35px 0 10px;}
+   .privacy-text a                          { padding: 10px 6px;}
+   /******* Footer Section CSS End *********/
+    /*.hover-tooltip a:hover .call-tooltip     { display: none;}*/
+}
+@media (max-width: 980px) {
+	.cookieConsentContainer {
+		bottom: 0px !important;
+		left: 0px !important;
+		width: 100%  !important;
+	}
+}
+
+@media (max-width: 359px){
+    .banner-content .btn-small               { margin-top: 40px;}
+    .banner-content h1                       { padding: 12px 0; font-size: 18px; line-height: 26px;}
+}
+
+@media (min-width: 440px) and (max-width: 767px){ 
+    .slider-download-app .download-btn a     { margin-bottom: 0; width: 130px; display: inline-block; }
+    .slider-download-app img.slider-mobile-img { right: -35%; }
+}

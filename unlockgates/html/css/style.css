@@ -1,0 +1,240 @@
+/****font-face included*****/
+
+/*typography Strat*/
+h1                                          { font-size: 50px; line-height: 70px; font-weight: bold; color:#fff;  }
+h2                                          { font-size: 38px; line-height: 52px; font-weight:600; color:#FC550A;  }
+h3                                          { font-size: 32px; line-height: 43px; font-weight:600; color:#fff;  }
+h5                                          { font-size: 24px; line-height: 32px; color:#FC550A; font-weight:700; }
+p ,ul li a ,.privacy-policy-content ul li           { font-size: 16px;  line-height: 24px; color:#221F20; }
+p.big-text ,ul.big-text li                  { font-size: 20px;  line-height:34px; font-weight: 400; color:#221F20; }
+a                                           { display: inline-block; text-decoration: none; outline: none; font-size: 15px; line-height: 22px; transition:all 0.5s ease; color:#221F20; }
+/*typography End*/
+/*****common section start****/
+*                                           { margin: 0px; padding: 0px; box-sizing: border-box; font-family: 'Nunito Sans', sans-serif;}
+html                                        { scroll-behavior: smooth; }
+body                                        { font-size:14px; line-height:24px; color:#fff; }
+img                                         { border: 0px;}
+ul,ol                                       { list-style: none;}
+a:hover, a:active,a:focus                   { text-decoration: none; color:#FC550A;}
+a:focus, a:active, a:visited                { outline: none; }
+.text-none                                  { text-transform: none !important; }
+button.navbar-toggler ,button               { outline:0;}
+.color-black                                { color:#221F20 !important; }
+.list-style-disc                            { list-style-type: disc; }
+.common-space                               { padding:100px 0;}
+.theme-btn                                  { padding:15px 24px; display: inline-block; font-size:16px; line-height:22px; font-weight:400; background-color:#FC550A; border-radius: 4px; border: 1px solid #FC550A; color:#fff; transition:all 0.5s ease; }
+.theme-btn:hover,.theme-btn:focus,.theme-btn:active { background-color:transparent; color:#FC550A; }
+.theme-btn.white-bg                         { padding: 13px 24px; background-color:#fff; border-color:transparent; color:#060606; min-width:137px; }
+.theme-btn.white-bg:hover,.theme-btn.white-bg:focus { background-color:#000; color:#fff;  }
+.heading h2                                 { padding-bottom:10px; margin-bottom:24px; position: relative; }
+.heading h2 span                            { text-transform: uppercase; }
+.heading h2:after                           { content:""; position: absolute; bottom:0; left:0; width:110px; height:2px; background-color:#FC550A; }
+.mb-32                                      { margin-bottom: 32px; }
+.bg-light                                   { background-color:#FDF9F8; }
+.bg-red                                     { background-color:#FC550A; }
+.title-box .heading h2:after                { left:50%; transform: translate(-50%); width:52px; }
+.color-fb                                   { color:#3B5998; }
+.color-insta                                { background-color:#C13584; color:#fff; border-radius:6px;}
+.color-twit                                 { color:#1DA1F2; }
+.color-linked                               { color:#2867B2; }
+.overlay                                    { position: relative; }
+.overlay::after                             { content:""; position: absolute; top:0; left:0; width:100%; height:100%; background-color:rgba(11,11,11,0.84);  }
+/*****common section End****/
+/***Header-section Css Start****/
+.header-section                             { padding: 15px 60px; position: fixed; top:0; left:0; width:100%;  background-color: #fff; z-index: 1000; transition:all 0.4s  ease; }
+.header-section.header-style                { padding: 10px 60px;  box-shadow: 0 6px 20px rgba(0,0,0,0.2);} 
+.navbar-brand                               { transition:all 0.5s ease; }
+.header-section.header-style    .navbar-brand { max-width: 3%; }
+.header-section .theme-btn                  { font-size:20px; line-height:28px;  }
+.header-section.header-style .theme-btn     { font-size:16px; line-height:22px; }
+/* header-section end */
+/* middle section start */
+/* banner */
+.banner-section                             { margin-top:110px; background:url('../images/banner-bg.png')no-repeat center center/cover; }
+.banner-section .row                        { z-index: 1; }
+/* why unlockgartes */
+.why-unlockgates ul                         { padding-left:20px; }
+.why-unlockgates .img-box:after             { content:""; position:absolute; bottom:0; left:0; width:100%; height:100%; background:url('../images/shape.png')no-repeat center center/100% auto; z-index: -1; }
+.pt-50                                      { padding-top:50px; }
+.unlock-gates-works                         { position: absolute; right:0; top:-50px; }
+/* feature-section */
+.main-feature .feature-item                 {  padding:20px; background-color:#fff; box-shadow: 0 6px 10px 0 rgba(0,0,0,0.2); }
+/* get-in-touch section */
+.get-in-touch-detail                        { padding:50px 80px 50px 50px; border-radius:2px; }
+.form-group                                 { margin-bottom:24px; }
+.form-control                               { padding: 0; font-size:16px; line-height: 22px; background-color:transparent; color:#fff; border:0; border-radius:0; border-bottom: 1px solid rgba(255,255,255,0.16); height:39px; }
+.form-control:focus                         { background-color:transparent; outline:0; border-color:#fff; box-shadow: none; }
+.form-control::placeholder                  { /* Chrome, Firefox, Opera, Safari 10.1+ */ color: #fff; opacity: 0.56; /* Firefox */ }
+textarea.form-control                       { resize:none; height:76px; }
+.contact-info                               { padding:80px; margin-left:-90px; background-color:#fff; box-shadow: 0 6px 20px rgba(0,0,0,0.2); }
+.contact-info a ,.contact-info address      { font-size: 24px; line-height:32px; color:#000733;}
+.contact-info a:hover,.contact-info a:focus { color:#FC550A; }
+.contact-info i                             { font-size:18px; }
+.social-list a                              { padding:5px; margin-right:16px; height:25px; width:25px;  display: flex; justify-content: center; align-items: center; }
+.social-list a:hover,.social-list a:focus   { filter: drop-shadow(0 1px 2px rgba(0,0,0, 0.4));-webkit-filter: drop-shadow(0 1px 2px rgba(0,0,0, 0.4)); }
+.social-list a img                          { max-height: 15px;}
+/* get-start-now */
+.title-box h5                               { margin:42px 0 49px; }
+/* privacy-policy */
+.content-details a                           { text-decoration: underline; }
+/* middle section end */
+/* footer-section  */
+.footer-section                             { padding:32px 0; }
+.copy-right                                 { font-size:12px; line-height:16px; }
+/******Responsive Css Sstart*/
+@media(min-width:1200px) and (max-width:1599px)/* for tablet */
+{
+     /*typography Strat*/
+     h1                                          { font-size: 42px; line-height: 58px; }
+    h2                                          { font-size: 34px; line-height: 42px;  }
+    h3                                          { font-size: 32px; line-height: 42px; }
+    h5                                          { font-size: 23px; line-height: 32px;  }
+    p                                           { font-size: 15px;  line-height: 22px;  }
+    p.big-text ,ul.big-text li                  { font-size: 18px;  line-height:30px; }
+.common-space                               { padding:70px 0;}
+.theme-btn                                  { padding:12px 20px; font-size:15px; line-height:22px; }
+.theme-btn.white-bg                         { padding:11px 20px;  }
+.mb-32                                      { margin-bottom: 28px; }
+.navbar-brand                               {  max-width: 7%;  }
+.header-section.header-style  .navbar-brand                { max-width: 5%; }
+/*typography End*/
+}
+@media(min-width:992px) and (max-width:1199px)
+{
+   /*typography Strat*/
+   h1                                          { font-size: 36px; line-height: 52px; }
+   h2                                          { font-size: 32px; line-height: 46px;  }
+   h3                                          { font-size: 30px; line-height: 40px; }
+   h5                                          { font-size: 21px; line-height: 30px;  }
+p                                           { font-size: 16px;  line-height: 22px;  }
+p.big-text ,ul.big-text li                  { font-size: 18px;  line-height:30px; }
+.common-space                               { padding:70px 0;}
+.theme-btn                                  { padding:12px 20px; font-size:15px; line-height:22px; }
+.theme-btn.white-bg                         { padding:11px 20px;  }
+.mb-32                                      { margin-bottom: 28px; }
+/*typography End*/
+/***Header-section Css Start****/
+.header-section                             { padding: 12px 50px; }
+.header-section.header-style                { padding: 8px 50px; } 
+.header-section .theme-btn                  { font-size:18px; line-height:24px;  }
+.header-section.header-style .theme-btn     { font-size:15px; line-height:22px; }
+.navbar-brand                               {  max-width: 7%;  }
+.header-section.header-style  .navbar-brand                { max-width: 5%; }
+/* header-section end */
+/* middle section start */
+/* banner */
+.banner-section                             { margin-top:96.43px;}
+/* why unlockgartes */
+.pt-50                                      { padding-top:30px; }
+.navbar-brand                               {  max-width: 7%;  }
+/* feature-section */
+.main-feature .feature-item                 {  padding:15px; }
+.main-feature .feature-item .icon-box       { width:40px; height:40px; }
+.main-feature .feature-item .icon-box img   { max-height: 100%; }
+/* get-in-touch section */
+.get-in-touch-detail                        { padding:30px 50px 30px 30px; }
+.form-group                                 { margin-bottom:20px; }
+textarea.form-control                       { height:70px; }
+.contact-info                               { padding:50px; margin-left:-65px;  }
+.contact-info a ,.contact-info address      { font-size: 22px; line-height:30px;}
+.social-list a                              { padding:5px; margin-right:14px;  }
+/* get-start-now */
+.title-box h5                               { margin:32px 0 40px; }
+/* middle section end */
+/* footer-section  */
+.footer-section                             { padding:25px 0; }
+}
+@media(min-width:768px) and (max-width:991px)/* for tablet */
+{
+     /*typography Strat*/
+h1                                          { font-size: 30px; line-height: 46px; }
+h2                                          { font-size: 26px; line-height: 42px;  }
+h3                                          { font-size: 24px; line-height: 32px; }
+h5                                          { font-size: 15px; line-height: 22px;  }
+p                                           { font-size: 14px;  line-height: 20px;  }
+p.big-text ,ul.big-text li                  { font-size: 15px;  line-height:22px; }
+.common-space                               { padding:50px 0;}
+.theme-btn                                  { padding:10px 18px; font-size:14px; line-height:20px; }
+.theme-btn.white-bg                         {  padding:9px 18px; min-width:120px; }
+.mb-32                                      { margin-bottom: 20px; }
+/*typography End*/
+/***Header-section Css Start****/
+.header-section                             { padding: 10px 40px; }
+.header-section.header-style                { padding: 8px 40px; } 
+.header-section .theme-btn                  { font-size:16px; line-height:22px;  }
+.header-section.header-style .theme-btn     { font-size:14px; line-height:20px; }
+.navbar-brand                               {  max-width: 7%;  }
+.header-section.header-style  .navbar-brand                { max-width: 5%; }
+/* header-section end */
+/* middle section start */
+/* banner */
+.banner-section                             { margin-top:78.15px;}
+/* why unlockgartes */
+.pt-50                                      { padding-top:30px; }
+/* feature-section */
+.main-feature .feature-item                 {  padding:10px; }
+/* get-in-touch section */
+.get-in-touch-detail                        { padding:20px 40px 20px 20px; }
+.form-group                                 { margin-bottom:15px; }
+textarea.form-control                       { height:60px; }
+.form-control                               { font-size:14px; line-height: 20px; height:30px; }
+.contact-info                               { padding:20px; margin-left:-65px;  }
+.contact-info a ,.contact-info address      { font-size: 18px; line-height:28px;}
+.social-list a                              { padding:5px; margin-right:12px;  }
+/* get-start-now */
+.title-box h5                               { margin:22px 0 30px; }
+/* middle section end */
+/* footer-section  */
+.footer-section                             { padding:20px 0; }
+}
+@media(max-width:767px)/* for mobile */
+{
+    /*typography Strat*/
+h1                                          { font-size: 28px; line-height: 38px; }
+h2                                          { font-size: 24px; line-height: 32px;  }
+h3                                          { font-size: 22px; line-height: 30px; }
+h5                                          { font-size: 16px; line-height: 22px;  }
+p                                           { font-size: 14px;  line-height: 20px;  }
+p.big-text ,ul.big-text li                  { font-size: 14px;  line-height:22px; }
+.common-space                               { padding:30px 0;}
+.theme-btn                                  { padding:8px 13px; font-size:14px; line-height:20px; }
+.theme-btn.white-bg                         {  padding:8px 13px; min-width:100px; }
+.mb-32                                      { margin-bottom: 24px; }
+/*typography End*/
+/***Header-section Css Start****/
+.header-section                             { padding: 10px 15px; }
+.header-section.header-style                { padding: 8px 15px; } 
+.header-section .theme-btn                  { font-size:14px; line-height:20px;  }
+.header-section.header-style .theme-btn     { font-size:13px; line-height:20px; }
+.navbar-brand                               {  max-width: 14%;  }
+.header-section.header-style  .navbar-brand                { max-width: 10%; }
+/* header-section end */
+/* middle section start */
+/* banner */
+.banner-section                             { margin-top:62px;}
+/* why unlockgartes */
+.pt-50                                      { padding-top:30px; }
+/* feature-section */
+.main-feature .feature-item                 {  padding:10px; }
+.main-feature .feature-item .icon-box       { width:40px; height:40px; }
+.main-feature .feature-item .icon-box img   { max-height:100%; }
+/* get-in-touch section */
+.get-in-touch-detail                        { padding:20px 40px 20px 20px; }
+.form-group                                 { margin-bottom:15px; }
+textarea.form-control                       { height:60px; }
+.form-control                               { font-size:14px; line-height: 20px; height:30px; }
+.contact-info                               { padding:20px; margin-left:0px;  }
+.contact-info a ,.contact-info address      { font-size: 16px; line-height:24px;}
+.social-list a                              { padding:5px; margin-right:12px;  }
+/* get-start-now */
+.title-box h5                               { margin:22px 0 30px; }
+/* middle section end */
+/* footer-section  */
+.footer-section                             { padding:15px 0; }
+}
+@media(min-width:576px) and (max-width:767px)/* for fablet */
+{
+    .main-feature .feature-item .icon-box       { width:45px; height:45px; }
+}
+
+/****Responsive Css End******/
